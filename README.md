@@ -6,6 +6,9 @@ keywords: *1 envisioned architecure; 3 features; 5 core functionalities*
 
 From decades of practices and theories in the field of database management, we never stop liberating us from tedious and complicated management of (big) data. We envision a universal architecture of (big) data management, **datar**, to make one more step. The idea essentially comes from computer. *A datar is a set of coherent softewares/systems that can manage (big) data pluggablly, automatically and intelligently with specific functionalities, where specific functionalities refer to input, storage, compute, control and output of the (big) data.* 
 
+![alt text][computer]
+[computer]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "computer architecture"
+
 ## What is biggy?
 keywords: *implementation of datar*
 
