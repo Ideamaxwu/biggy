@@ -19,7 +19,9 @@
 * output -share [data operation]
 
 # Example
+* install biggy
 
+      install biggy
 
 # Five Parts
 
