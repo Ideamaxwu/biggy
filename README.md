@@ -8,12 +8,8 @@ From decades of practices and theories in the field of database management, we n
 
 <p align="center">
   <img src="https://github.com/Ideamaxwu/biggy/blob/master/computer.jpg" alt="computer architecture"/>
+  <img src="https://github.com/Ideamaxwu/biggy/blob/master/datar.jpg" alt="datar architecture"/>
 </p>
-->![alt text][computer]<-
-[computer]: https://github.com/Ideamaxwu/biggy/blob/master/computer.jpg "computer architecture"
-
-->![alt text][datar]<-
-[datar]: https://github.com/Ideamaxwu/biggy/blob/master/datar.jpg "datar architecture"
 
 ## What is biggy?
 keywords: *implementation of datar*
