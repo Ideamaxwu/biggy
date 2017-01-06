@@ -2,10 +2,10 @@
 
 # How to use?
 
-### input [data_source, data_destination]
+### input [datasource, datadestination]
 
-### store [datastore_name]
-* store -store [datastore_name]
+### store [datastorename]
+* store -store [datastorename]
 * store -index [data indextype]
 
 ### compute [data operation]
@@ -17,6 +17,9 @@
 ### output [data operation]
 * output -visualize [data operation]
 * output -share [data operation]
+
+# Example
+
 
 # Five Parts
 
