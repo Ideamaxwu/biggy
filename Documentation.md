@@ -22,6 +22,9 @@
 * install biggy
 
       install biggy
+* run biggy
+
+      run biggy
 
 # Five Parts
 
