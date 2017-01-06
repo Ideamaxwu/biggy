@@ -1,5 +1,17 @@
 # Documentation of biggy
 
+# How to use?
+
+* input [data_source, data_destination]
+* store [datastore_name]
+- store -store [datastore_name]
+- store -index [data indextype]
+* compute [data operation]
+* control [configuration]
+* output [data operation]
+
+# Five Parts
+
 ## INPUT
 Data INPUT is to have continous data arrive into biggy from external sources and incrementally populate a persisted dataset and associated indexes.
 
