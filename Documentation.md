@@ -3,12 +3,15 @@
 # How to use?
 
 ### input [data_source, data_destination]
+
 ### store [datastore_name]
 * store -store [datastore_name]
 * store -index [data indextype]
+
 ### compute [data operation]
 * compute -query [data operation]
 * compute -analysis [data operation]
+
 ### control [configuration]
 
 ### output [data operation]
