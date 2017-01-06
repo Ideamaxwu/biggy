@@ -9,7 +9,7 @@ From decades of practices and theories in the field of database management, we n
 ->![alt text][computer]<-
 [computer]: https://github.com/Ideamaxwu/biggy/blob/master/computer.jpg "computer architecture"
 
-![alt text][datar]
+->![alt text][datar]<-
 [datar]: https://github.com/Ideamaxwu/biggy/blob/master/datar.jpg "datar architecture"
 
 ## What is biggy?
