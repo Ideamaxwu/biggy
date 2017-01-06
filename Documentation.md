@@ -25,6 +25,9 @@
 * run biggy
       
       ```run biggy```
+* create datastore
+
+      ```biggy>>>store -store myds```
 
 # Five Parts
 
