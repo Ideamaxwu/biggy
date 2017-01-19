@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+#biggy script
+
+#statics
+mgxcmd="../../asterixdb/managix/bin/managix"
+
+#function run
+run(){
+	read -e -p "biggy>>> " cmd
+	history -s "$cmd"
+	while [ "$cmd" != "quit" ]
+	do
+		history -s "$cmd"
+		#pre-process cmd
+		cmdarr=($cmd)
+		echo "biggy>>> "${cmdarr[0]}"..."
+		#pass cmd to internal
+		newcmd="describe -n mydb"
+		$mgxcmd "$newcmd"
+		read -e -p "biggy>>> " cmd
+	done
+}
+
+#case inpute
+case $1 in
+
+	#install projects
+	"install") 
+	echo "installing biggy..."
+	;;
+
+	#run biggy
+	"run")
+	echo "running biggy..."
+	run
+	;;
+	#commond error
+	*)
+	echo "Command Error!"
+	;;
+
+esac
