@@ -13,30 +13,74 @@ run(){
 		history -s "$cmd"
 		#pre-process cmd
 		cmdarr=($cmd)
-		echo "biggy>>> "${cmdarr[0]}"..."
+		#run biggy
+		case "${cmdarr[0]}" in
+			#input
+			"input")
+			echo "input..."
+			;;
+			#store
+			"store")
+			echo "store..."
+			run
+			;;
+			#compute
+			"compute")
+			echo "compute..."
+			;;
+			#control
+			"control")
+			echo "control..."
+			;;
+			#output
+			"output")
+			echo "output..."
+			;;
+			#commond error
+			*)
+			echo "Command Error!"
+			;;	
+		esac	
 		#pass cmd to internal
-		newcmd="describe -n mydb"
-		$mgxcmd "$newcmd"
+		#newcmd="describe -n mydb"
+		#$mgxcmd "$newcmd"
 		read -e -p "biggy>>> " cmd
 	done
 }
 
-#case inpute
-case $1 in
-
+if [ "$1" == "install" ]
+then 
 	#install projects
-	"install") 
 	echo "installing biggy..."
-	;;
-
-	#run biggy
-	"run")
-	echo "running biggy..."
-	run
-	;;
-	#commond error
-	*)
+elif [ "$2" != "biggy" ]
+then
 	echo "Command Error!"
-	;;
-
-esac
+elif [ "$3" == "" ]
+then 
+	echo "Command Error!"
+else
+	#manage biggy
+	case "$1" in
+		#new
+		"new")
+		echo "new biggy ""$3""..."
+		;;
+		#start
+		"start")
+		echo "start biggy ""$3""..."
+		run
+		;;
+		#stop
+		"stop")
+		echo "stop biggy ""$3""..."
+		;;
+		#delete
+		"delete")
+		echo "delete biggy ""$3""..."
+		;;
+		#commond error
+		*)
+		echo "Command Error!"
+		;;	
+	esac
+fi
