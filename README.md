@@ -1,4 +1,7 @@
-# biggy
+# biggy 
+<p align="center">
+  <img src="https://github.com/Ideamaxwu/biggy/blob/master/bigo.png" alt="bigo"/>
+</p>
 biggy - implementation of datar - universal architecture of data management
 
 ## What is datar?
