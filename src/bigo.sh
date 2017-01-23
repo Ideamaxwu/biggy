@@ -22,7 +22,21 @@ run(){
 			#store
 			"store")
 			echo "store..."
-			run
+			case "${cmdarr[1]}" in
+				"-new")
+				cmd="create dataverse ""${cmdarr[2]}"";"
+				echo "$cmd"
+				$mgxcmd "$cmd"
+				;;
+				"-delete")
+				cmd="drop dataverse ""${cmdarr[2]}"";"
+				$mgxcmd "$cmd"
+				;;
+				*)
+				echo "Paras Missing!"
+				;;
+			esac			
+			echo "stored."
 			;;
 			#compute
 			"compute")
@@ -63,20 +77,45 @@ else
 	case "$1" in
 		#new
 		"new")
-		echo "new biggy ""$3""..."
+		echo "newing biggy ""$3""..."
+		newcmd="create -n ""$3"" -c ../../asterixdb/managix/clusters/local/local.xml"
+		$mgxcmd "$newcmd"
+		echo "new biggy ""$3"" end."
 		;;
 		#start
 		"start")
-		echo "start biggy ""$3""..."
+		echo "starting biggy ""$3""..."
+		newcmd="start -n ""$3"
+		$mgxcmd "$newcmd"
+		echo "start biggy ""$3"" end."
+		#run
+		;;
+		#use
+		"use")
+		echo "using biggy ""$3""..."
 		run
+		echo "use biggy ""$3"" end."
 		;;
 		#stop
 		"stop")
-		echo "stop biggy ""$3""..."
+		echo "stopping biggy ""$3""..."
+		newcmd="stop -n ""$3"
+		$mgxcmd "$newcmd"
+		echo "stop biggy ""$3"" end."
 		;;
 		#delete
 		"delete")
-		echo "delete biggy ""$3""..."
+		echo "deleting biggy ""$3""..."
+		newcmd="delete -n ""$3"
+		$mgxcmd "$newcmd"
+		echo "delete biggy ""$3"" end."
+		;;
+		#info
+		"info")
+		echo "infoing biggy ""$3""..."
+		newcmd="describe -n ""$3"
+		$mgxcmd "$newcmd"
+		echo "info biggy ""$3"" end."
 		;;
 		#commond error
 		*)
