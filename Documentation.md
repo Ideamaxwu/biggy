@@ -24,7 +24,7 @@
       ```./bigo.sh install biggy```
 * \[new, start, use, stop, delete, info\] biggy instance named bigo
       
-      ```./bigo.sh \[new, start, use, stop, delete, info\] biggy bigo```
+      ```./bigo.sh [new, start, use, stop, delete, info] biggy bigo```
 * create datastore
 
       ```>>> store -store myds```
