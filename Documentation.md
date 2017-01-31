@@ -22,12 +22,18 @@
 * install biggy project
       
       ```./bigo.sh install biggy```
-* [new, start, use, stop, delete, info] biggy instance named bigo
+* [create, start, use, stop, delete, describe] biggy instance named bigo
       
       ```./bigo.sh [new, start, use, stop, delete, info] biggy bigo```
-* create datastore
+* [create, delete] datastore
 
-      ```>>> store -store myds```
+      ```./bigo.sh use biggy bigo```
+      ```using biggy bigo```
+      ```biggy>>> store [-new, -delete] bigdb```
+      ```some excuting info here```
+      ```store...```
+      ```stored.```
+	  ```>>> store -store myds```
 
 # Five Parts
 
