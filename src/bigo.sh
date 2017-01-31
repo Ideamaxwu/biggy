@@ -3,7 +3,7 @@
 
 #statics
 mgxcmd="../../asterixdb/managix/bin/managix"
-
+AQLcmd="python3 AdapterAsterix/QueryInstance.py"
 #function run
 run(){
 	read -e -p "biggy>>> " cmd
@@ -25,12 +25,11 @@ run(){
 			case "${cmdarr[1]}" in
 				"-new")
 				cmd="create dataverse ""${cmdarr[2]}"";"
-				echo "$cmd"
-				$mgxcmd "$cmd"
+				$AQLcmd "$cmd"
 				;;
 				"-delete")
 				cmd="drop dataverse ""${cmdarr[2]}"";"
-				$mgxcmd "$cmd"
+				$AQLcmd "$cmd"
 				;;
 				*)
 				echo "Paras Missing!"
