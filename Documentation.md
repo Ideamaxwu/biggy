@@ -19,12 +19,12 @@
 * output -share [data operation]
 
 # Example
-* install biggy
+* install biggy project
       
-      ```install biggy```
-* run biggy
+      ```./bigo.sh install biggy```
+* \[new, start, use, stop, delete, info\] biggy instance named bigo
       
-      ```run biggy```
+      ```./bigo.sh \[new, start, use, stop, delete, info\] biggy bigo```
 * create datastore
 
       ```>>> store -store myds```

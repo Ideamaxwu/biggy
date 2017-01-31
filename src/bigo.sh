@@ -65,6 +65,7 @@ if [ "$1" == "install" ]
 then 
 	#install projects
 	echo "installing biggy..."
+	echo "installed biggy."
 elif [ "$2" != "biggy" ]
 then
 	echo "Command Error!"
