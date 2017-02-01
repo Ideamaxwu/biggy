@@ -63,6 +63,20 @@ run(){
 			#output
 			"output")
 			echo "output..."
+			case "${cmdarr[1]}" in
+				"-visual")
+				cmd="${cmdarr[@]:2}"
+				#$AQLcmd "$cmd"
+				;;
+				"-share")
+				cmd="${cmdarr[@]:2}"
+				#$AQLcmd "$cmd"
+				;;
+				*)
+				echo "Paras Missing!"
+				;;
+			esac			
+			echo "outputed."
 			;;
 			#commond error
 			*)
