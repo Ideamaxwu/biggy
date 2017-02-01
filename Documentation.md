@@ -27,13 +27,15 @@
       ```./bigo.sh [new, start, use, stop, delete, info] biggy bigo```
 * [create, delete] datastore
 
-      ```./bigo.sh use biggy bigo```
-      ```using biggy bigo```
-      ```biggy>>> store [-new, -delete] bigdb```
-      ```some excuting info here```
-      ```store...```
-      ```stored.```
-	  ```>>> store -store myds```
+      ```
+      ./bigo.sh use biggy bigo
+      using biggy bigo
+      biggy>>> store [-new, -delete] bigdb
+      some excuting info here
+      store...
+      stored.
+	  >>> store -store myds
+      ```
 
 # Five Parts
 
