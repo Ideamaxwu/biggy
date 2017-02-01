@@ -22,10 +22,10 @@
 * install biggy project
       
       ```./bigo.sh install biggy```
-* [create, start, use, stop, delete, describe] biggy instance named bigo
+* manage [create, start, use, stop, delete, describe] biggy instance named bigo
       
       ```./bigo.sh [new, start, use, stop, delete, info] biggy bigo```
-* [create, delete] datastore
+* store [create, delete] datastore
 
       ```
       ./bigo.sh use biggy bigo
@@ -34,6 +34,18 @@
       store...
       *some excuting info here*
       stored.
+	  biggy>>> quit
+      use biggy bigo end.
+      ```
+* compute [query, analysis]
+
+      ```
+      ./bigo.sh use biggy bigo
+      using biggy bigo
+      biggy>>> compute [-query, -analysis] "use dataverse bigdb; for $ds in dataset Metadata.Dataset return $ds"
+      compute...
+      *some excuting info here*
+      computed.
 	  biggy>>> quit
       use biggy bigo end.
       ```

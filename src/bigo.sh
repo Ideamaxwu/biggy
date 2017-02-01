@@ -40,6 +40,21 @@ run(){
 			#compute
 			"compute")
 			echo "compute..."
+			case "${cmdarr[1]}" in
+				"-query")
+				#cmd="use dataverse bigdb; for \$ds in dataset Metadata.Dataset return \$ds"
+				cmd="${cmdarr[@]:2}"
+				$AQLcmd "$cmd"
+				;;
+				"-analysis")
+				cmd="${cmdarr[@]:2}"
+				$AQLcmd "$cmd"
+				;;
+				*)
+				echo "Paras Missing!"
+				;;
+			esac			
+			echo "computed."
 			;;
 			#control
 			"control")
