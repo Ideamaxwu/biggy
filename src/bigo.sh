@@ -66,6 +66,17 @@ run(){
 			case "${cmdarr[1]}" in
 				"-visual")
 				cmd="${cmdarr[@]:2}"
+				#write files to	../../d3/example/
+				#sudo pkill -9 node
+				#start server
+				if netstat -an | grep 8080 | grep LISTEN
+				then
+					google-chrome http://localhost:8080 
+				else
+					cd ../../d3/exmple/
+					http-server	-p 8080 -o &
+					cd ../../biggy/src/
+				fi		
 				#$AQLcmd "$cmd"
 				;;
 				"-share")
