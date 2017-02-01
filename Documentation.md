@@ -31,10 +31,11 @@
       ./bigo.sh use biggy bigo
       using biggy bigo
       biggy>>> store [-new, -delete] bigdb
-      some excuting info here
       store...
+      *some excuting info here*
       stored.
-	  >>> store -store myds
+	  biggy>>> quit
+      use biggy bigo end.
       ```
 
 # Five Parts
