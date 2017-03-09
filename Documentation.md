@@ -25,6 +25,19 @@
 * manage [create, start, use, stop, delete, describe] biggy instance named bigo
       
       ```./bigo.sh [new, start, use, stop, delete, info] biggy bigo```
+* input [feed, file] path_from path_to
+
+      ```
+      *TBD module*
+      ./bigo.sh use biggy bigo
+      using biggy bigo
+      biggy>>> input [-feed, -file] data/source.xls data/destination.table
+      input...
+      *some excuting info here*
+      inputed.
+	  biggy>>> quit
+      use biggy bigo end.
+      ```
 * store [create, delete] datastore
 
       ```
@@ -37,7 +50,7 @@
 	  biggy>>> quit
       use biggy bigo end.
       ```
-* compute [query, analysis]
+* compute [query, analysis] code_query
 
       ```
       ./bigo.sh use biggy bigo
@@ -49,7 +62,20 @@
 	  biggy>>> quit
       use biggy bigo end.
       ```
-* output [visual, share]
+* control
+
+      ```
+      *BUILDIN module*
+      ./bigo.sh use biggy bigo
+      using biggy bigo
+      biggy>>> control
+      control...
+      *transaction control is internal settings*
+      controlled.
+	  biggy>>> quit
+      use biggy bigo end.
+      ```
+* output [visual, share] path_data
 
       ```
       ./bigo.sh use biggy bigo

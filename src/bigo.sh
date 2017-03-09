@@ -18,6 +18,7 @@ run(){
 			#input
 			"input")
 			echo "input..."
+			echo "inputed."
 			;;
 			#store
 			"store")
@@ -59,6 +60,7 @@ run(){
 			#control
 			"control")
 			echo "control..."
+			echo "controlled."
 			;;
 			#output
 			"output")
