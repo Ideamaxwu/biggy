@@ -60,6 +60,7 @@ run(){
 			#control
 			"control")
 			echo "control..."
+			echo "Built-in Module. NO Configuration!"
 			echo "controlled."
 			;;
 			#output

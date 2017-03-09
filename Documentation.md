@@ -70,7 +70,7 @@
       using biggy bigo
       biggy>>> control
       control...
-      *transaction control is internal settings*
+      Built-in Module. NO Configuration!
       controlled.
 	  biggy>>> quit
       use biggy bigo end.
