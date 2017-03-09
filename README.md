@@ -11,7 +11,7 @@ From decades of practices and theories in the field of database management, we n
 
 <p align="center">
   <img src="https://github.com/Ideamaxwu/biggy/blob/master/computer.jpg" alt="computer architecture"/>
-  <img src="https://github.com/Ideamaxwu/biggy/blob/master/datar.jpg" alt="datar architecture"/>
+  <img src="https://github.com/Ideamaxwu/biggy/blob/master/datar.png" alt="datar architecture"/>
 </p>
 
 ## What is biggy?
