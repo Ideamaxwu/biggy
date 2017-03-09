@@ -49,7 +49,19 @@
 	  biggy>>> quit
       use biggy bigo end.
       ```
+* output [visual, share]
 
+      ```
+      ./bigo.sh use biggy bigo
+      using biggy bigo
+      biggy>>> output -visual
+      output...
+      *some excuting info here*
+      outputed.
+	  biggy>>> quit
+      use biggy bigo end.
+      ```
+      
 # Five Parts
 
 ## INPUT
