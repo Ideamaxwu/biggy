@@ -42,7 +42,7 @@
       ```
       ./bigo.sh use biggy bigo
       using biggy bigo
-      biggy>>> compute [-query, -analysis] "use dataverse bigdb; for $ds in dataset Metadata.Dataset return $ds"
+      biggy>>> compute [-query, -analysis] use dataverse bigdb; for $ds in dataset Metadata.Dataset return $ds
       compute...
       *some excuting info here*
       computed.
