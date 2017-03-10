@@ -18,6 +18,26 @@ run(){
 			#input
 			"input")
 			echo "input..."
+			if [ ""${#cmdarr[@]}"" -le 3 ]
+			then
+				echo "path_from path_to missing!"
+				echo "inputed."
+				read -e -p "biggy>>> " cmd
+				continue
+			fi
+			case "${cmdarr[1]}" in
+				"-feed")
+				cmd="create feed ""${cmdarr[2]}"" using socket_adapter() to dataset ""${cmdarr[3]}"";"
+				echo "$cmd"
+				;;
+				"-file")
+				cmd="dump file ""${cmdarr[2]}"" to dataset ""${cmdarr[2]}"";"
+				echo "$cmd"
+				;;
+				*)
+				echo "Paras Missing!"
+				;;
+			esac	
 			echo "inputed."
 			;;
 			#store
