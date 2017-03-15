@@ -60,6 +60,10 @@
       ./bigo.sh use biggy bigo
       using biggy bigo
       biggy>>> compute [-query, -analysis] use dataverse bigdb; for $ds in dataset Metadata.Dataset return $ds
+      *biggy>>> compute -query use dataverse bigdb; create type UserType as {userName: string, userAge: int, userGender: string};*
+      *biggy>>> compute -query use dataverse bigdb; create dataset Users(UserType) primary key userName;*
+      *biggy>>> compute -query use dataverse bigdb; insert into dataset Users({"userName":"Tom","userAge":20,"userGender":"Male"});*
+      *biggy>>> compute -query use dataverse bigdb; for $user in dataset Users return $user;*
       compute...
       *some excuting info here*
       computed.

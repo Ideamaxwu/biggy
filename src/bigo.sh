@@ -69,7 +69,7 @@ run(){
 				;;
 				"-analysis")
 				cmd="${cmdarr[@]:2}"
-				$AQLcmd "$cmd"
+				#$AQLcmd "$cmd"
 				;;
 				*)
 				echo "Paras Missing!"
