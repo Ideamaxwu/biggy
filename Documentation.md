@@ -20,7 +20,6 @@
 
 # Example
 * install biggy project
-      
       ```./bigo.sh install biggy```
 * manage [create, start, use, stop, delete, describe] biggy instance named bigo
       
