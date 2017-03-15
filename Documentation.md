@@ -21,7 +21,7 @@
 # Example
 * install biggy project
 
-      ```./bigo.sh install biggy```
+	```./bigo.sh install biggy```
 * manage [create, start, use, stop, delete, describe] biggy instance named bigo
       
       ```./bigo.sh [new, start, use, stop, delete, info] biggy bigo```
