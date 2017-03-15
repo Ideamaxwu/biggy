@@ -10,13 +10,13 @@ def AQL(dataverseName,aql_stmt):
 	aqmi=QueryMgr.AsterixQueryManager.getInstance()
 	status,response = yield aqmi.executeAQL(dataverseName,aql_stmt)
 	if status == 200:
-		print("if")
+		print("AQL SUCCESS!")
 		return {
 			'status': 'success',
 			'response': response
 		}
 	else:
-		print("else")
+		print("AQL FAILURE!")
 		return {
 			'status': 'failed',
 			'response': response
@@ -24,7 +24,7 @@ def AQL(dataverseName,aql_stmt):
 
 @tornado.gen.coroutine
 def execAQL(aql_stmt):
-	print(aql_stmt)
+	print("AQL_stmt: " + aql_stmt)
 	#dataverseName="hell"
 	#aql_stmt="for $ds in dataset Metadata.Dataset return $ds"
 	#response = yield AQL(dataverseName,aql_stmt)
@@ -36,4 +36,4 @@ def execAQL(aql_stmt):
 
 if __name__ == "__main__":
 	ret = tornado.ioloop.IOLoop.current().run_sync(lambda: execAQL(sys.argv[1]))
-	print(ret['status'])
+	print(ret['response'])

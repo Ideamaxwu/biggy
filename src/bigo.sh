@@ -31,7 +31,7 @@ run(){
 				echo "$cmd"
 				;;
 				"-file")
-				cmd="dump file ""${cmdarr[2]}"" to dataset ""${cmdarr[2]}"";"
+				cmd="dump file ""${cmdarr[2]}"" to dataset ""${cmdarr[3]}"";"
 				echo "$cmd"
 				;;
 				*)
