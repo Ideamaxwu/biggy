@@ -21,13 +21,17 @@
 # Example
 * install biggy project
 
-	```./bigo.sh install biggy```
+	```
+	  ./bigo.sh install biggy
+	```
 * manage [create, start, use, stop, delete, describe] biggy instance named bigo
       
-      ```./bigo.sh [new, start, use, stop, delete, info] biggy bigo```
+	```
+	  ./bigo.sh [new, start, use, stop, delete, info] biggy bigo
+	```
 * input [feed, file] path_from path_to
 
-      ```
+	```
       *TBD module*
       ./bigo.sh use biggy bigo
       using biggy bigo
@@ -37,10 +41,10 @@
       inputed.
 	  biggy>>> quit
       use biggy bigo end.
-      ```
+	```
 * store [create, delete] datastore
 
-      ```
+	```
       ./bigo.sh use biggy bigo
       using biggy bigo
       biggy>>> store [-new, -delete] bigdb
@@ -49,10 +53,10 @@
       stored.
 	  biggy>>> quit
       use biggy bigo end.
-      ```
+	```
 * compute [query, analysis] code_query
 
-      ```
+	```
       ./bigo.sh use biggy bigo
       using biggy bigo
       biggy>>> compute [-query, -analysis] use dataverse bigdb; for $ds in dataset Metadata.Dataset return $ds
@@ -61,10 +65,10 @@
       computed.
 	  biggy>>> quit
       use biggy bigo end.
-      ```
+	```
 * control
 
-      ```
+	```
       *BUILDIN module*
       ./bigo.sh use biggy bigo
       using biggy bigo
@@ -74,10 +78,10 @@
       controlled.
 	  biggy>>> quit
       use biggy bigo end.
-      ```
+	```
 * output [visual, share] path_data
 
-      ```
+	```
       ./bigo.sh use biggy bigo
       using biggy bigo
       biggy>>> output -visual
@@ -86,7 +90,7 @@
       outputed.
 	  biggy>>> quit
       use biggy bigo end.
-      ```
+	```
       
 # Five Parts
 
