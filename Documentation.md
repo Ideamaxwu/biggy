@@ -64,6 +64,7 @@
       *biggy>>> compute -query use dataverse bigdb; create dataset Users(UserType) primary key userName;*
       *biggy>>> compute -query use dataverse bigdb; insert into dataset Users({"userName":"Tom","userAge":20,"userGender":"Male"});*
       *biggy>>> compute -query use dataverse bigdb; for $user in dataset Users return $user;*
+      *biggy>>> compute -analysis sc.parallelize(1 to 1000).count()*
       compute...
       *some excuting info here*
       computed.

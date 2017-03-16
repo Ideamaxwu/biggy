@@ -69,7 +69,9 @@ run(){
 				;;
 				"-analysis")
 				cmd="${cmdarr[@]:2}"
+				#sc.parallelize(1 to 1000).count()
 				#$AQLcmd "$cmd"
+				../../spark/bin/spark-submit ../../spark/TestData/PyScript.py
 				;;
 				*)
 				echo "Paras Missing!"
