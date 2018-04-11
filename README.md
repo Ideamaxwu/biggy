@@ -31,3 +31,8 @@ To put the envisioned datar into practice, we implement it as **biggy**. biggy i
 
 ## How to make it work?
 Currently, we plan to implement biggy based on [AsterixDB](https://github.com/apache/asterixdb), [BAD](https://github.com/apache/asterixdb-bad), [Spark-MLlib](https://github.com/apache/spark) and [d3](https://github.com/d3/d3). AsterixDB is the core component for data storage and control, BAD for data input, Spark-MLlib for data computation and d3 for data output. We make it more pluggable and automatical rather than just gluing them together. Further work of supporting most popular systems (e.g., TensorFlow) as plugins needs done with fullfilment of intelligency.
+
+## References
+* [Apache Beam](https://beam.apache.org/): An advanced unified programming model, and [source code](https://github.com/apache/beam). Ideas about End Users, SDK Writers and Runner Writers.
+
+* [PingCAP](https://www.pingcap.com/index.html): Opensource NewSQL, and [source code](https://github.com/pingcap). Ideas about storage and computation seperation.
