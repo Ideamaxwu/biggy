@@ -8,6 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello MVN World!" );
+        Util.printMessage( "Hello MVN World!" );
     }
 }

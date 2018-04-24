@@ -1,0 +1,9 @@
+biggy\framework\cores\StorageEngine.class
+biggy\framework\cores\biggy.class
+biggy\framework\cores\ComputationEngineSpark.class
+biggy\framework\cores\Engine.class
+biggy\framework\cores\ComputationEngine.class
+biggy\framework\cores\ComputationWrapper.class
+biggy\framework\cores\InstanceObject.class
+biggy\framework\cores\StorageWrapper.class
+biggy\framework\cores\StorageEngineHBase.class
