@@ -6,4 +6,5 @@ package biggy.framework.cores;
  */
  public interface Engine{
 	 void start();
+	 String getInfo();
  }

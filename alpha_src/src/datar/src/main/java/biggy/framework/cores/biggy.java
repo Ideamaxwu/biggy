@@ -9,14 +9,18 @@ public class biggy
     public static void main( String[] args )
     {
         InstanceObject bigo = InstanceObject.getInstance();
-		bigo.showMsg();
+		//test instance duplicate
+		InstanceObject bigoCopy = InstanceObject.getInstance();
 		
 		Engine storageEngineHBase = new StorageEngineHBase(new StorageEngine());
-		//storageEngineHBase.start();
+		//add Storage HBase
 		bigo.addEngine(storageEngineHBase);
 		
 		Engine computationEngineSpark = new ComputationEngineSpark(new ComputationEngine());
-		//computationEngineSpark.start();
+		//add Computation Spark
 		bigo.addEngine(computationEngineSpark);
+		
+		//show current engines
+		bigo.showInfo();
     }
 }

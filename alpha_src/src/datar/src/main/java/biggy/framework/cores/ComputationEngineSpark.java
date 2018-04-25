@@ -5,6 +5,8 @@ package biggy.framework.cores;
  *
  */
  public class ComputationEngineSpark extends ComputationWrapper{
+	 private String engineName = "Spark";
+	 
 	 public ComputationEngineSpark(Engine computationEngine){
 		 super(computationEngine);
 	 }
@@ -17,5 +19,14 @@ package biggy.framework.cores;
 	 
 	 private void setComputationEngine(Engine computationEngine){
 		 System.out.println("Add Computation Engine: Spark.");
+	 }
+	 
+	 public String getEngineName(){
+		return engineName;
+	 }
+	 
+	 @Override
+	 public String getInfo(){
+		 return computationEngine.getInfo() + ", " + getEngineName();
 	 }
  }
