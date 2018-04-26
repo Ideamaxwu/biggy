@@ -23,9 +23,9 @@ To put the envisioned datar into practice, we implement it as **biggy**. biggy i
 
 * storage - data storage&index
 
-* compute - data query&analysis
+* compute - data query&analysis&deep learning
 
-* control - data transaction&recovery
+* control - data transaction&recovery&scheduling
 
 * output - data visualization&sharing
 
