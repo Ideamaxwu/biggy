@@ -31,10 +31,10 @@ public class InstanceObject {
 	}
 	
 	public void showInfo(){
-		System.out.println("-----Current Info-----");
+		System.out.println("-----Status Info-----");
 		for(Engine engine : engineList){
 			System.out.println(engine.getInfo());
 		}
-		System.out.println("-----Current Info END-----");
+		System.out.println("-----Status Info END-----");
 	}
 }

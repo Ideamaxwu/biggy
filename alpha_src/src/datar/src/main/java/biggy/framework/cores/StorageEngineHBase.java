@@ -27,6 +27,6 @@ package biggy.framework.cores;
 	 
 	 @Override
 	 public String getInfo(){
-		 return storageEngine.getInfo() + ", " + getEngineName();
+		 return storageEngine.getInfo() + ": " + getEngineName();
 	 }
  }

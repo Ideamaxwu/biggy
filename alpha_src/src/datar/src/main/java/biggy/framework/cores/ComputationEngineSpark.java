@@ -27,6 +27,6 @@ package biggy.framework.cores;
 	 
 	 @Override
 	 public String getInfo(){
-		 return computationEngine.getInfo() + ", " + getEngineName();
+		 return computationEngine.getInfo() + ": " + getEngineName();
 	 }
  }

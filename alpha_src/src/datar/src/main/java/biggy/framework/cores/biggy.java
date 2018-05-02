@@ -1,5 +1,8 @@
 package biggy.framework.cores;
 
+import java.util.Map;
+import java.util.HashMap;
+
 /**
  * biggy
  *
@@ -8,17 +11,31 @@ public class biggy
 {
     public static void main( String[] args )
     {
-        InstanceObject bigo = InstanceObject.getInstance();
+		//engines configuration
+        Configuration conf = new Configuration();
+		Map engineMap = new HashMap();
+		engineMap = conf.getEngineConf();
+		
+		InstanceObject bigo = InstanceObject.getInstance();
 		//test instance duplicate
 		InstanceObject bigoCopy = InstanceObject.getInstance();
 		
-		Engine storageEngineHBase = new StorageEngineHBase(new StorageEngine());
+		//add Input Conf
+		String confInputeEngineName = (String) engineMap.get("inputEngine");
+		Engine inputEngineConf = new InputEngineConf(new InputEngine(), confInputeEngineName);
+		bigo.addEngine(inputEngineConf);
+		
 		//add Storage HBase
+		Engine storageEngineHBase = new StorageEngineHBase(new StorageEngine());
 		bigo.addEngine(storageEngineHBase);
 		
-		Engine computationEngineSpark = new ComputationEngineSpark(new ComputationEngine());
 		//add Computation Spark
+		Engine computationEngineSpark = new ComputationEngineSpark(new ComputationEngine());
 		bigo.addEngine(computationEngineSpark);
+		
+		//add Control YARN
+		Engine controlEngineYARN = new ControlEngineYARN(new ControlEngine());
+		bigo.addEngine(controlEngineYARN);
 		
 		//show current engines
 		bigo.showInfo();
