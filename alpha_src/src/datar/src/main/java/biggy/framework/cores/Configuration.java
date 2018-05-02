@@ -14,8 +14,9 @@ import java.io.*;
 	 public Configuration(){};
 	 
 	 public Map getEngineConf(){
-		 String fileName = "E:/BDMS/biggy/alpha_src/conf/engine.conf";
-		 File confFile = new File(fileName);
+		 String fileName = "config/engine.conf";
+		 ClassLoader classLoader = new Configuration().getClass().getClassLoader();
+		 File confFile = new File(classLoader.getResource(fileName).getFile());
 		 BufferedReader br = null;
 		 System.out.println("******Configuration Info******");
 		 try{
