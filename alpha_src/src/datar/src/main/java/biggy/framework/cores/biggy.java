@@ -37,6 +37,11 @@ public class biggy
 		Engine controlEngineYARN = new ControlEngineYARN(new ControlEngine());
 		bigo.addEngine(controlEngineYARN);
 		
+		//add Out Conf
+		String confOutputeEngineName = (String) engineMap.get("outputEngine");
+		Engine outputEngineConf = new OutputEngineConf(new OutputEngine(), confOutputeEngineName);
+		bigo.addEngine(outputEngineConf);
+		
 		//show current engines
 		bigo.showInfo();
     }

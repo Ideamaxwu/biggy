@@ -1,0 +1,92 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 AAA5-6AF4
+E:.
+│  pom.xml
+│  tree.txt
+│  
+├─src
+│  ├─main
+│  │  ├─java
+│  │  │  └─biggy
+│  │  │      ├─engines
+│  │  │      │  ├─computation-Spark
+│  │  │      │  │      SparkEngine.java
+│  │  │      │  │      
+│  │  │      │  └─storage-HBase
+│  │  │      │          HBaseEngine.java
+│  │  │      │          
+│  │  │      └─framework
+│  │  │          ├─cores
+│  │  │          │      biggy.java
+│  │  │          │      ComputationEngine.java
+│  │  │          │      ComputationEngineSpark.java
+│  │  │          │      ComputationWrapper.java
+│  │  │          │      Configuration.java
+│  │  │          │      ControlEngine.java
+│  │  │          │      ControlEngineYARN.java
+│  │  │          │      ControlWrapper.java
+│  │  │          │      Engine.java
+│  │  │          │      InputEngine.java
+│  │  │          │      InputEngineConf.java
+│  │  │          │      InputWrapper.java
+│  │  │          │      InstanceObject.java
+│  │  │          │      OutputEngine.java
+│  │  │          │      OutputEngineConf.java
+│  │  │          │      OutputWrapper.java
+│  │  │          │      pom.xml
+│  │  │          │      StorageEngine.java
+│  │  │          │      StorageEngineHBase.java
+│  │  │          │      StorageWrapper.java
+│  │  │          │      
+│  │  │          └─utils
+│  │  │                  Configuration.java
+│  │  │                  
+│  │  └─resources
+│  │      └─config
+│  │              engine.conf
+│  │              
+│  └─test
+│      └─java
+│          └─biggy
+│              └─framework
+│                  └─cores
+│                          AppTest.java
+│                          
+└─target
+    ├─classes
+    │  ├─biggy
+    │  │  └─framework
+    │  │      ├─cores
+    │  │      │      biggy.class
+    │  │      │      ComputationEngine.class
+    │  │      │      ComputationEngineSpark.class
+    │  │      │      ComputationWrapper.class
+    │  │      │      Configuration.class
+    │  │      │      ControlEngine.class
+    │  │      │      ControlEngineYARN.class
+    │  │      │      ControlWrapper.class
+    │  │      │      Engine.class
+    │  │      │      InputEngine.class
+    │  │      │      InputEngineConf.class
+    │  │      │      InputWrapper.class
+    │  │      │      InstanceObject.class
+    │  │      │      OutputEngine.class
+    │  │      │      OutputEngineConf.class
+    │  │      │      OutputWrapper.class
+    │  │      │      StorageEngine.class
+    │  │      │      StorageEngineHBase.class
+    │  │      │      StorageWrapper.class
+    │  │      │      
+    │  │      └─utils
+    │  │              Configuration.class
+    │  │              
+    │  └─config
+    │          engine.conf
+    │          
+    └─maven-status
+        └─maven-compiler-plugin
+            └─compile
+                └─default-compile
+                        createdFiles.lst
+                        inputFiles.lst
+                        
