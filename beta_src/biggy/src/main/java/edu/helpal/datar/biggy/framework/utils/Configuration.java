@@ -13,7 +13,7 @@ import java.io.*;
 	 
 	 public Configuration(){};
 	 
-	 public Map getEngineConf(){
+	 public Map<String, String> getEngineConf(){
 		 String fileName = "config/engine.conf";
 		 ClassLoader classLoader = new Configuration().getClass().getClassLoader();
 		 File confFile = new File(classLoader.getResource(fileName).getFile());

@@ -1,8 +1,19 @@
-package edu.helpal.datar.biggy.framework.cores;
+package edu.helpal.datar.biggy.bigo;
 
 import java.util.Map;
 import java.util.HashMap;
 
+import edu.helpal.datar.biggy.framework.cores.ComputationEngine;
+import edu.helpal.datar.biggy.framework.cores.ComputationEngineSpark;
+import edu.helpal.datar.biggy.framework.cores.ControlEngine;
+import edu.helpal.datar.biggy.framework.cores.ControlEngineYARN;
+import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.InputEngine;
+import edu.helpal.datar.biggy.framework.cores.InputEngineConf;
+import edu.helpal.datar.biggy.framework.cores.OutputEngine;
+import edu.helpal.datar.biggy.framework.cores.OutputEngineConf;
+import edu.helpal.datar.biggy.framework.cores.StorageEngine;
+import edu.helpal.datar.biggy.framework.cores.StorageEngineHBase;
 import edu.helpal.datar.biggy.framework.inception.Inception;
 import edu.helpal.datar.biggy.framework.utils.Configuration;
 
@@ -16,12 +27,12 @@ public class biggy
     {
 		//engines configuration
         Configuration conf = new Configuration();
-		Map engineMap = new HashMap();
+		Map<String, String> engineMap = new HashMap<String, String>();
 		engineMap = conf.getEngineConf();
 		
 		InstanceObject bigo = InstanceObject.getInstance();
 		//test instance duplicate
-		InstanceObject bigoCopy = InstanceObject.getInstance();
+		InstanceObject.getInstance();
 		
 		//add Input Conf
 		String confInputeEngineName = (String) engineMap.get("inputEngine");
