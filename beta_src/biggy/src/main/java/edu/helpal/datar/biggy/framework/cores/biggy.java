@@ -1,10 +1,10 @@
 package edu.helpal.datar.biggy.framework.cores;
 
 import java.util.Map;
-
-import edu.helpal.datar.biggy.framework.utils.Configuration;
-
 import java.util.HashMap;
+
+import edu.helpal.datar.biggy.framework.inception.Inception;
+import edu.helpal.datar.biggy.framework.utils.Configuration;
 
 /**
  * biggy
@@ -47,5 +47,9 @@ public class biggy
 		
 		//show current engines
 		bigo.showInfo();
+		
+		//start cmd line
+		Inception incp = new Inception();
+		incp.start();
     }
 }
