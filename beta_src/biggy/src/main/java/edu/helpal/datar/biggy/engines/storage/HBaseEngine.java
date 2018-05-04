@@ -7,9 +7,13 @@ package edu.helpal.datar.biggy.engines.storage;
 
 public class HBaseEngine
 {
-	 public static void main( String[] args )
-	 {
-		 System.out.println("Helo HBase Engine!");
-	 }
+	String moduleName; 
+	public void run(){
+		moduleName = "HBase Engine module";
+		System.out.println(moduleName + " starting...");
+		//start engine
+		
+		System.out.println(moduleName + " running...");
+	}
 	
 }

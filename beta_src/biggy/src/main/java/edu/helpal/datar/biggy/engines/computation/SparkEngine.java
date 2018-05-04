@@ -1,5 +1,10 @@
 package edu.helpal.datar.biggy.engines.computation;
 
+import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.api.java.function.Function;
+
 /**
  * Spark Engine
  *
@@ -7,9 +12,16 @@ package edu.helpal.datar.biggy.engines.computation;
 
 public class SparkEngine
 {
-	 public static void main( String[] args )
-	 {
-		 System.out.println("Helo Spark Engine!");
-	 }
+	String moduleName; 
+	public void run(){
+		moduleName = "Spark Engine module";
+		System.out.println(moduleName + " starting...");
+		//start engine
+		runExample();
+		System.out.println(moduleName + " running...");
+	}
 	
+	void runExample(){
+		new SparkExample().run();
+	}
 }

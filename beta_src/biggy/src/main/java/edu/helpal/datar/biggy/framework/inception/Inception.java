@@ -20,6 +20,12 @@ public class Inception
 		 String cmdLine = sc.nextLine().toLowerCase();
 		 while (!cmdLine.equals("quit")){
 			 switch(cmdLine){
+			 case "input":
+				 System.out.println("Input engine working...");
+				 //processing
+				 
+				 System.out.print(prompt);
+				 break;
 			 case "store":
 				 System.out.println("Storage engine working...");
 				 //processing
@@ -32,7 +38,22 @@ public class Inception
 				 
 				 System.out.print(prompt);
 				 break;
+			 case "control":
+				 System.out.println("Control engine working...");
+				 //processing
+				 
+				 System.out.print(prompt);
+				 break;
+			 case "output":
+				 System.out.println("Output engine working...");
+				 //processing
+				 
+				 System.out.print(prompt);
+				 break;
 			 default:
+				 System.out.println("Invalid Command!");
+				 //processing
+				 
 				 System.out.print(prompt);
 				 break;
 			 }
