@@ -1,6 +1,7 @@
 package edu.helpal.datar.biggy.bigo;
 
 import java.util.Map;
+import java.util.Date;
 import java.util.HashMap;
 
 import edu.helpal.datar.biggy.framework.cores.ComputationEngine;
@@ -15,6 +16,7 @@ import edu.helpal.datar.biggy.framework.cores.OutputEngineConf;
 import edu.helpal.datar.biggy.framework.cores.StorageEngine;
 import edu.helpal.datar.biggy.framework.cores.StorageEngineHBase;
 import edu.helpal.datar.biggy.framework.inception.Inception;
+import edu.helpal.datar.biggy.framework.utils.BusKeeper;
 import edu.helpal.datar.biggy.framework.utils.Configuration;
 
 /**
@@ -33,6 +35,7 @@ public class biggy
 		//bus keeper
 		BusKeeper bk = new BusKeeper();
 		bk.start();
+		bk.setContext("startTime", new Date().toString());
 		
 		InstanceObject bigo = InstanceObject.getInstance();
 		//test instance duplicate
@@ -67,6 +70,9 @@ public class biggy
 		Inception incp = new Inception();
 		incp.start();
 		
+		//buskeeper info
+		bk.setContext("endTime", new Date().toString());
+		System.out.println("biggy Context: " + bk.getContext().toString());
 		//close buskeeper
 		bk.close();
     }
