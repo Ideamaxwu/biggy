@@ -30,6 +30,10 @@ public class biggy
 		Map<String, String> engineMap = new HashMap<String, String>();
 		engineMap = conf.getEngineConf();
 		
+		//bus keeper
+		BusKeeper bk = new BusKeeper();
+		bk.start();
+		
 		InstanceObject bigo = InstanceObject.getInstance();
 		//test instance duplicate
 		InstanceObject.getInstance();
@@ -62,5 +66,8 @@ public class biggy
 		//start cmd line
 		Inception incp = new Inception();
 		incp.start();
+		
+		//close buskeeper
+		bk.close();
     }
 }

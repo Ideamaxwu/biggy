@@ -12,8 +12,12 @@ public class HBaseEngine
 		moduleName = "HBase Engine module";
 		System.out.println(moduleName + " starting...");
 		//start engine
-		
+		runJob();
 		System.out.println(moduleName + " running...");
+	}
+	
+	void runJob(){
+		new HBaseJob().run();
 	}
 	
 }

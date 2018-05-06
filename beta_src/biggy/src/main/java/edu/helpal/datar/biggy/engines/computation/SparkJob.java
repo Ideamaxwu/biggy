@@ -1,6 +1,10 @@
 package edu.helpal.datar.biggy.engines.computation;
 
-/* SparkJob Example */
+/**
+ * SparkJob Example
+ *
+ */
+
 import org.apache.spark.api.java.*;
 import org.apache.spark.SparkConf;
 
