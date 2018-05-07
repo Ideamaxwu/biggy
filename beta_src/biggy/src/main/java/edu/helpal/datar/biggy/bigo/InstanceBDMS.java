@@ -10,15 +10,15 @@ import java.util.ArrayList;
  * InstanceObject
  *
  */
-public class InstanceObject {
+public class InstanceBDMS {
 	
-	private static InstanceObject instance = null;
+	private static InstanceBDMS instance = null;
 	private List<Engine> engineList = new ArrayList<Engine>();
-	private InstanceObject(){}
+	private InstanceBDMS(){}
 	
-	public static InstanceObject getInstance(){
+	public static InstanceBDMS getInstance(){
 		if(instance == null){
-			instance = new InstanceObject();
+			instance = new InstanceBDMS();
 			System.out.println("-------Welcome to biggy-------");
 			System.out.println("Single Instance Object Bigo Created.");
 		}

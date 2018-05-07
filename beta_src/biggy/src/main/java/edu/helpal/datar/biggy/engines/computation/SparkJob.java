@@ -13,7 +13,7 @@ public class SparkJob {
 
 	public void run() {
 		System.out.println("/*******this is an SparkJob example******/");
-		String logFile = "src/main/resources/config/DBcount.txt"; 
+		final String logFile = "src/main/resources/config/DBcount.txt"; 
 		SparkConf conf = new SparkConf().setAppName("SparkJobExample").setMaster("local");
 		sc = new JavaSparkContext(conf);
 		JavaRDD<String> logData = sc.textFile(logFile).cache();

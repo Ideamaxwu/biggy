@@ -3,7 +3,7 @@ package edu.helpal.datar.biggy.clients.desktop;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public class WinListner implements WindowListener {
+public class WinListener implements WindowListener {
 
 	@Override
 	public void windowOpened(WindowEvent e) {

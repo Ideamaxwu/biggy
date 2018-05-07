@@ -28,4 +28,24 @@ A: make it work then make it perfect. aka, practice makes perfect.
 
 * I can teach you the physics of riding a bicycle, prove to you that bicycle riding is practical, and you'd still fall down the first time you cliembed on that bike. Coding is no different.
 
-*
+* LeBalanc's law: Later equals never.
+
+* Meaningful Names: elapsedTimeInDays; IShapeFactory; class names should have noun (Account) not verb (Processor); methods names should have verb phrases (deletePage).
+
+* Functions: first rule of functions is small; do one thing well and only; too many arguments should be wrapped into class.
+
+* Comments: don't comment bad code, rewrite it; warning of consequences; TODO; Mandated/Journal Comments; don't use a comment when you can use a function or a viariable; commented-out code is odious.
+
+* Formatting: .
+
+* Objects abd Data Structures: data abstraction; Law of Demeter.
+
+* Error Handling: try-catch-finnaly.
+
+* Boundries: .
+
+* Unit Tests: three laws of TDD.
+
+* Classes: .
+
+* Systems: .

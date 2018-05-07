@@ -20,6 +20,8 @@ import edu.helpal.datar.biggy.framework.utils.BusKeeper;
 import edu.helpal.datar.biggy.framework.utils.Configuration;
 
 /**
+ * @author DWBI 1deamaxwu
+ * 
  * biggy
  *
  */
@@ -37,9 +39,9 @@ public class biggy
 		bk.start();
 		bk.setContext("startTime", new Date().toString());
 		
-		InstanceObject bigo = InstanceObject.getInstance();
+		InstanceBDMS bigo = InstanceBDMS.getInstance();
 		//test instance duplicate
-		InstanceObject.getInstance();
+		InstanceBDMS.getInstance();
 		
 		//add Input Conf
 		String confInputeEngineName = (String) engineMap.get("inputEngine");

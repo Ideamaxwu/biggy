@@ -6,6 +6,7 @@ package edu.helpal.datar.biggy.framework.cores;
  */
  public class InputEngineConf extends InputWrapper{
 	 private String engineName = "Default XXX";
+	 private InputEngineFactory inputEngineFactory = new InputEngineFactory(); 
 	 
 	 public InputEngineConf(Engine inputEngine, String confEngineName){
 		 super(inputEngine);
@@ -21,6 +22,8 @@ package edu.helpal.datar.biggy.framework.cores;
 	 }
 	 
 	 private void setInputEngine(){
+		 IInputEngine inputEngine = inputEngineFactory.getInputEngine(engineName);
+		 inputEngine.setup();
 		 System.out.println("Add Input Engine: " + engineName + ".");
 	 }
 	 

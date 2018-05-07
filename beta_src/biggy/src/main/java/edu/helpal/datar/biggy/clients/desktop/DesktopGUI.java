@@ -18,7 +18,7 @@ public class DesktopGUI {
 		//fr.add(jlbl);
 		//fr.add(jlbl1);
 		
-		fr.addWindowListener(new WinListner());
+		fr.addWindowListener(new WinListener());
 		
 		fr.setVisible(true);
 	}

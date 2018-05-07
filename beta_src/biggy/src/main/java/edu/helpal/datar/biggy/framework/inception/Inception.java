@@ -11,8 +11,10 @@ public class Inception
 {
 	 private String prompt;
 	 private Scanner sc;
+	 private Dispatcher dp;
 	 
 	 public void start(){
+		 dp = new Dispatcher();
 		 System.out.println(">>>>>>biggy Console<<<<<<");
 		 prompt = "Please input your command: > ";
 		 sc = new Scanner(System.in); 
@@ -29,7 +31,7 @@ public class Inception
 			 case "store":
 				 System.out.println("Storage engine working...");
 				 //processing
-				 
+				 dp.Dispatch("Spark", "DBWordCountJob");
 				 System.out.print(prompt);
 				 break;
 			 case "compute":
