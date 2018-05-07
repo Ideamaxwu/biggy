@@ -54,4 +54,10 @@ A: make it work then make it perfect. aka, practice makes perfect.
 
 * Concurrency: objects are abstractions of processing, and threads are abstractions of schedule.
 
-* Successive Refinement: .
+* Successive Refinement: never let the rot get started.
+
+* JUnit Internals: .
+
+* Refactoring SerialDate: .
+
+* Smells and Heuristics: .
