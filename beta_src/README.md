@@ -22,7 +22,7 @@ A: make it work then make it perfect. aka, practice makes perfect.
 
 # Ways to get there
 
-## Clean Code
+## Clean Code (notes of the name-same book)
 
 * Bad Code: the only valid measurement of code quality: WTFs/minute
 
@@ -49,3 +49,9 @@ A: make it work then make it perfect. aka, practice makes perfect.
 * Classes: .
 
 * Systems: .
+
+* Emergency: .
+
+* Concurrency: objects are abstractions of processing, and threads are abstractions of schedule.
+
+* Successive Refinement: .

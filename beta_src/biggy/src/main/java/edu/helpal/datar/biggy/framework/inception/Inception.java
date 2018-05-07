@@ -24,37 +24,37 @@ public class Inception
 			 switch(cmdLine){
 			 case "input":
 				 System.out.println("Input engine working...");
-				 //processing
+				 //TODO processing
 				 
 				 System.out.print(prompt);
 				 break;
 			 case "store":
 				 System.out.println("Storage engine working...");
-				 //processing
-				 dp.Dispatch("Spark", "DBWordCountJob");
+				 //TODO processing
+				 
 				 System.out.print(prompt);
 				 break;
 			 case "compute":
 				 System.out.println("Computation engine working...");
-				 //processing
-				 
+				 //TODO processing
+				 dp.Dispatch("Spark", "DBWordCountJob", "-analysis DBcount.txt Iteration");
 				 System.out.print(prompt);
 				 break;
 			 case "control":
 				 System.out.println("Control engine working...");
-				 //processing
+				 //TODO processing
 				 
 				 System.out.print(prompt);
 				 break;
 			 case "output":
 				 System.out.println("Output engine working...");
-				 //processing
+				 //TODO processing
 				 
 				 System.out.print(prompt);
 				 break;
 			 default:
 				 System.out.println("Invalid Command!");
-				 //processing
+				 //TODO processing
 				 
 				 System.out.print(prompt);
 				 break;
