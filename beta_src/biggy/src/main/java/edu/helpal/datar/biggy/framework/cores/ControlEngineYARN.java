@@ -1,5 +1,7 @@
 package edu.helpal.datar.biggy.framework.cores;
 
+import edu.helpal.datar.biggy.engines.control.YARNEngine;
+
 /**
  * Storage Engine HBase
  *
@@ -15,10 +17,16 @@ package edu.helpal.datar.biggy.framework.cores;
 	 public void start(){
 		 controlEngine.start();
 		 setControlEngine(controlEngine);
+		 runEngine();
 	 }
 	 
 	 private void setControlEngine(Engine controlEngine){
 		 System.out.println("Add Control Engine: YARN.");
+	 }
+	 
+	 private void runEngine(){
+		 YARNEngine YARNngn = new YARNEngine();
+		 YARNngn.run();
 	 }
 	 
 	 public String getEngineName(){
