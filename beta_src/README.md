@@ -78,3 +78,14 @@ seems no help :)
 
 ## UML
 Unified Modeling Language for Class/Objects/Component/Deployment/UserCase/Interaction/StateChart/Activity Diagram
+
+## Cluster Scheduling
+[blog1](https://zhuanlan.zhihu.com/p/34492335), [blog1 in  English](http://www.firmament.io/blog/scheduler-architectures.html),  [blog2](https://zhuanlan.zhihu.com/p/33823266)
+
+* Job Scheduler
+
+* Resources Manager
+
+* States Monitor
+
+* Centralized, Distributed, Two-tier, Hybrid
