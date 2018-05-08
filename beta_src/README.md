@@ -25,10 +25,10 @@ A: make it work then make it perfect. aka, practice makes perfect.
 	clients		- interactive Web/Desktop clients
 	engines		- runtime Input/Storage/Computation/Control/Output execution engines, e.g., Spark, HBase
 	framework	- biggy framework including
-						- cores: engine wrapper related 
-						- inception: compiler-like Inception, job-schedule-like Dispatcher 
-						- utils: deployment settings Configuration, context information manager BusKeeper
-	SDKs		- SDKs for developer users
+					- cores: engine-wrapper-related classes 
+					- inception: compiler-like Inception, job-schedule-like Dispatcher 
+					- utils: deployment settings Configuration, context information manager BusKeeper
+	SDKs		- SDKs for developer users, e.g., Python
 	examples	- examples for using biggy
 
 # Ways to get there
@@ -74,3 +74,7 @@ A: make it work then make it perfect. aka, practice makes perfect.
 * Smells and Heuristics: .
 
 ## [A Build System for Complex Projects](http://www.drdobbs.com/tools/a-build-system-for-complex-projects-part/218400678)
+seems no help :)
+
+## UML
+Unified Modeling Language for Class/Objects/Component/Deployment/UserCase/Interaction/StateChart/Activity Diagram
