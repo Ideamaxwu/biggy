@@ -20,6 +20,17 @@ A: make it work then make it perfect. aka, practice makes perfect.
 
 * abstraction and reconstraction in the loop
 
+# Code Structures
+bigo		- biggy instance
+clients		- interactive Web/Desktop clients
+engines		- runtime Input/Storage/Computation/Control/Output execution engines, e.g., Spark, HBase
+framework	- biggy framework including
+					- cores: engine wrapper related 
+					- inception: compiler-like Inception, job-schedule-like Dispatcher 
+					- utils: deployment settings Configuration, context information manager BusKeeper
+SDKs		- SDKs for developer users
+examples	- examples for using biggy
+
 # Ways to get there
 
 ## Clean Code (notes of the name-same book)
