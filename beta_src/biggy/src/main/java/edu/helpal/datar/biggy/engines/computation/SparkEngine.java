@@ -17,6 +17,7 @@ public class SparkEngine
 	}
 	
 	void runJob(){
-		new SparkJob().run();
+		new SparkStandaloneJob().run();
+		new SparkClusterJob().run();
 	}
 }

@@ -38,7 +38,7 @@ A: make it work then make it perfect. aka, practice makes perfect.
 
 * Formatting: .
 
-* Objects abd Data Structures: data abstraction; Law of Demeter.
+* Objects and Data Structures: data abstraction; Law of Demeter.
 
 * Error Handling: try-catch-finnaly.
 
@@ -61,3 +61,5 @@ A: make it work then make it perfect. aka, practice makes perfect.
 * Refactoring SerialDate: .
 
 * Smells and Heuristics: .
+
+## [A Build System for Complex Projects](http://www.drdobbs.com/tools/a-build-system-for-complex-projects-part/218400678)
