@@ -1,4 +1,7 @@
-package edu.helpal.datar.biggy.framework.cores;
+package edu.helpal.datar.biggy.engines.output;
+
+import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.OutputWrapper;
 
 /**
  * Output Engine Conf

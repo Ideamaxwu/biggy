@@ -1,9 +1,10 @@
-package edu.helpal.datar.biggy.framework.cores;
+package edu.helpal.datar.biggy.engines.control.rm;
 
-import edu.helpal.datar.biggy.engines.control.YARNEngine;
+import edu.helpal.datar.biggy.framework.cores.ControlWrapper;
+import edu.helpal.datar.biggy.framework.cores.Engine;
 
 /**
- * Storage Engine HBase
+ * Control Engine YARN
  *
  */
  public class ControlEngineYARN extends ControlWrapper{

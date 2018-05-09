@@ -1,4 +1,7 @@
-package edu.helpal.datar.biggy.framework.cores;
+package edu.helpal.datar.biggy.engines.input;
+
+import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.InputWrapper;
 
 /**
  * Input Engine Conf

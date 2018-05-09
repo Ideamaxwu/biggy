@@ -1,6 +1,7 @@
-package edu.helpal.datar.biggy.framework.cores;
+package edu.helpal.datar.biggy.engines.computation;
 
-import edu.helpal.datar.biggy.engines.computation.SparkEngine;
+import edu.helpal.datar.biggy.framework.cores.ComputationWrapper;
+import edu.helpal.datar.biggy.framework.cores.Engine;
 
 /**
  * Computation Engine Spark

@@ -1,6 +1,7 @@
-package edu.helpal.datar.biggy.framework.cores;
+package edu.helpal.datar.biggy.engines.storage;
 
-import edu.helpal.datar.biggy.engines.storage.HBaseEngine;
+import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.StorageWrapper;
 
 /**
  * Storage Engine HBase

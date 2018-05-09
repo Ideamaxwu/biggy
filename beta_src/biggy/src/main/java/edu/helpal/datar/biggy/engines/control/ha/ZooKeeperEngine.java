@@ -1,16 +1,14 @@
-package edu.helpal.datar.biggy.engines.control;
-
-import edu.helpal.datar.biggy.engines.control.YARNJob;
+package edu.helpal.datar.biggy.engines.control.ha;
 
 /**
  * 
- * YARNEngine
+ * ZooKeeperEnine
  *
  */
-public class YARNEngine {
+public class ZooKeeperEngine {
 	String moduleName; 
 	public void run(){
-		moduleName = "YARN Engine module";
+		moduleName = "ZooKeeper Engine module";
 		System.out.println(moduleName + " starting...");
 		//start engine
 		runJob();
@@ -18,7 +16,6 @@ public class YARNEngine {
 	}
 	
 	void runJob(){
-		new YARNJob().run();
+		new ZKJob().run();
 	}
-
 }
