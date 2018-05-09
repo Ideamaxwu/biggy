@@ -1,4 +1,4 @@
-# These are some examples using biggy to build your own BDMS.
+# biggy, build your own BDMS.
 
 ## Guide for Framework Writers
 how to contribute to the biggy framework?
@@ -18,7 +18,7 @@ biggy support several popular languages, e.g., Java, Python. We encourage SDKs W
 ## Guide for End Users
 how to use your built BDMS?
 
-We provide an interactive interface for End Users to configurate, deploy, build and use your own BDMS. Also, command line interface is supported.
+We provide an interactive interface for End Users to configurate, deploy, build and use your own BDMS. Also, command line interface is supported. Followings are some examples.
 
 ### Standalone HelloWorld
 

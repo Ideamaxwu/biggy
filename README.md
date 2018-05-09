@@ -58,3 +58,6 @@ Currently, we plan to implement biggy based on [AsterixDB](https://github.com/ap
 * [PingCAP](https://www.pingcap.com/index.html): Opensource NewSQL, and [source code](https://github.com/pingcap). Ideas about storage and computation seperation.
 
 * [Apache Zeppelin](https://zeppelin.apache.org/), and [source code](https://github.com/apache/zeppelin). Ideas about interpreters.
+
+## User Guide
+See beta-version guide [here](https://github.com/Ideamaxwu/biggy/tree/master/beta_src/biggy/src/main/java/edu/helpal/datar/biggy/examples)
