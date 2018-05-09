@@ -4,7 +4,7 @@ package edu.helpal.datar.biggy.framework.cores;
  * Control Engine
  *
  */
- public class ControlEngine implements Engine{
+ public class ControlEngine implements IEngine{
 	 private String engineType = "ControlEngine";
 
 	 public void start(){

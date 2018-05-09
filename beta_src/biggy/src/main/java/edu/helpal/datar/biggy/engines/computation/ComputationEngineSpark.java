@@ -1,7 +1,7 @@
 package edu.helpal.datar.biggy.engines.computation;
 
 import edu.helpal.datar.biggy.framework.cores.ComputationWrapper;
-import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.IEngine;
 
 /**
  * Computation Engine Spark
@@ -10,7 +10,7 @@ import edu.helpal.datar.biggy.framework.cores.Engine;
  public class ComputationEngineSpark extends ComputationWrapper{
 	 private String engineName = "Spark";
 	 
-	 public ComputationEngineSpark(Engine computationEngine){
+	 public ComputationEngineSpark(IEngine computationEngine){
 		 super(computationEngine);
 	 }
 	 
@@ -21,7 +21,7 @@ import edu.helpal.datar.biggy.framework.cores.Engine;
 		 runEngine();
 	 }
 	 
-	 private void setComputationEngine(Engine computationEngine){
+	 private void setComputationEngine(IEngine computationEngine){
 		 System.out.println("Add Computation Engine: Spark.");
 	 }
 	 

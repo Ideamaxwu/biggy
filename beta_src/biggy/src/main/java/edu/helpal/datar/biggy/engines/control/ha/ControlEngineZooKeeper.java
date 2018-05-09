@@ -1,7 +1,7 @@
 package edu.helpal.datar.biggy.engines.control.ha;
 
 import edu.helpal.datar.biggy.framework.cores.ControlWrapper;
-import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.IEngine;
 
 /**
  * 
@@ -11,7 +11,7 @@ import edu.helpal.datar.biggy.framework.cores.Engine;
 public class ControlEngineZooKeeper extends ControlWrapper{
 	private String engineName = "YARN";
 	 
-	 public ControlEngineZooKeeper(Engine controlEngine){
+	 public ControlEngineZooKeeper(IEngine controlEngine){
 		 super(controlEngine);
 	 }
 	 
@@ -22,7 +22,7 @@ public class ControlEngineZooKeeper extends ControlWrapper{
 		 runEngine();
 	 }
 	 
-	 private void setControlEngine(Engine controlEngine){
+	 private void setControlEngine(IEngine controlEngine){
 		 System.out.println("Add Control Engine: ZooKeeper.");
 	 }
 	 

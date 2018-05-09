@@ -1,6 +1,6 @@
 package edu.helpal.datar.biggy.engines.storage;
 
-import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.IEngine;
 import edu.helpal.datar.biggy.framework.cores.StorageWrapper;
 
 /**
@@ -10,7 +10,7 @@ import edu.helpal.datar.biggy.framework.cores.StorageWrapper;
  public class StorageEngineHBase extends StorageWrapper{
 	 private String engineName = "HBase";
 	 
-	 public StorageEngineHBase(Engine storageEngine){
+	 public StorageEngineHBase(IEngine storageEngine){
 		 super(storageEngine);
 	 }
 	 
@@ -21,7 +21,7 @@ import edu.helpal.datar.biggy.framework.cores.StorageWrapper;
 		 runEngine();
 	 }
 	 
-	 private void setStorageEngine(Engine storageEngine){
+	 private void setStorageEngine(IEngine storageEngine){
 		 System.out.println("Add Storage Engine: HBase.");
 	 }
 	 

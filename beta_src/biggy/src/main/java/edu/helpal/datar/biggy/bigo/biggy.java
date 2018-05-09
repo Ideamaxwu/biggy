@@ -12,13 +12,14 @@ import edu.helpal.datar.biggy.engines.output.OutputEngineConf;
 import edu.helpal.datar.biggy.engines.storage.StorageEngineHBase;
 import edu.helpal.datar.biggy.framework.cores.ComputationEngine;
 import edu.helpal.datar.biggy.framework.cores.ControlEngine;
-import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.IEngine;
 import edu.helpal.datar.biggy.framework.cores.InputEngine;
 import edu.helpal.datar.biggy.framework.cores.OutputEngine;
 import edu.helpal.datar.biggy.framework.cores.StorageEngine;
 import edu.helpal.datar.biggy.framework.inception.Inception;
+import edu.helpal.datar.biggy.framework.pipeline.Pipeline;
 import edu.helpal.datar.biggy.framework.utils.BusKeeper;
-import edu.helpal.datar.biggy.framework.utils.Configuration;
+import edu.helpal.datar.biggy.framework.utils.EngineConfig;
 
 /**
  * @author DWBI 1deamaxwu
@@ -31,7 +32,7 @@ public class biggy
     public static void main( String[] args )
     {
 		//engines configuration
-        Configuration conf = new Configuration();
+        EngineConfig conf = new EngineConfig();
 		Map<String, String> engineMap = new HashMap<String, String>();
 		engineMap = conf.getEngineConf();
 		
@@ -46,27 +47,27 @@ public class biggy
 		
 		//add Input Conf
 		String confInputeEngineName = (String) engineMap.get("inputEngine");
-		Engine inputEngineConf = new InputEngineConf(new InputEngine(), confInputeEngineName);
+		IEngine inputEngineConf = new InputEngineConf(new InputEngine(), confInputeEngineName);
 		bigo.addEngine(inputEngineConf);
 		
 		//add Storage HBase
-		Engine storageEngineHBase = new StorageEngineHBase(new StorageEngine());
+		IEngine storageEngineHBase = new StorageEngineHBase(new StorageEngine());
 		bigo.addEngine(storageEngineHBase);
 		
 		//add Computation Spark
-		Engine computationEngineSpark = new ComputationEngineSpark(new ComputationEngine());
+		IEngine computationEngineSpark = new ComputationEngineSpark(new ComputationEngine());
 		bigo.addEngine(computationEngineSpark);
 		
 		//add Control resource manager YARN
-		Engine controlEngineYARN = new ControlEngineYARN(new ControlEngine());
+		IEngine controlEngineYARN = new ControlEngineYARN(new ControlEngine());
 		bigo.addEngine(controlEngineYARN);
 		//add Control high availability ZooKeeper
-		Engine controlEngineZK = new ControlEngineZooKeeper(new ControlEngine());
+		IEngine controlEngineZK = new ControlEngineZooKeeper(new ControlEngine());
 		bigo.addEngine(controlEngineZK);
 		
 		//add Output Conf
 		String confOutputeEngineName = (String) engineMap.get("outputEngine");
-		Engine outputEngineConf = new OutputEngineConf(new OutputEngine(), confOutputeEngineName);
+		IEngine outputEngineConf = new OutputEngineConf(new OutputEngine(), confOutputeEngineName);
 		bigo.addEngine(outputEngineConf);
 		
 		//show current engines
@@ -75,6 +76,10 @@ public class biggy
 		//start cmd line
 		Inception incp = new Inception();
 		incp.start();
+		
+		//run pipeline
+		Pipeline pipeline = new Pipeline();
+		pipeline.run();
 		
 		//buskeeper info
 		bk.setContext("endTime", new Date().toString());

@@ -4,10 +4,10 @@ package edu.helpal.datar.biggy.framework.cores;
  * Output Wrapper
  *
  */
- public abstract class OutputWrapper implements Engine{
-	 protected Engine outputEngine;
+ public abstract class OutputWrapper implements IEngine{
+	 protected IEngine outputEngine;
 	 
-	 public OutputWrapper(Engine outputEngine){
+	 public OutputWrapper(IEngine outputEngine){
 		 this.outputEngine = outputEngine;
 	 }
 	 

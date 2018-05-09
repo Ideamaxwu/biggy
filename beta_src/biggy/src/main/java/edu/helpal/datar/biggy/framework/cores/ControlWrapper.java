@@ -4,10 +4,10 @@ package edu.helpal.datar.biggy.framework.cores;
  * Control Wrapper
  *
  */
- public abstract class ControlWrapper implements Engine{
-	 protected Engine controlEngine;
+ public abstract class ControlWrapper implements IEngine{
+	 protected IEngine controlEngine;
 	 
-	 public ControlWrapper(Engine controlEngine){
+	 public ControlWrapper(IEngine controlEngine){
 		 this.controlEngine = controlEngine;
 	 }
 	 

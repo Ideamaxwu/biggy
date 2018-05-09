@@ -2,7 +2,7 @@ package edu.helpal.datar.biggy.bigo;
 
 import java.util.List;
 
-import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.IEngine;
 
 import java.util.ArrayList;
 
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class InstanceBDMS {
 	
 	private static InstanceBDMS instance = null;
-	private List<Engine> engineList = new ArrayList<Engine>();
+	private List<IEngine> engineList = new ArrayList<IEngine>();
 	private InstanceBDMS(){}
 	
 	public static InstanceBDMS getInstance(){
@@ -28,14 +28,14 @@ public class InstanceBDMS {
 		return instance;
 	}
 	
-	public void addEngine(Engine engine){
+	public void addEngine(IEngine engine){
 		engine.start();
 		engineList.add(engine);
 	}
 	
 	public void showInfo(){
 		System.out.println("-----Status Info-----");
-		for(Engine engine : engineList){
+		for(IEngine engine : engineList){
 			System.out.println(engine.getInfo());
 		}
 		System.out.println("-----Status Info END-----");

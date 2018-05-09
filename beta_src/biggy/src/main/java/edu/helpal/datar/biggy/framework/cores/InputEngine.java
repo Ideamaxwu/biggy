@@ -4,7 +4,7 @@ package edu.helpal.datar.biggy.framework.cores;
  * Input Engine
  *
  */
- public class InputEngine implements Engine{
+ public class InputEngine implements IEngine{
 	 private String engineType = "InputEngine";
 
 	 public void start(){

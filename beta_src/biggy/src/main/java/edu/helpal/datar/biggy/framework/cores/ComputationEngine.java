@@ -4,7 +4,7 @@ package edu.helpal.datar.biggy.framework.cores;
  * Computation Engine
  *
  */
- public class ComputationEngine implements Engine{
+ public class ComputationEngine implements IEngine{
 	 private String engineType = "ComputationEngine";
 	 
 	 public void start(){

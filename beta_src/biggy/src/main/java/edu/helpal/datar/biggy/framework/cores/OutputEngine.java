@@ -4,7 +4,7 @@ package edu.helpal.datar.biggy.framework.cores;
  * Output Engine
  *
  */
- public class OutputEngine implements Engine{
+ public class OutputEngine implements IEngine{
 	 private String engineType = "OutputEngine";
 
 	 public void start(){

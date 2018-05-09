@@ -4,7 +4,7 @@ package edu.helpal.datar.biggy.framework.cores;
  * Engine
  *
  */
- public interface Engine{
+ public interface IEngine{
 	 void start();
 	 String getInfo();
  }

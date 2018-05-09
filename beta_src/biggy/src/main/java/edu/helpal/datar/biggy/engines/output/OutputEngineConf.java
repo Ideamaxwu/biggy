@@ -1,6 +1,6 @@
 package edu.helpal.datar.biggy.engines.output;
 
-import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.IEngine;
 import edu.helpal.datar.biggy.framework.cores.OutputWrapper;
 
 /**
@@ -10,7 +10,7 @@ import edu.helpal.datar.biggy.framework.cores.OutputWrapper;
  public class OutputEngineConf extends OutputWrapper{
 	 private String engineName = "Default XXX";
 	 
-	 public OutputEngineConf(Engine outputEngine, String confEngineName){
+	 public OutputEngineConf(IEngine outputEngine, String confEngineName){
 		 super(outputEngine);
 		 if (confEngineName != null){
 			engineName = confEngineName; 

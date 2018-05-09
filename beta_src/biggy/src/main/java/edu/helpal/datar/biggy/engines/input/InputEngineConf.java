@@ -1,6 +1,6 @@
 package edu.helpal.datar.biggy.engines.input;
 
-import edu.helpal.datar.biggy.framework.cores.Engine;
+import edu.helpal.datar.biggy.framework.cores.IEngine;
 import edu.helpal.datar.biggy.framework.cores.InputWrapper;
 
 /**
@@ -11,7 +11,7 @@ import edu.helpal.datar.biggy.framework.cores.InputWrapper;
 	 private String engineName = "Default XXX";
 	 private InputEngineFactory inputEngineFactory = new InputEngineFactory(); 
 	 
-	 public InputEngineConf(Engine inputEngine, String confEngineName){
+	 public InputEngineConf(IEngine inputEngine, String confEngineName){
 		 super(inputEngine);
 		 if (confEngineName != null){
 			engineName = confEngineName; 

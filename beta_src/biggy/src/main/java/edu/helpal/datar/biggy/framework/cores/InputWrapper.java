@@ -4,10 +4,10 @@ package edu.helpal.datar.biggy.framework.cores;
  * Input Wrapper
  *
  */
- public abstract class InputWrapper implements Engine{
-	 protected Engine inputEngine;
+ public abstract class InputWrapper implements IEngine{
+	 protected IEngine inputEngine;
 	 
-	 public InputWrapper(Engine inputEngine){
+	 public InputWrapper(IEngine inputEngine){
 		 this.inputEngine = inputEngine;
 	 }
 	 

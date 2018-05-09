@@ -8,14 +8,14 @@ import java.io.*;
  * Engine Configuration
  *
  */
- public class Configuration{
+ public class EngineConfig{
 	 private Map<String, String> engineMap = new HashMap<String, String>();
 	 
-	 public Configuration(){};
+	 public EngineConfig(){};
 	 
 	 public Map<String, String> getEngineConf(){
 		 String fileName = "config/engine.conf";
-		 ClassLoader classLoader = new Configuration().getClass().getClassLoader();
+		 ClassLoader classLoader = new EngineConfig().getClass().getClassLoader();
 		 File confFile = new File(classLoader.getResource(fileName).getFile());
 		 BufferedReader br = null;
 		 System.out.println("******biggy Configuration Info******");
@@ -23,7 +23,6 @@ import java.io.*;
 			 br = new BufferedReader(new FileReader(confFile));
 			 String line;
 			 while((line = br.readLine())!=null){
-				//System.out.println(line);
 				String key = line.trim().replaceAll("\\[|\\]","").toLowerCase() + "Engine";
 				line = br.readLine();
 				String value = line.trim().replaceAll("moduleName = ","");
