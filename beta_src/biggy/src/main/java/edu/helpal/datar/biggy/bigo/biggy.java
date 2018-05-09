@@ -57,10 +57,10 @@ public class biggy
 		Engine computationEngineSpark = new ComputationEngineSpark(new ComputationEngine());
 		bigo.addEngine(computationEngineSpark);
 		
-		//add Control YARN
+		//add Control resource manager YARN
 		Engine controlEngineYARN = new ControlEngineYARN(new ControlEngine());
 		bigo.addEngine(controlEngineYARN);
-		//add Control ZooKeer
+		//add Control high availability ZooKeeper
 		Engine controlEngineZK = new ControlEngineZooKeeper(new ControlEngine());
 		bigo.addEngine(controlEngineZK);
 		

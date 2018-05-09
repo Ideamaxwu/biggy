@@ -1,0 +1,375 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 AAA5-6AF4
+E:.
+│  biggy in english.pdf
+│  biggy中文.pdf
+│  bigo.png
+│  computer.jpg
+│  datar.jpg
+│  datar.png
+│  Documentation.md
+│  README.md
+│  tree.txt
+│  
+├─alpha_src
+│  │  README.md
+│  │  
+│  ├─mvnexample
+│  │  │  README.md
+│  │  │  
+│  │  └─consumerBanking
+│  │      │  pom.xml
+│  │      │  
+│  │      ├─src
+│  │      │  ├─main
+│  │      │  │  └─java
+│  │      │  │      └─com
+│  │      │  │          └─companyname
+│  │      │  │              └─bank
+│  │      │  │                      App.java
+│  │      │  │                      Util.java
+│  │      │  │                      
+│  │      │  └─test
+│  │      │      └─java
+│  │      │          └─com
+│  │      │              └─companyname
+│  │      │                  └─bank
+│  │      │                          AppTest.java
+│  │      │                          
+│  │      └─target
+│  │          ├─classes
+│  │          │  └─com
+│  │          │      └─companyname
+│  │          │          └─bank
+│  │          │                  App.class
+│  │          │                  Util.class
+│  │          │                  
+│  │          └─maven-status
+│  │              └─maven-compiler-plugin
+│  │                  └─compile
+│  │                      └─default-compile
+│  │                              createdFiles.lst
+│  │                              inputFiles.lst
+│  │                              
+│  └─src
+│      │  README.md
+│      │  
+│      └─datar
+│          │  pom.xml
+│          │  tree.txt
+│          │  
+│          ├─src
+│          │  ├─main
+│          │  │  ├─java
+│          │  │  │  └─biggy
+│          │  │  │      ├─client
+│          │  │  │      │      index.html
+│          │  │  │      │      
+│          │  │  │      ├─engines
+│          │  │  │      │  ├─computation-Spark
+│          │  │  │      │  │      SparkEngine.java
+│          │  │  │      │  │      
+│          │  │  │      │  └─storage-HBase
+│          │  │  │      │          HBaseEngine.java
+│          │  │  │      │          
+│          │  │  │      └─framework
+│          │  │  │          ├─cores
+│          │  │  │          │      biggy.java
+│          │  │  │          │      ComputationEngine.java
+│          │  │  │          │      ComputationEngineSpark.java
+│          │  │  │          │      ComputationWrapper.java
+│          │  │  │          │      Configuration.java
+│          │  │  │          │      ControlEngine.java
+│          │  │  │          │      ControlEngineYARN.java
+│          │  │  │          │      ControlWrapper.java
+│          │  │  │          │      Engine.java
+│          │  │  │          │      InputEngine.java
+│          │  │  │          │      InputEngineConf.java
+│          │  │  │          │      InputWrapper.java
+│          │  │  │          │      InstanceObject.java
+│          │  │  │          │      OutputEngine.java
+│          │  │  │          │      OutputEngineConf.java
+│          │  │  │          │      OutputWrapper.java
+│          │  │  │          │      pom.xml
+│          │  │  │          │      StorageEngine.java
+│          │  │  │          │      StorageEngineHBase.java
+│          │  │  │          │      StorageWrapper.java
+│          │  │  │          │      
+│          │  │  │          └─utils
+│          │  │  │                  Configuration.java
+│          │  │  │                  
+│          │  │  └─resources
+│          │  │      └─config
+│          │  │              engine.conf
+│          │  │              
+│          │  └─test
+│          │      └─java
+│          │          └─biggy
+│          │              └─framework
+│          │                  └─cores
+│          │                          AppTest.java
+│          │                          
+│          └─target
+│              ├─classes
+│              │  ├─biggy
+│              │  │  └─framework
+│              │  │      ├─cores
+│              │  │      │      biggy.class
+│              │  │      │      ComputationEngine.class
+│              │  │      │      ComputationEngineSpark.class
+│              │  │      │      ComputationWrapper.class
+│              │  │      │      Configuration.class
+│              │  │      │      ControlEngine.class
+│              │  │      │      ControlEngineYARN.class
+│              │  │      │      ControlWrapper.class
+│              │  │      │      Engine.class
+│              │  │      │      InputEngine.class
+│              │  │      │      InputEngineConf.class
+│              │  │      │      InputWrapper.class
+│              │  │      │      InstanceObject.class
+│              │  │      │      OutputEngine.class
+│              │  │      │      OutputEngineConf.class
+│              │  │      │      OutputWrapper.class
+│              │  │      │      StorageEngine.class
+│              │  │      │      StorageEngineHBase.class
+│              │  │      │      StorageWrapper.class
+│              │  │      │      
+│              │  │      └─utils
+│              │  │              Configuration.class
+│              │  │              
+│              │  └─config
+│              │          engine.conf
+│              │          
+│              └─maven-status
+│                  └─maven-compiler-plugin
+│                      └─compile
+│                          └─default-compile
+│                                  createdFiles.lst
+│                                  inputFiles.lst
+│                                  
+├─beta_src
+│  │  README.md
+│  │  
+│  └─biggy
+│      │  .classpath
+│      │  .gitignore
+│      │  .project
+│      │  pom.xml
+│      │  
+│      ├─.settings
+│      │      org.eclipse.core.resources.prefs
+│      │      org.eclipse.jdt.core.prefs
+│      │      org.eclipse.m2e.core.prefs
+│      │      
+│      ├─src
+│      │  ├─main
+│      │  │  ├─java
+│      │  │  │  └─edu
+│      │  │  │      └─helpal
+│      │  │  │          └─datar
+│      │  │  │              └─biggy
+│      │  │  │                  ├─bigo
+│      │  │  │                  │      biggy.java
+│      │  │  │                  │      InstanceBDMS.java
+│      │  │  │                  │      
+│      │  │  │                  ├─clients
+│      │  │  │                  │  ├─desktop
+│      │  │  │                  │  │      DesktopGUI.java
+│      │  │  │                  │  │      WinListener.java
+│      │  │  │                  │  │      
+│      │  │  │                  │  └─web
+│      │  │  │                  │          index.html
+│      │  │  │                  │          WebGUI.java
+│      │  │  │                  │          
+│      │  │  │                  ├─engines
+│      │  │  │                  │  ├─computation
+│      │  │  │                  │  │      ComputationEngineSpark.java
+│      │  │  │                  │  │      SparkClusterJob.java
+│      │  │  │                  │  │      SparkEngine.java
+│      │  │  │                  │  │      SparkStandaloneJob.java
+│      │  │  │                  │  │      
+│      │  │  │                  │  ├─control
+│      │  │  │                  │  │  ├─ha
+│      │  │  │                  │  │  │      ControlEngineZooKeeper.java
+│      │  │  │                  │  │  │      ZKJob.java
+│      │  │  │                  │  │  │      ZooKeeperEngine.java
+│      │  │  │                  │  │  │      
+│      │  │  │                  │  │  └─rm
+│      │  │  │                  │  │          ControlEngineYARN.java
+│      │  │  │                  │  │          YARNEngine.java
+│      │  │  │                  │  │          YARNJob.java
+│      │  │  │                  │  │          
+│      │  │  │                  │  ├─input
+│      │  │  │                  │  │      IInputEngine.java
+│      │  │  │                  │  │      InputEngineADBFeed.java
+│      │  │  │                  │  │      InputEngineConf.java
+│      │  │  │                  │  │      InputEngineFactory.java
+│      │  │  │                  │  │      InputEngineFlafka.java
+│      │  │  │                  │  │      
+│      │  │  │                  │  ├─output
+│      │  │  │                  │  │      OutputEngineConf.java
+│      │  │  │                  │  │      
+│      │  │  │                  │  └─storage
+│      │  │  │                  │          HBaseEngine.java
+│      │  │  │                  │          HBaseJob.java
+│      │  │  │                  │          StorageEngineHBase.java
+│      │  │  │                  │          
+│      │  │  │                  ├─examples
+│      │  │  │                  │      README.md
+│      │  │  │                  │      
+│      │  │  │                  ├─framework
+│      │  │  │                  │  ├─cores
+│      │  │  │                  │  │      ComputationEngine.java
+│      │  │  │                  │  │      ComputationWrapper.java
+│      │  │  │                  │  │      ControlEngine.java
+│      │  │  │                  │  │      ControlWrapper.java
+│      │  │  │                  │  │      Engine.java
+│      │  │  │                  │  │      InputEngine.java
+│      │  │  │                  │  │      InputWrapper.java
+│      │  │  │                  │  │      OutputEngine.java
+│      │  │  │                  │  │      OutputWrapper.java
+│      │  │  │                  │  │      StorageEngine.java
+│      │  │  │                  │  │      StorageWrapper.java
+│      │  │  │                  │  │      
+│      │  │  │                  │  ├─inception
+│      │  │  │                  │  │      Dispatcher.java
+│      │  │  │                  │  │      DispatchTask.java
+│      │  │  │                  │  │      IJob.java
+│      │  │  │                  │  │      Inception.java
+│      │  │  │                  │  │      
+│      │  │  │                  │  └─utils
+│      │  │  │                  │          BusKeeper.java
+│      │  │  │                  │          Configuration.java
+│      │  │  │                  │          
+│      │  │  │                  └─SDKs
+│      │  │  │                      └─python
+│      │  │  │                              README.md
+│      │  │  │                              
+│      │  │  └─resources
+│      │  │      └─config
+│      │  │              DBcount.txt
+│      │  │              engine.conf
+│      │  │              
+│      │  └─test
+│      │      └─java
+│      │          └─edu
+│      │              └─helpal
+│      │                  └─datar
+│      │                      └─biggy
+│      │                              AppTest.java
+│      │                              
+│      └─target
+│          ├─classes
+│          │  ├─config
+│          │  │      DBcount.txt
+│          │  │      engine.conf
+│          │  │      
+│          │  └─edu
+│          │      └─helpal
+│          │          └─datar
+│          │              └─biggy
+│          │                  ├─bigo
+│          │                  │      biggy.class
+│          │                  │      InstanceBDMS.class
+│          │                  │      
+│          │                  ├─clients
+│          │                  │  ├─desktop
+│          │                  │  │      DesktopGUI.class
+│          │                  │  │      WinListener.class
+│          │                  │  │      
+│          │                  │  └─web
+│          │                  │          index.html
+│          │                  │          WebGUI.class
+│          │                  │          
+│          │                  ├─engines
+│          │                  │  ├─computation
+│          │                  │  │      ComputationEngineSpark.class
+│          │                  │  │      SparkClusterJob.class
+│          │                  │  │      SparkEngine.class
+│          │                  │  │      SparkStandaloneJob.class
+│          │                  │  │      
+│          │                  │  ├─control
+│          │                  │  │  ├─ha
+│          │                  │  │  │      ControlEngineZooKeeper.class
+│          │                  │  │  │      ZKJob.class
+│          │                  │  │  │      ZooKeeperEngine.class
+│          │                  │  │  │      
+│          │                  │  │  └─rm
+│          │                  │  │          ControlEngineYARN.class
+│          │                  │  │          YARNEngine.class
+│          │                  │  │          YARNJob.class
+│          │                  │  │          
+│          │                  │  ├─input
+│          │                  │  │      IInputEngine.class
+│          │                  │  │      InputEngineADBFeed.class
+│          │                  │  │      InputEngineConf.class
+│          │                  │  │      InputEngineFactory.class
+│          │                  │  │      InputEngineFlafka.class
+│          │                  │  │      
+│          │                  │  ├─output
+│          │                  │  │      OutputEngineConf.class
+│          │                  │  │      
+│          │                  │  └─storage
+│          │                  │          HBaseEngine.class
+│          │                  │          HBaseJob.class
+│          │                  │          StorageEngineHBase.class
+│          │                  │          
+│          │                  ├─examples
+│          │                  │      README.md
+│          │                  │      
+│          │                  ├─framework
+│          │                  │  ├─cores
+│          │                  │  │      ComputationEngine.class
+│          │                  │  │      ComputationWrapper.class
+│          │                  │  │      ControlEngine.class
+│          │                  │  │      ControlWrapper.class
+│          │                  │  │      Engine.class
+│          │                  │  │      InputEngine.class
+│          │                  │  │      InputWrapper.class
+│          │                  │  │      OutputEngine.class
+│          │                  │  │      OutputWrapper.class
+│          │                  │  │      StorageEngine.class
+│          │                  │  │      StorageWrapper.class
+│          │                  │  │      
+│          │                  │  ├─inception
+│          │                  │  │      Dispatcher.class
+│          │                  │  │      DispatchTask.class
+│          │                  │  │      IJob.class
+│          │                  │  │      Inception.class
+│          │                  │  │      
+│          │                  │  └─utils
+│          │                  │          BusKeeper.class
+│          │                  │          Configuration.class
+│          │                  │          
+│          │                  └─SDKs
+│          │                      └─python
+│          │                              README.md
+│          │                              
+│          ├─maven-status
+│          │  └─maven-compiler-plugin
+│          │      └─compile
+│          │          └─default-compile
+│          │                  createdFiles.lst
+│          │                  inputFiles.lst
+│          │                  
+│          └─test-classes
+│              └─edu
+│                  └─helpal
+│                      └─datar
+│                          └─biggy
+│                                  AppTest.class
+│                                  
+└─demo_src
+    │  bigo.sh
+    │  config.ini
+    │  
+    └─AdapterAsterix
+        │  config.ini
+        │  logutils.py
+        │  QueryInstance.py
+        │  QueryMgr.py
+        │  
+        └─__pycache__
+                logutils.cpython-35.pyc
+                QueryMgr.cpython-35.pyc
+                
