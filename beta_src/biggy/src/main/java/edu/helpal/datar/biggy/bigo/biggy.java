@@ -64,7 +64,7 @@ public class biggy
 		Engine controlEngineZK = new ControlEngineZooKeeper(new ControlEngine());
 		bigo.addEngine(controlEngineZK);
 		
-		//add Out Conf
+		//add Output Conf
 		String confOutputeEngineName = (String) engineMap.get("outputEngine");
 		Engine outputEngineConf = new OutputEngineConf(new OutputEngine(), confOutputeEngineName);
 		bigo.addEngine(outputEngineConf);

@@ -82,10 +82,10 @@ Unified Modeling Language for Class/Objects/Component/Deployment/UserCase/Intera
 ## Cluster Scheduling
 [blog1](https://zhuanlan.zhihu.com/p/34492335), [blog1 in  English](http://www.firmament.io/blog/scheduler-architectures.html),  [blog2](https://zhuanlan.zhihu.com/p/33823266)
 
-* Job Scheduler
+* Resources Manager - YARN
 
-* Resources Manager
+* Job Scheduler - Mesos
 
-* States Monitor
+* States Monitor - Kubernetes, Omega
 
 * Centralized, Distributed, Two-tier, Hybrid
