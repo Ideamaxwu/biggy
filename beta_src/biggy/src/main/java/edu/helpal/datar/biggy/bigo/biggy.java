@@ -45,6 +45,13 @@ public class biggy
 		//test instance duplicate
 		InstanceBDMS.getInstance();
 		
+		//add Control high availability ZooKeeper
+		IEngine controlEngineZK = new ControlEngineZooKeeper(new ControlEngine());
+		bigo.addEngine(controlEngineZK);
+		//add Control resource manager YARN
+		IEngine controlEngineYARN = new ControlEngineYARN(new ControlEngine());
+		bigo.addEngine(controlEngineYARN);
+				
 		//add Input Conf
 		String confInputeEngineName = (String) engineMap.get("inputEngine");
 		IEngine inputEngineConf = new InputEngineConf(new InputEngine(), confInputeEngineName);
@@ -57,13 +64,6 @@ public class biggy
 		//add Computation Spark
 		IEngine computationEngineSpark = new ComputationEngineSpark(new ComputationEngine());
 		bigo.addEngine(computationEngineSpark);
-		
-		//add Control resource manager YARN
-		IEngine controlEngineYARN = new ControlEngineYARN(new ControlEngine());
-		bigo.addEngine(controlEngineYARN);
-		//add Control high availability ZooKeeper
-		IEngine controlEngineZK = new ControlEngineZooKeeper(new ControlEngine());
-		bigo.addEngine(controlEngineZK);
 		
 		//add Output Conf
 		String confOutputeEngineName = (String) engineMap.get("outputEngine");

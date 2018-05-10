@@ -1,5 +1,9 @@
 package edu.helpal.datar.biggy.engines.control.ha;
 
+import java.io.IOException;
+
+import org.apache.zookeeper.KeeperException;
+
 /**
  * 
  * ZooKeeperEnine
@@ -11,11 +15,22 @@ public class ZooKeeperEngine {
 		moduleName = "ZooKeeper Engine module";
 		System.out.println(moduleName + " starting...");
 		//start engine
-		runJob();
+		//runJob();
 		System.out.println(moduleName + " running...");
 	}
 	
 	void runJob(){
-		new ZKJob().run();
+		try {
+			new ZKJob().run();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (KeeperException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
