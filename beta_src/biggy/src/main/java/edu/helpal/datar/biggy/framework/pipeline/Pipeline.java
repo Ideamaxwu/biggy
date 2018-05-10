@@ -6,7 +6,7 @@ package edu.helpal.datar.biggy.framework.pipeline;
  *
  */
 public class Pipeline {
-	private static AbstractPipe getPipeline(){
+	private AbstractPipe getPipeline(){
 		
 		AbstractPipe headPipe = new HeadPipe(AbstractPipe.HEAD);
 		AbstractPipe inputPipe = new InputPipe(AbstractPipe.INPUT);
