@@ -27,6 +27,7 @@ A: make it work then make it perfect. aka, practice makes perfect.
 	framework	- biggy framework including
 					- cores: engine-wrapper-related classes 
 					- inception: compiler-like Inception, job-schedule-like Dispatcher 
+					- pipeline: dataflow among engines
 					- utils: deployment settings Configuration, context information manager BusKeeper
 	SDKs		- SDKs for developer users, e.g., Python
 	examples	- examples for using biggy

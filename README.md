@@ -61,3 +61,6 @@ Currently, we plan to implement biggy based on [AsterixDB](https://github.com/ap
 
 ## User Guide
 See beta-version guide [here](https://github.com/Ideamaxwu/biggy/tree/master/beta_src/biggy/src/main/java/edu/helpal/datar/biggy/examples)
+
+## Study Case
+IoTs privacy testbed based on Big data platform [BIT](https://github.com/Ideamaxwu/BIT)
