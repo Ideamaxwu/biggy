@@ -7,6 +7,6 @@ public class StoragePipe extends AbstractPipe{
 
 	@Override
 	protected void write(String message) {
-		System.out.println("Storage Engine::Pipe: " + message);
+		System.out.println("Storege Pipe::Pipeline: " + message);
 	}
 }
