@@ -6,7 +6,7 @@ public class OutputPipe extends AbstractPipe{
 	}
 
 	@Override
-	protected void write(String message) {
+	protected void start(String message) {
 		System.out.println("Output Pipe::Pipeline: " + message);
 	}
 }
