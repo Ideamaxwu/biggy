@@ -30,6 +30,7 @@ A: make it work then make it perfect. aka, practice makes perfect.
 					- datamodel: data model based on proactor
 					- inception: compiler-like Inception, job-schedule-like Dispatcher 
 					- pipeline: dataflow among engines
+					- scripts: scripts to run runtime engine after pipeline
 					- utils: deployment settings Configuration, context information manager BusKeeper
 	SDKs		- SDKs for developer users, e.g., Python
 	examples	- examples for using biggy
