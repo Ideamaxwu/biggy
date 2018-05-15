@@ -24,8 +24,10 @@ A: make it work then make it perfect. aka, practice makes perfect.
 	bigo		- biggy instance
 	clients		- interactive Web/Desktop clients
 	engines		- runtime Input/Storage/Computation/Control/Output execution engines, e.g., Spark, HBase
+	bEngines	- new original engines for biggy
 	framework	- biggy framework including
 					- cores: engine-wrapper-related classes 
+					- datamodel: data model based on proactor
 					- inception: compiler-like Inception, job-schedule-like Dispatcher 
 					- pipeline: dataflow among engines
 					- utils: deployment settings Configuration, context information manager BusKeeper

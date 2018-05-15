@@ -15,7 +15,7 @@ public class ZooKeeperEngine {
 		moduleName = "ZooKeeper Engine module";
 		System.out.println(moduleName + " starting...");
 		//start engine
-		//runJob();
+		runJob();
 		System.out.println(moduleName + " running...");
 	}
 	
