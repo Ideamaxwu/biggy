@@ -13,6 +13,11 @@ public class SparkStandaloneJob {
 
 	public void run() {
 		System.out.println("/*******this is an SparkStandaloneJob example******/");
+		//startJob();
+		System.out.println("/*******this is the end of the SparkStandaloneJob example******/");
+	}
+	
+	public void startJob(){
 		final String logFile = "src/main/resources/config/DBcount.txt"; 
 		SparkConf conf = new SparkConf().setAppName("SparkJobExample").setMaster("local");
 		jsc = new JavaSparkContext(conf);
@@ -23,6 +28,5 @@ public class SparkStandaloneJob {
 		jsc.stop();
 		
 		System.out.println("Lines with DB: " + numDBs);
-		System.out.println("/*******this is the end of the SparkStandaloneJob example******/");
 	}
 }
