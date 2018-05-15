@@ -15,6 +15,7 @@ import org.apache.zookeeper.data.Stat;
 /**
  * 
  * ZKJob start ZK instance then run the job
+ * zkServer.cmd zkCli.cmd -sever:2181
  *
  */
 public class ZKJob {

@@ -5,6 +5,9 @@ import edu.helpal.datar.biggy.engines.input.IInputEngine;
 /**
  * 
  * InputEngine Flafka
+ * start Kafka instance before run job
+ * bin\windows\kafka-server-start.bat    config\server.properties
+ * the versions must be compatible among Kafka, ZooKeeper, Scala, etc.
  *
  */
 public class InputEngineFlafka implements IInputEngine{
@@ -14,10 +17,10 @@ public class InputEngineFlafka implements IInputEngine{
 		//TODO setup
 		System.out.println("setup InputEngine Flafka.");
 		
-		//KafkaProducer producerThread = new KafkaProducer(KafkaProperties.topic);
-        //producerThread.start();
-        //KafkaConsumer consumerThread = new KafkaConsumer(KafkaProperties.topic);
-        //consumerThread.start();
+		KafkaProducerAPI producerThread = new KafkaProducerAPI(KafkaProperties.topic);
+        producerThread.start();
+        KafkaConsumerAPI consumerThread = new KafkaConsumerAPI(KafkaProperties.topic);
+        consumerThread.start();
 	}
 
 }
