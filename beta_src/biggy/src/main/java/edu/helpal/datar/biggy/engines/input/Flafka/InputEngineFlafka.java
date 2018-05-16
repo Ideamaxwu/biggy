@@ -17,10 +17,10 @@ public class InputEngineFlafka implements IInputEngine{
 		//TODO setup
 		System.out.println("setup InputEngine Flafka.");
 		
-		KafkaProducerAPI producerThread = new KafkaProducerAPI(KafkaProperties.topic);
-        producerThread.start();
-        KafkaConsumerAPI consumerThread = new KafkaConsumerAPI(KafkaProperties.topic);
-        consumerThread.start();
+		//KafkaProducerAPI producerThread = new KafkaProducerAPI(KafkaProperties.topic);
+        //producerThread.start();
+        //KafkaConsumerAPI consumerThread = new KafkaConsumerAPI(KafkaProperties.topic);
+        //consumerThread.start();
 	}
 
 }

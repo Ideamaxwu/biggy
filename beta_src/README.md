@@ -93,3 +93,9 @@ Unified Modeling Language for Class/Objects/Component/Deployment/UserCase/Intera
 * States Monitor - Kubernetes, Omega
 
 * Centralized, Distributed, Two-tier, Hybrid
+
+## Related Work
+
+* Operating System Support for Warehouse-scale Computing, Malte Schwarzkopf
+
+* The Datacenter Needs an Operating System, Matei Zaharia

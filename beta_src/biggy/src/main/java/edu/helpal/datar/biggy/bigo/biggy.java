@@ -6,6 +6,7 @@ import java.util.HashMap;
 
 import edu.helpal.datar.biggy.engines.computation.ComputationEngineSpark;
 import edu.helpal.datar.biggy.engines.control.ha.ControlEngineZooKeeper;
+import edu.helpal.datar.biggy.engines.control.locking.ControlEngineChubby;
 import edu.helpal.datar.biggy.engines.control.rm.ControlEngineYARN;
 import edu.helpal.datar.biggy.engines.input.InputEngineConf;
 import edu.helpal.datar.biggy.engines.output.OutputEngineConf;
@@ -51,6 +52,9 @@ public class biggy
 		//add Control resource manager YARN
 		IEngine controlEngineYARN = new ControlEngineYARN(new ControlEngine());
 		bigo.addEngine(controlEngineYARN);
+		//add Control locking Chubby
+		IEngine controlEngineChubby = new ControlEngineChubby(new ControlEngine());
+		bigo.addEngine(controlEngineChubby);
 				
 		//add Input Conf
 		String confInputeEngineName = (String) engineMap.get("inputEngine");

@@ -23,10 +23,16 @@ public class ZKJob {
 	java.util.concurrent.CountDownLatch connectedSignal = new java.util.concurrent.CountDownLatch(1);
 	String newnode = "/newznode";
 
-	public void run() throws IOException, KeeperException, InterruptedException {
+	public void run() throws IOException, InterruptedException, KeeperException {
 		System.out.println("/*******this is a ZKJob example******/");
 
 		// TODO ZKJob
+		//startJob();
+		
+		System.out.println("/*******this is the end of the ZKJob example******/");
+	}
+	
+	public void startJob() throws IOException, InterruptedException, KeeperException{
 		System.out.println("Master: 127.0.0.1:8080; Standby: 127.0.0.3:8080.");
 		connect("localhost");
 		zookeeper = getZooKeeper();
@@ -38,8 +44,6 @@ public class ZKJob {
 			System.out.println("Node " + newnode + " creating");
 			zookeeper.create(newnode, "new znode".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
 		}
-		
-		System.out.println("/*******this is the end of the ZKJob example******/");
 	}
 
 	public void connect(String host) throws IOException, InterruptedException {

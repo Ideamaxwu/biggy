@@ -22,13 +22,7 @@ public class ZooKeeperEngine {
 	void runJob(){
 		try {
 			new ZKJob().run();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (KeeperException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InterruptedException e) {
+		} catch (IOException | InterruptedException | KeeperException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
