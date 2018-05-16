@@ -33,9 +33,7 @@ To put the envisioned datar into practice, we implement it as **biggy**. biggy i
 Currently, we plan to implement biggy based on [AsterixDB](https://github.com/apache/asterixdb), [BAD](https://github.com/apache/asterixdb-bad), [Spark-MLlib](https://github.com/apache/spark) and [d3](https://github.com/d3/d3). AsterixDB is the core component for data storage and control, BAD for data input, Spark-MLlib for data computation and d3 for data output. We make it more pluggable and automatical rather than just gluing them together. Further work of supporting most popular systems (e.g., TensorFlow) as plugins needs done with fullfilment of intelligency.
 
 ## Features
-* All Fit in One
-
-* A Unified Framework
+* All Fit in One: A Unified Framework
 
 * Pluggable Engines
 
