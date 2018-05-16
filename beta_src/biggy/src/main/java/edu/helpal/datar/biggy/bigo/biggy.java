@@ -21,6 +21,7 @@ import edu.helpal.datar.biggy.framework.inception.Inception;
 import edu.helpal.datar.biggy.framework.pipeline.Pipeline;
 import edu.helpal.datar.biggy.framework.utils.BusKeeper;
 import edu.helpal.datar.biggy.framework.utils.EngineConfig;
+import edu.helpal.datar.biggy.framework.utils.JetBrain;
 
 /**
  * @author DWBI 1deamaxwu
@@ -42,6 +43,11 @@ public class biggy
 		bk.start();
 		bk.setContext("startTime", new Date().toString());
 		
+		//jet brain
+		JetBrain jb = new JetBrain();
+		jb.start();
+		
+		//start instance
 		InstanceBDMS bigo = InstanceBDMS.getInstance();
 		//test instance duplicate
 		InstanceBDMS.getInstance();
