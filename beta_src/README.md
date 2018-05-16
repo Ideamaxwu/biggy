@@ -96,8 +96,8 @@ Unified Modeling Language for Class/Objects/Component/Deployment/UserCase/Intera
 
 ## Related Work
 
-* Operating System Support for Warehouse-scale Computing, Malte Schwarzkopf: a model for a decentralised, distributed operating system
+* Operating System Support for Warehouse-scale Computing, Malte Schwarzkopf: *a model for a decentralised, distributed operating system*
 
-* The Datacenter Needs an Operating System, Matei Zaharia: the need for OS abstractions in data centers
+* The Datacenter Needs an Operating System, Matei Zaharia: *the need for OS abstractions in data centers*
 
-* Flexible and Efficient Computation in Large Data Centres, Ionel Corneliu Gog: an architecture for decoupling data processing workflow specification
+* Flexible and Efficient Computation in Large Data Centres, Ionel Corneliu Gog: *an architecture for decoupling data processing workflow specification*
