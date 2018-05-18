@@ -9,6 +9,7 @@ import edu.helpal.datar.biggy.framework.cores.OutputWrapper;
  */
  public class OutputEngineConf extends OutputWrapper{
 	 private String engineName = "Default XXX";
+	 private OutputEngineFactory outputEngineFactory = new OutputEngineFactory(); 
 	 
 	 public OutputEngineConf(IEngine outputEngine, String confEngineName){
 		 super(outputEngine);
@@ -24,6 +25,8 @@ import edu.helpal.datar.biggy.framework.cores.OutputWrapper;
 	 }
 	 
 	 private void setOutputEngine(){
+		 IOutputEngine outputEngine = outputEngineFactory.getOutputEngine(engineName);
+		 outputEngine.setup();
 		 System.out.println("Add Output Engine: " + engineName + ".");
 	 }
 	 
