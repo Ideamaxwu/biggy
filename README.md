@@ -37,9 +37,9 @@ Currently, we plan to implement biggy based on [AsterixDB](https://github.com/ap
 
 * Pluggable Engines
 
-* Automatic dataflow
+* Automatic Dataflow
 
-* Intelligent Analysis
+* Intelligent Management
 
 ## Bonus
 * Interactive TOOLs to build your own BDMS by just a few steps
