@@ -1,3 +1,5 @@
+*In theory, there is no difference between theory and practice; in practice, there is. — Chuck Reid*
+
 # Goals in GAMMA version
 
 * clean code
