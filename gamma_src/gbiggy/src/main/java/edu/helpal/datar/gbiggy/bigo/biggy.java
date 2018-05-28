@@ -7,16 +7,29 @@ import java.util.Map;
 import edu.helpal.datar.gbiggy.framework.utils.EngineConfig;
 import edu.helpal.datar.gbiggy.framework.utils.BusKeeper;
 import edu.helpal.datar.gbiggy.framework.utils.JetBrain;
-import edu.helpal.datar.gbiggy.engines.output.OutputEngineConf;
+import edu.helpal.datar.gbiggy.framework.inception.Inception;
+import edu.helpal.datar.gbiggy.bigo.InstanceBDMS;
+
+import edu.helpal.datar.gbiggy.framework.cores.IEngine;
+
+import edu.helpal.datar.gbiggy.framework.cores.InputEngine;
+import edu.helpal.datar.gbiggy.engines.input.InputEngineConf;
+import edu.helpal.datar.gbiggy.framework.cores.StorageEngine;
+import edu.helpal.datar.gbiggy.engines.storage.StorageEngineConf;
+import edu.helpal.datar.gbiggy.framework.cores.ComputationEngine;
+import edu.helpal.datar.gbiggy.engines.computation.ComputationEngineConf;
 import edu.helpal.datar.gbiggy.framework.cores.OutputEngine;
+import edu.helpal.datar.gbiggy.engines.output.OutputEngineConf;
+
+import edu.helpal.datar.gbiggy.framework.cores.ControlEngine;
 import edu.helpal.datar.gbiggy.engines.control.ha.ControlEngineZooKeeper;
 import edu.helpal.datar.gbiggy.engines.control.locking.ControlEngineChubby;
 import edu.helpal.datar.gbiggy.engines.control.rm.ControlEngineYARN;
-import edu.helpal.datar.gbiggy.framework.cores.ControlEngine;
-import edu.helpal.datar.gbiggy.bigo.InstanceBDMS;
-import edu.helpal.datar.gbiggy.engines.input.InputEngineConf;
-import edu.helpal.datar.gbiggy.framework.cores.IEngine;
-import edu.helpal.datar.gbiggy.framework.cores.InputEngine;
+
+
+
+
+
 
 /**
  * @author DWBI 1deamaxwu
@@ -34,13 +47,13 @@ public class biggy
 		engineMap = conf.getEngineConf();
     	
 		//bus keeper
-		System.out.println("\n->->->   BusKeeper");
+		System.out.println("\n->->->   start BusKeeper");
 		BusKeeper bk = new BusKeeper();
 		bk.start();
 		bk.setContext("startTime", new Date().toString());
 				
 		//jet brain
-		System.out.println("\n->->->   JetBrain");
+		System.out.println("\n->->->   start JetBrain");
 		JetBrain jb = new JetBrain();
 		jb.start();
 				
@@ -64,9 +77,21 @@ public class biggy
     	
     	//add Input Conf
     	System.out.println("\n->->->   add Input");
-    	String confInputeEngineName = (String) engineMap.get("inputEngine");
-    	IEngine inputEngineConf = new InputEngineConf(new InputEngine(), confInputeEngineName);
+    	String confInputEngineName = (String) engineMap.get("inputEngine");
+    	IEngine inputEngineConf = new InputEngineConf(new InputEngine(), confInputEngineName);
     	bigo.addEngine(inputEngineConf);
+    	
+    	//add Storage Conf
+    	System.out.println("\n->->->   add Storage");
+    	String confStorageEngineName = (String) engineMap.get("storageEngine");
+    	IEngine storageEngineConf = new StorageEngineConf(new StorageEngine(), confStorageEngineName);
+    	bigo.addEngine(storageEngineConf);
+    	
+    	//add Computation Conf
+    	System.out.println("\n->->->   add Computation");
+    	String confComputationEngineName = (String) engineMap.get("computationEngine");
+    	IEngine computationEngineConf = new ComputationEngineConf(new ComputationEngine(), confComputationEngineName);
+    	bigo.addEngine(computationEngineConf);
     	
     	//add Output Conf
     	System.out.println("\n->->->   add Output");
@@ -78,6 +103,11 @@ public class biggy
     	System.out.println("\n->->->   show Info");
     	bigo.showInfo();
     	
+    	//start Inception cmd line
+    	System.out.println("\n->->->   start Inception");
+    	Inception incp = new Inception();
+    	incp.start();
+    			
     	//buskeeper info
     	System.out.println("\n->->->   close ALL");
     	bk.setContext("endTime", new Date().toString());
