@@ -8,7 +8,7 @@ package edu.helpal.datar.gbiggy.framework.cores;
 	 private String engineType = "ComputationEngine";
 	 
 	 public void start(){
-		 System.out.println("Computation Engine Initializing.");
+		 System.out.println("Computation Engine Initializing...");
 	 }
 	 
 	 public String getEngineType(){

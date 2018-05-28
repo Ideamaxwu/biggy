@@ -8,7 +8,7 @@ package edu.helpal.datar.gbiggy.framework.cores;
 	 private String engineType = "InputEngine";
 
 	 public void start(){
-		 System.out.println("Input Engine Initializing.");
+		 System.out.println("Input Engine Initializing...");
 	 }
 	 
 	 public String getEngineType(){

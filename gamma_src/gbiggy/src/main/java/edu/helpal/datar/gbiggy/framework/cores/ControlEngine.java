@@ -8,7 +8,7 @@ package edu.helpal.datar.gbiggy.framework.cores;
 	 private String engineType = "ControlEngine";
 
 	 public void start(){
-		 System.out.println("Control Engine Initializing.");
+		 System.out.println("Control Engine Initializing...");
 	 }
 	 
 	 public String getEngineType(){

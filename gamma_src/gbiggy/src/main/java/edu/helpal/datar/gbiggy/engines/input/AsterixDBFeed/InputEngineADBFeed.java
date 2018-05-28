@@ -1,4 +1,4 @@
-package edu.helpal.datar.biggy.engines.input.AsterixDBFeed;
+package edu.helpal.datar.gbiggy.engines.input.AsterixDBFeed;
 
 import edu.helpal.datar.gbiggy.engines.input.IInputEngine;
 

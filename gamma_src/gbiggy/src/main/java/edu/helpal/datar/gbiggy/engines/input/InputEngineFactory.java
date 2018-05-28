@@ -1,7 +1,7 @@
 package edu.helpal.datar.gbiggy.engines.input;
 
-import edu.helpal.datar.biggy.engines.input.AsterixDBFeed.InputEngineADBFeed;
-import edu.helpal.datar.biggy.engines.input.Flafka.InputEngineFlafka;
+import edu.helpal.datar.gbiggy.engines.input.AsterixDBFeed.InputEngineADBFeed;
+import edu.helpal.datar.gbiggy.engines.input.Flafka.InputEngineFlafka;
 
 /**
  * 

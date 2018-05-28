@@ -19,8 +19,7 @@ public class InstanceBDMS {
 	public static InstanceBDMS getInstance(){
 		if(instance == null){
 			instance = new InstanceBDMS();
-			System.out.println("-------Welcome to biggy-------");
-			System.out.println("Single Instance Object Bigo Created.");
+			System.out.println("Single Instance BDMS Bigo Created.");
 		}
 		else{
 			System.out.println("Instance Object Bigo Existed. DO NOT DUPLICATE!");
