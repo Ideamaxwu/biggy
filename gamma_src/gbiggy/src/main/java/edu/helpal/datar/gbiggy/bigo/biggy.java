@@ -8,6 +8,7 @@ import edu.helpal.datar.gbiggy.framework.utils.EngineConfig;
 import edu.helpal.datar.gbiggy.framework.utils.BusKeeper;
 import edu.helpal.datar.gbiggy.framework.utils.JetBrain;
 import edu.helpal.datar.gbiggy.framework.inception.Inception;
+import edu.helpal.datar.gbiggy.framework.pipeline.Pipeline;
 import edu.helpal.datar.gbiggy.bigo.InstanceBDMS;
 
 import edu.helpal.datar.gbiggy.framework.cores.IEngine;
@@ -107,6 +108,11 @@ public class biggy
     	System.out.println("\n->->->   start Inception");
     	Inception incp = new Inception();
     	incp.start();
+    	
+    	//run pipeline
+    	System.out.println("\n->->->   start Pipeline");
+    	Pipeline pipeline = new Pipeline();
+    	pipeline.run();
     			
     	//buskeeper info
     	System.out.println("\n->->->   close ALL");
