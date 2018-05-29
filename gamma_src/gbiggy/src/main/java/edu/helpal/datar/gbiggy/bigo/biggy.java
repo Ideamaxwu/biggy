@@ -16,6 +16,7 @@ import edu.helpal.datar.gbiggy.framework.cores.IEngine;
 import edu.helpal.datar.gbiggy.framework.cores.InputEngine;
 import edu.helpal.datar.gbiggy.engines.input.InputEngineConf;
 import edu.helpal.datar.gbiggy.framework.cores.StorageEngine;
+import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 import edu.helpal.datar.gbiggy.engines.storage.StorageEngineConf;
 import edu.helpal.datar.gbiggy.framework.cores.ComputationEngine;
 import edu.helpal.datar.gbiggy.engines.computation.ComputationEngineConf;
@@ -113,7 +114,16 @@ public class biggy
     	System.out.println("\n->->->   start Pipeline");
     	Pipeline pipeline = new Pipeline();
     	pipeline.run();
-    			
+    	
+    	//data model
+    	System.out.println("\n->->->   BigData Model");
+    	BigData bigdata = new BigData("BigData");
+    	bigdata.Show();
+    	bigdata.Tansform("upperCase");
+    	bigdata.Show();
+    	bigdata.Action("addData");
+    	bigdata.Show();
+    	
     	//buskeeper info
     	System.out.println("\n->->->   close ALL");
     	bk.setContext("endTime", new Date().toString());
