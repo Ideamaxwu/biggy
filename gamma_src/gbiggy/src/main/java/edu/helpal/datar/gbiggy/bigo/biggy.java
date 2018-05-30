@@ -7,6 +7,7 @@ import java.util.Map;
 import edu.helpal.datar.gbiggy.framework.utils.EngineConfig;
 import edu.helpal.datar.gbiggy.framework.utils.BusKeeper;
 import edu.helpal.datar.gbiggy.framework.utils.JetBrain;
+import edu.helpal.datar.gbiggy.pipelines.PLWordCount;
 import edu.helpal.datar.gbiggy.framework.inception.Inception;
 import edu.helpal.datar.gbiggy.framework.pipeline.Pipeline;
 import edu.helpal.datar.gbiggy.bigo.InstanceBDMS;
@@ -114,6 +115,11 @@ public class biggy
     	System.out.println("\n->->->   start Pipeline");
     	Pipeline pipeline = new Pipeline();
     	pipeline.run();
+    	
+    	//run wordcount pipeline
+    	System.out.println("\n->->->   start WordCount Pipeline");
+    	PLWordCount plWordCount = new PLWordCount();
+    	plWordCount.run();
     	
     	//data model
     	System.out.println("\n->->->   BigData Model");
