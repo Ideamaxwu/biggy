@@ -111,7 +111,7 @@ public class biggy
     	Inception incp = new Inception();
     	incp.start();
     	
-    	//run pipeline
+    	//run pipeline model
     	System.out.println("\n->->->   start Pipeline");
     	Pipeline pipeline = new Pipeline();
     	pipeline.run();

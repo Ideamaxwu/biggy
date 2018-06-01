@@ -35,6 +35,8 @@ Currently, we plan to implement biggy based on [AsterixDB](https://github.com/ap
 ## Features
 * All Fit in One: A Unified Framework
 
+* Interactive Clients
+
 * Pluggable Engines
 
 * Automatic Dataflow
