@@ -14,9 +14,11 @@ public class PLWordCount extends Pipeline{
 		AbstractPipe headPipe = new HeadPipe(AbstractPipe.HEAD);
 		AbstractPipe hbaseStoragePipe = new StoragePipeHBase(AbstractPipe.STORAGE, "data storage by HBase Pipe.");
 		AbstractPipe sparkComputationPipe = new ComputationPipeSpark(AbstractPipe.COMPUTATION, "data computation by Spark Pipe.");
+		AbstractPipe d3OutputPipe = new OutputPipeD3(AbstractPipe.OUTPUT, "data output by D3 Pipe.");
 		
 		headPipe.setNextPipe(hbaseStoragePipe);
 		hbaseStoragePipe.setNextPipe(sparkComputationPipe);
+		sparkComputationPipe.setNextPipe(d3OutputPipe);
 		
 		return headPipe;
 	}

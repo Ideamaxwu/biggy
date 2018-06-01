@@ -17,6 +17,7 @@ public class ComputationPipeSpark extends ComputationPipe{
 	
 	@Override
 	protected void start(String message){
+		super.start(message);
 		SparkPipeJob sparkpj = new SparkPipeJob();
 		sparkpj.submit();
 	}
