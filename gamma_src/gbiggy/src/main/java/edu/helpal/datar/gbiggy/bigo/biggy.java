@@ -133,6 +133,7 @@ public class biggy
     	bigdata.Show();
     	
     	//start bigo server
+    	System.out.println("\n->->->   start bigo server");
     	bigo.startServer();
     	
     	//buskeeper info
