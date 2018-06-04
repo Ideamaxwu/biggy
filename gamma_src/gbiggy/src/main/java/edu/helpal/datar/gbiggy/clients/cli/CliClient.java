@@ -16,12 +16,13 @@ import java.net.UnknownHostException;
 import edu.helpal.datar.gbiggy.framework.inception.Inception;
 
 public class CliClient {
+	
 	private Socket clientSocket;
-
+	private String host = "localhost";
+	private int port = 9091;
+	
 	public void startClient(){
 		System.out.print("client> ");
-		String host = "localhost";
-		int port = 9091;
 		try{
 			clientSocket = new Socket(host, port);  
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);  

@@ -65,6 +65,7 @@ public class biggy
     	InstanceBDMS bigo = InstanceBDMS.getInstance();
     	//test instance duplicate
     	InstanceBDMS.getInstance();
+    	bigo.bundleContext(bk);
     	
     	//add Control module
     	System.out.println("\n->->->   add Control fisrt");
