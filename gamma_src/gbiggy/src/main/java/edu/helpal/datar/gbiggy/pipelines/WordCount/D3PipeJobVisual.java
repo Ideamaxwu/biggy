@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class D3PipeJobVisual {
-	public void startWebPage() throws IOException {
+	public void startVisualPage() throws IOException {
 		Properties properties = System.getProperties();
 		String osName = properties.getProperty("os.name");
 
