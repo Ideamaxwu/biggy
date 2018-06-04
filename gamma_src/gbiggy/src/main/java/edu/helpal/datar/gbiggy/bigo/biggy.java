@@ -109,7 +109,8 @@ public class biggy
     	//start Inception cmd line
     	System.out.println("\n->->->   start Inception");
     	Inception incp = new Inception();
-    	incp.start();
+    	//incp.start();
+    	incp.init();
     	
     	//run pipeline model
     	System.out.println("\n->->->   start Pipeline");
@@ -129,6 +130,9 @@ public class biggy
     	bigdata.Show();
     	bigdata.Action("addData");
     	bigdata.Show();
+    	
+    	//start bigo server
+    	bigo.startServer();
     	
     	//buskeeper info
     	System.out.println("\n->->->   close ALL");

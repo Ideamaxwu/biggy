@@ -63,4 +63,8 @@ public class Inception
 		 }
 		 System.out.println(">>>>>>biggy Console Exit<<<<<<");
 	 }
+	 
+	 public void init(){
+		 System.out.println("Inception initializing...");
+	 }
 }
