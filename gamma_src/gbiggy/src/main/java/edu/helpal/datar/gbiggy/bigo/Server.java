@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Date;
 
 import edu.helpal.datar.gbiggy.framework.utils.BusKeeper;
 
@@ -49,6 +50,8 @@ public class Server {
 					}
 					if(inputLine.equalsIgnoreCase("info")){
 						System.out.println(context.getContext().toString());
+						context.setContext("LOG" + context.logID, new Date().toString());
+						context.logID += 1;
 					}
 				}
 			}

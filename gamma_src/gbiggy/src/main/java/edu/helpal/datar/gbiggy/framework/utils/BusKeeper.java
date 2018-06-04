@@ -10,6 +10,7 @@ import java.util.Map;
 public class BusKeeper {
 	
 	private Map<String, String> context = null;
+	public int logID = 0;
 	
 	public void start(){
 		context = new HashMap<String, String>();
