@@ -17,3 +17,7 @@
 * Data STATE Machine
 
 * High-level Abstraction
+
+# In Details
+
+* Operators Implementation

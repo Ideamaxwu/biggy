@@ -17,6 +17,7 @@ import edu.helpal.datar.gbiggy.framework.cores.IEngine;
 import edu.helpal.datar.gbiggy.framework.cores.InputEngine;
 import edu.helpal.datar.gbiggy.engines.input.InputEngineConf;
 import edu.helpal.datar.gbiggy.framework.cores.StorageEngine;
+import edu.helpal.datar.gbiggy.framework.datamodel.BDIO;
 import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 import edu.helpal.datar.gbiggy.engines.storage.StorageEngineConf;
 import edu.helpal.datar.gbiggy.framework.cores.ComputationEngine;
@@ -126,6 +127,7 @@ public class biggy
     	//data model
     	System.out.println("\n->->->   BigData Model");
     	BigData bigdata = new BigData("BigData");
+    	new BDIO(bigdata).ReadFromFile("src\\main\\java\\edu\\helpal\\datar\\gbiggy\\pipelines\\WordCount\\data\\DBcount.txt");
     	bigdata.Show();
     	bigdata.Tansform("upperCase");
     	bigdata.Show();

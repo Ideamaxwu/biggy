@@ -32,6 +32,12 @@ public class DataReactor {
 		if(Operator.equals("addData")){
 			this.bigdata.content += " add this texts";
 		}
+		if(Operator.equals("Count")){
+			new Action().Count();
+		}
+		if(Operator.equals("Sort")){
+			new Transform().Sort();
+		}
 		System.out.println(Operator + " event processing...");
 	}
 	
