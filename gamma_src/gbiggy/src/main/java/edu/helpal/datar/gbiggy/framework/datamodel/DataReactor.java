@@ -4,7 +4,9 @@ public class DataReactor {
 	BigData bigdata;
 	DataReactor(BigData bigdata, String type, String Operator){
 		if (type.equals("Action")){
-			this.bigdata = new BigData(bigdata.content);
+			this.bigdata = new BigData(bigdata.info);
+			this.bigdata.content = bigdata.content;
+			bigdata.linage.add(this.bigdata);
 			eventRegister(Operator);
 			eventListen(Operator);
 			eventProcess(Operator);	
@@ -27,10 +29,10 @@ public class DataReactor {
 	
 	void eventProcess(String Operator){
 		if(Operator.equals("upperCase")){
-			this.bigdata.content = this.bigdata.content.toUpperCase();
+			this.bigdata.info = this.bigdata.info.toUpperCase();
 		}
 		if(Operator.equals("addData")){
-			this.bigdata.content += " add this texts";
+			this.bigdata.info += " add this texts";
 		}
 		if(Operator.equals("Count")){
 			new Action().Count();

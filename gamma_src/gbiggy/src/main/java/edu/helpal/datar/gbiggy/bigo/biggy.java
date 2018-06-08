@@ -133,6 +133,10 @@ public class biggy
     	bigdata.Show();
     	bigdata.Action("addData");
     	bigdata.Show();
+    	bigdata.Tansform("Sort");
+    	bigdata.Show();
+    	bigdata.Action("Count");
+    	bigdata.Show();
     	
     	//start bigo server
     	System.out.println("\n->->->   start bigo server");

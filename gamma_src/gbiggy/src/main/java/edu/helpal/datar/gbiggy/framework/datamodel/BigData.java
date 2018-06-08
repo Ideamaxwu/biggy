@@ -1,12 +1,22 @@
 package edu.helpal.datar.gbiggy.framework.datamodel;
 
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
 public class BigData {
 	private BigData bigdata;
-	String content;
+	String info;
+	Map<String, Long> content;
+	List<BigData> linage;
 	
 	public BigData(String data){
-		content = data;
+		info = data;
 		bigdata = this;
+		content = new HashMap<String, Long>();
+		linage = new LinkedList<BigData>();
+		linage.add(this);
 	}
 	
 	public BigData Tansform(String transformOperator){
@@ -22,7 +32,8 @@ public class BigData {
 	}
 	
 	public void Show(){
-		System.out.println("BigData id@[" + bigdata + "], content: [" + bigdata.content + "].");
+		System.out.println("BigData .bigdata id@[" + bigdata + "], info: [" + bigdata.info + "], content: [" + bigdata.content + "], linage: [" + bigdata.linage + "].");
+		System.out.println("BigData cls.self id@[" + this + "], info: [" + this.info + "], content: [" + this.content + "], linage: [" + this.linage + "].");
 	}
 	
 }
