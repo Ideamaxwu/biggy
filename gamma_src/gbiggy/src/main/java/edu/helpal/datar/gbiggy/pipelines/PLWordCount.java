@@ -12,11 +12,13 @@ import edu.helpal.datar.gbiggy.framework.pipeline.Pipeline;
 public class PLWordCount extends Pipeline{
 	private AbstractPipe getPLWordCount(){
 		AbstractPipe headPipe = new HeadPipe(AbstractPipe.HEAD);
+		AbstractPipe fileInputPipe = new InputPipeBDIO(AbstractPipe.INPUT, "data input by BDIO Pipe.");
 		AbstractPipe hbaseStoragePipe = new StoragePipeHBase(AbstractPipe.STORAGE, "data storage by HBase Pipe.");
 		AbstractPipe sparkComputationPipe = new ComputationPipeSpark(AbstractPipe.COMPUTATION, "data computation by Spark Pipe.");
 		AbstractPipe d3OutputPipe = new OutputPipeD3(AbstractPipe.OUTPUT, "data output by D3 Pipe.");
 		
-		headPipe.setNextPipe(hbaseStoragePipe);
+		headPipe.setNextPipe(fileInputPipe);
+		fileInputPipe.setNextPipe(hbaseStoragePipe);
 		hbaseStoragePipe.setNextPipe(sparkComputationPipe);
 		sparkComputationPipe.setNextPipe(d3OutputPipe);
 		

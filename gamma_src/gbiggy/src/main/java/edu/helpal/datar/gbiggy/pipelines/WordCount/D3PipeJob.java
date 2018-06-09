@@ -4,12 +4,13 @@ import java.io.IOException;
 
 /**
  * 
- * Spark Pipe Job for WordCount
+ * D3 Pipe Job for WordCount
  *
  */
 public class D3PipeJob {
 	public void submit(){
 		System.out.println("submitting WordCount output job on d3...");
+		System.out.println("  inner Loooooooooooooooo");
 		D3PipeJobVisual dpjv = new D3PipeJobVisual();
 		try {
 			dpjv.startVisualPage();
@@ -17,5 +18,6 @@ public class D3PipeJob {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println("  innner ooooooooooooooooG");
 	}
 }

@@ -2,7 +2,7 @@ package edu.helpal.datar.gbiggy.pipelines.WordCount;
 
 /**
  * 
- * D3 Pipe Job for WordCount
+ * Spark Pipe Job for WordCount
  *
  */
 public class SparkPipeJob {
