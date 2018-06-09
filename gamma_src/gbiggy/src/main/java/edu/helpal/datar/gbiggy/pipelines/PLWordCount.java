@@ -1,5 +1,6 @@
 package edu.helpal.datar.gbiggy.pipelines;
 
+import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 import edu.helpal.datar.gbiggy.framework.pipeline.AbstractPipe;
 import edu.helpal.datar.gbiggy.framework.pipeline.HeadPipe;
 import edu.helpal.datar.gbiggy.framework.pipeline.Pipeline;
@@ -26,8 +27,9 @@ public class PLWordCount extends Pipeline{
 	}
 	
 	public void run(){
-		System.out.println("Your WordCount Pipeline on your own BDMS Pipeline:");
+		System.out.println("Your WordCount Pipeline on BigData DataFlow runs on your own BDMS ConfChain!");
+		BigData bigdata = new BigData("WordCount");
 		AbstractPipe pipeline = getPLWordCount();
-		pipeline.pipeStart(AbstractPipe.HEAD, "WordCount pipeline starting.");
+		pipeline.pipeStart(AbstractPipe.HEAD, "WordCount pipeline starting.", bigdata);
 	}
 }

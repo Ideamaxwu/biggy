@@ -1,5 +1,7 @@
 package edu.helpal.datar.gbiggy.framework.pipeline;
 
+import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
+
 /**
  * 
  * Pipeline
@@ -26,6 +28,6 @@ public class Pipeline {
 	public void run(){
 		System.out.println("Your pipeJob on your own BDMS Pipeline:");
 		AbstractPipe pipeline = getPipeline();
-		pipeline.pipeStart(AbstractPipe.HEAD, "DBWordCount pipeline starting.");
+		pipeline.pipeStart(AbstractPipe.HEAD, "DBWordCount pipeline starting.", new BigData(null));
 	}
 }

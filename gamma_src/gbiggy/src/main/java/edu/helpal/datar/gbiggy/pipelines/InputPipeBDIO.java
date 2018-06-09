@@ -19,7 +19,7 @@ public class InputPipeBDIO extends InputPipe{
 	protected void start(String message){
 		super.start(message);
 		BDIOPipeJob bdiopj = new BDIOPipeJob();
-		bdiopj.submit();
+		bdiopj.submit(this.bigdata);
 	}
 
 }

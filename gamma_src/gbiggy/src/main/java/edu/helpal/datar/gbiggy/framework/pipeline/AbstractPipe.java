@@ -1,5 +1,7 @@
 package edu.helpal.datar.gbiggy.framework.pipeline;
 
+import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
+
 public abstract class AbstractPipe {
 	public static int HEAD = 6;
 	public static int CONTROL = 5;
@@ -10,6 +12,7 @@ public abstract class AbstractPipe {
 	
 	protected int level;
 	protected String pipeJob;
+	protected BigData bigdata;
 	
 	protected AbstractPipe nextPipe;
 	
@@ -17,12 +20,18 @@ public abstract class AbstractPipe {
 		this.nextPipe = nextPipe;
 	}
 	
-	public void pipeStart(int level, String message){
+	public void bindBigData(BigData bigdata){
+		this.bigdata = bigdata;
+	}
+	public void pipeStart(int level, String message, BigData bigdata){
+		
+		bindBigData(bigdata);
+		
 		if(this.level <= level && this.level != AbstractPipe.HEAD){
 			start(message);
 		}
 		if(nextPipe != null){
-			nextPipe.pipeStart(level, message);
+			nextPipe.pipeStart(level, message, bigdata);
 		}
 	}
 	abstract protected void start(String message);
