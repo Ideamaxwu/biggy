@@ -35,10 +35,10 @@ public class DataReactor {
 			this.bigdata.info += " add this texts";
 		}
 		if(Operator.equals("Count")){
-			new Action().Count();
+			this.bigdata.content = new Action().Count(this.bigdata.content);
 		}
 		if(Operator.equals("Sort")){
-			new Transform().Sort();
+			this.bigdata.content = new Transform().Sort(this.bigdata.content);
 		}
 		System.out.println(Operator + " event processing...");
 	}

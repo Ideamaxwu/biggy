@@ -8,13 +8,13 @@ import java.util.Map;
 public class BigData {
 	private BigData bigdata;
 	String info;
-	Map<String, Long> content;
+	Map<Long, String> content;
 	List<BigData> linage;
 	
 	public BigData(String data){
 		info = data;
 		bigdata = this;
-		content = new HashMap<String, Long>();
+		content = new HashMap<Long, String>();
 		linage = new LinkedList<BigData>();
 		linage.add(this);
 	}

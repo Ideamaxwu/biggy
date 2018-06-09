@@ -21,17 +21,17 @@ public class BDIO {
 
 	public void ReadFromFile(String path) {
 		System.out.println("Read from File: " + path);
-		this.bigdata.content.put("LineContent", (long) 0);
+		this.bigdata.content.put((long) 0, "LineContent");
 
 		File dataFile = new File(path);
 		BufferedReader br = null;
-		long cnt = 1;
+		long id = 1;
 		try {
 			br = new BufferedReader(new FileReader(dataFile));
 			String line;
 			while ((line = br.readLine()) != null) {
-				this.bigdata.content.put(line, cnt);
-				cnt += 1;
+				this.bigdata.content.put(id, line);
+				id += 1;
 			}
 			br.close();
 		} catch (IOException e) {
