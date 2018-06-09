@@ -34,11 +34,16 @@ public class DataReactor {
 		if(Operator.equals("addData")){
 			this.bigdata.info += " add this texts";
 		}
+		//Action Operator
 		if(Operator.equals("Count")){
 			this.bigdata.content = new Action().Count(this.bigdata.content);
 		}
+		//Transform Operator
 		if(Operator.equals("Sort")){
 			this.bigdata.content = new Transform().Sort(this.bigdata.content);
+		}
+		if(Operator.equals("Filter")){
+			this.bigdata.content = new Transform().Filter(this.bigdata.content, "AsterixDB");
 		}
 		System.out.println(Operator + " event processing...");
 	}

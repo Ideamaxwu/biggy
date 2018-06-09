@@ -137,6 +137,8 @@ public class biggy
     	bigdata.Show();
     	bigdata.Action("Count");
     	bigdata.Show();
+    	bigdata.Tansform("Filter");
+    	bigdata.Show();
     	
     	//start bigo server
     	System.out.println("\n->->->   start bigo server");

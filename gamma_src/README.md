@@ -16,8 +16,14 @@
 
 * Data STATE Machine
 
-* High-level Abstraction
+* High-level Abstraction: Data Model
+
+* ConfChain, DataFlow, JobPipeline
 
 # In Details
 
 * Operators Implementation
+
+# References
+
+* Resilient distributed datasets: a fault-tolerant abstraction for in-memory cluster computing, Matei, NSDI2012.

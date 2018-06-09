@@ -3,6 +3,7 @@ package edu.helpal.datar.gbiggy.framework.datamodel;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -27,6 +28,20 @@ public class Transform {
 		}
 		
 		return content;
+	}
+	
+	public Map<Long, String> Filter(Map<Long, String> content, String filter) {
+		
+		Map<Long, String> result = new HashMap<Long, String>();
+		long id = 0;
+		for(Entry<Long, String> entry : content.entrySet()){
+			if(entry.getValue().contains(filter)){
+				result.put(id, entry.getValue());
+				id += 1;
+			}
+		}
+		
+		return result;
 	}
 
 	public Map<Long, String> sortMapByValue(Map<Long, String> oriMap) {
