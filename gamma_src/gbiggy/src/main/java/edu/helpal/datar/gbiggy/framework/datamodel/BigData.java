@@ -36,4 +36,8 @@ public class BigData {
 		System.out.println("BigData cls.self id@[" + this + "], info: [" + this.info + "], content: [" + this.content + "], linage: [" + this.linage + "].");
 	}
 	
+	public BigData getBD(){
+		return bigdata;
+	}
+	
 }

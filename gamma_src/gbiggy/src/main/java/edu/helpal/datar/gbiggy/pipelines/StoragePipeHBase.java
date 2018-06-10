@@ -19,7 +19,7 @@ public class StoragePipeHBase extends StoragePipe{
 	protected void start(String message){
 		super.start(message);
 		HBasePipeJob hbasepj = new HBasePipeJob();
-		hbasepj.submit();
+		hbasepj.submit(this.bigdata);
 	}
 
 }

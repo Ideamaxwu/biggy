@@ -1,0 +1,31 @@
+[INPUT]
+moduleName = Flafka
+path = /Flafka/bin/
+
+[STORAGE]
+moduleName = AsterixDB
+path = /AsterixDB/bin/
+
+[COMPUTATION]
+moduleName = AsterixDB
+path = /AsterixDB/bin/
+
+[CONTROL]
+moduleName = AsterixDB
+path = /AsterixDB/bin/
+
+[OUTPUT]
+moduleName = D3
+path = /D3/bin/
+
+AsterixDB
+Apache Beam
+Spark
+AsterixDB
+Spark
+YARN
+Spark
+D3
+Zookeeper
+HBase
+Spark

@@ -1,9 +1,12 @@
 package edu.helpal.datar.gbiggy.framework.datamodel;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Map.Entry;
 
 /*
  * 
@@ -21,7 +24,6 @@ public class BDIO {
 
 	public void ReadFromFile(String path) {
 		System.out.println("Read from File: " + path);
-		this.bigdata.content.put((long) 0, "LineContent");
 
 		File dataFile = new File(path);
 		BufferedReader br = null;
@@ -40,6 +42,33 @@ public class BDIO {
 			if (br != null) {
 				try {
 					br.close();
+				} catch (IOException ee) {
+
+				}
+			}
+		}
+	}
+
+	public void WriteToFile(String path) {
+		System.out.println("Write to File: " + path);
+		File dataFile = new File(path);
+		
+		BufferedWriter bw = null;
+		try {
+			if(!dataFile.exists()){
+				dataFile.createNewFile();
+			}
+			bw = new BufferedWriter(new FileWriter(dataFile));
+			for (Entry<Long, String> entry : this.bigdata.content.entrySet()){
+				bw.write(entry.getValue());
+				bw.newLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (bw != null) {
+				try {
+					bw.close();
 				} catch (IOException ee) {
 
 				}

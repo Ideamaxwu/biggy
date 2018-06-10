@@ -19,7 +19,7 @@ public class ComputationPipeSpark extends ComputationPipe{
 	protected void start(String message){
 		super.start(message);
 		SparkPipeJob sparkpj = new SparkPipeJob();
-		sparkpj.submit();
+		sparkpj.submit(this.bigdata);
 	}
 
 }
