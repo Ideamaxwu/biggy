@@ -27,7 +27,7 @@ public class BDIO {
 
 		File dataFile = new File(path);
 		BufferedReader br = null;
-		long id = 1;
+		long id = 0;
 		try {
 			br = new BufferedReader(new FileReader(dataFile));
 			String line;

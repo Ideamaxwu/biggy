@@ -9,5 +9,8 @@ public class SparkPipeJobWordCount {
 		bigdata.Show();
     	new BDIO(bigdata.getBD()).WriteToFile("src\\main\\java\\edu\\helpal\\datar\\gbiggy\\pipelines\\WordCount\\data\\DBcount_count.txt");
     	bigdata.Show();
+    	bigdata.Action("SparkCount");
+    	new BDIO(bigdata.getBD()).WriteToFile("src\\main\\java\\edu\\helpal\\datar\\gbiggy\\pipelines\\WordCount\\data\\DBcount_sparkcount.txt");
+    	bigdata.Show();
 	}
 }

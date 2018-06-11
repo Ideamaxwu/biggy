@@ -12,7 +12,7 @@ import java.util.Map.Entry;
 
 /*
  * 
- * Transform Operators BD => BD
+ * Transform Operators BD<T> => BD<T>, BD<T> => BD<U>
  * 
  */
 public class Transform {
