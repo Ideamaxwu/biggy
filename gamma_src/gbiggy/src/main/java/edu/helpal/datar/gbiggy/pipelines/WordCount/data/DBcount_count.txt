@@ -1,19 +1,19 @@
-=5
-moduleName = Flafka=1
-path = /Flafka/bin/=1
-[OUTPUT]=1
-[COMPUTATION]=1
-[STORAGE]=1
-moduleName = D3=1
-YARN=1
-path = /AsterixDB/bin/=3
-D3=1
-HBase=1
-[CONTROL]=1
-Zookeeper=1
-[INPUT]=1
-path = /D3/bin/=1
-AsterixDB=2
-Apache Beam=1
-moduleName = AsterixDB=3
-Spark=4
+: 5
+moduleName = Flafka: 1
+path = /Flafka/bin/: 1
+[OUTPUT]: 1
+[COMPUTATION]: 1
+[STORAGE]: 1
+moduleName = D3: 1
+YARN: 1
+path = /AsterixDB/bin/: 3
+D3: 1
+HBase: 1
+[CONTROL]: 1
+Zookeeper: 1
+[INPUT]: 1
+path = /D3/bin/: 1
+AsterixDB: 2
+Apache Beam: 1
+moduleName = AsterixDB: 3
+Spark: 4

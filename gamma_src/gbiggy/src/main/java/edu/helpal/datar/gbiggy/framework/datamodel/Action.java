@@ -25,7 +25,7 @@ public class Action {
 		content = new HashMap<Long, String>();
 		long id = 0;
 		for (Map.Entry<String, Long> entry : result.entrySet()){
-			content.put(id, entry.getKey()+"="+entry.getValue());
+			content.put(id, entry.getKey()+": "+entry.getValue());
 			id +=1;
 		}
 		return content;
