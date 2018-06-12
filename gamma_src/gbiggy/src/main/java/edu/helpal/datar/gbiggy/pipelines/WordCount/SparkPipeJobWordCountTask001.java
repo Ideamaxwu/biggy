@@ -18,7 +18,7 @@ public class SparkPipeJobWordCountTask001 {
 	public Map<Long, String> run(Map<Long, String> content){
 		System.out.println("/***   SparkCount TEST Task   ***/");
 		Map<Long, String> result = new HashMap<Long, String>();
-		result.put((long) -1, "SparkCountTest");
+		//result.put((long) -1, "SparkCountTest");
 		
 		//convert Map to List
 		List<String> dataList = new ArrayList<String>();
@@ -47,7 +47,7 @@ public class SparkPipeJobWordCountTask001 {
 		
 		jsc.stop();
 		
-		result.put((long) -2, "Lines with DB: " + numDBs);
+		//result.put((long) -2, "Lines with DB: " + numDBs);
 		content = result;
 		return content;
 	}

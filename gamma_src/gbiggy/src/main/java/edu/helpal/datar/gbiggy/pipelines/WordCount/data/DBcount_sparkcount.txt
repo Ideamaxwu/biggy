@@ -1,21 +1,7 @@
-SparkCountTest
 D3: 1
 Spark: 4
-Lines with DB: 8
 Zookeeper: 1
-moduleName = AsterixDB: 3
 Apache Beam: 1
-[STORAGE]: 1
-[OUTPUT]: 1
-moduleName = D3: 1
-[COMPUTATION]: 1
-path = /D3/bin/: 1
 AsterixDB: 2
 YARN: 1
-moduleName = Flafka: 1
-: 5
-[INPUT]: 1
-[CONTROL]: 1
 HBase: 1
-path = /AsterixDB/bin/: 3
-path = /Flafka/bin/: 1

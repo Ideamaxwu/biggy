@@ -1,6 +1,6 @@
 package edu.helpal.datar.gbiggy.framework.datamodel;
 
-import edu.helpal.datar.gbiggy.pipelines.WordCount.HBasePipeJobWordCountTask001;
+import edu.helpal.datar.gbiggy.pipelines.WordCount.HBasePipeJobWriteDBTask001;
 
 public class hdfsBD {
 	private BigData bigdata;
@@ -12,7 +12,7 @@ public class hdfsBD {
 	public void WriteToHBase(String tablename) {
 		
 		System.out.println("Write to HBase Table: " + tablename);
-		new HBasePipeJobWordCountTask001().flush(this.bigdata.content);
+		new HBasePipeJobWriteDBTask001().flush(this.bigdata.content, tablename);
 	}
 
 }

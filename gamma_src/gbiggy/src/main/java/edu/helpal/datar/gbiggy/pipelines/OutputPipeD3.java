@@ -19,7 +19,7 @@ public class OutputPipeD3 extends OutputPipe{
 	protected void start(String message){
 		super.start(message);
 		D3PipeJob d3pj = new D3PipeJob();
-		d3pj.submit();
+		d3pj.submit(this.bigdata);
 	}
 
 }

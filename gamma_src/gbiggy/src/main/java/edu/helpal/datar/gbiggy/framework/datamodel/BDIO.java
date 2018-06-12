@@ -8,6 +8,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map.Entry;
 
+import edu.helpal.datar.gbiggy.pipelines.WordCount.D3PipeJobVisualTask001;
+
 /*
  * 
  * BigData IO
@@ -74,6 +76,11 @@ public class BDIO {
 				}
 			}
 		}
+	}
+
+	public void VisualFile(String path) {
+		System.out.println("Write to Visual Data File: " + path);
+		new D3PipeJobVisualTask001().generate(this.bigdata.content, path);
 	}
 
 }
