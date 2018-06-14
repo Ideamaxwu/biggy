@@ -3,12 +3,12 @@ package edu.helpal.datar.gbiggy.pipelines.WordCount;
 import java.io.IOException;
 import java.util.Properties;
 
-import edu.helpal.datar.gbiggy.framework.datamodel.BDIO;
+import edu.helpal.datar.gbiggy.framework.datamodel.fileBD;
 import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 
 public class D3PipeJobVisual {
 	public void startVisualPage(BigData bigdata) throws IOException {
-		new BDIO(bigdata.getBD()).VisualFile("src\\main\\java\\edu\\helpal\\datar\\gbiggy\\pipelines\\WordCount\\res\\wordcount_data.js");
+		new fileBD(bigdata.getBD()).VisualFile("src\\main\\java\\edu\\helpal\\datar\\gbiggy\\pipelines\\WordCount\\res\\wordcount_data.js");
 		bigdata.Show();
 		
 		Properties properties = System.getProperties();
