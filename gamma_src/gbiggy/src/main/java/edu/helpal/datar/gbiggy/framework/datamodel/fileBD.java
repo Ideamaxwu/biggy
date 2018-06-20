@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map.Entry;
 
+import edu.helpal.datar.gbiggy.examples.WordCount.egD3PipeJobVisualTask001;
 import edu.helpal.datar.gbiggy.pipelines.WordCount.D3PipeJobVisualTask001;
 
 /**
@@ -81,6 +82,11 @@ public class fileBD {
 	public void VisualFile(String path) {
 		System.out.println("Write to Visual Data File: " + path);
 		new D3PipeJobVisualTask001().generate(this.bigdata.content, path);
+	}
+	
+	public void egVisualFile(String path) {
+		System.out.println("Write to Visual Data File: " + path);
+		new egD3PipeJobVisualTask001().generate(this.bigdata.content, path);
 	}
 
 }

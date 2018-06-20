@@ -3,6 +3,7 @@ package edu.helpal.datar.gbiggy.framework.datamodel;
 import java.util.HashMap;
 import java.util.Map;
 
+import edu.helpal.datar.gbiggy.examples.WordCount.egSparkPipeJobWordCountTask001;
 import edu.helpal.datar.gbiggy.pipelines.WordCount.SparkPipeJobWordCountTask001;
 
 /*
@@ -34,6 +35,12 @@ public class Action {
 	public Map<Long, String> SparkCount(Map<Long, String> content){
 		System.out.println("/***   SparkCount TEST Action   ***/");
 		content = new SparkPipeJobWordCountTask001().run(content);
+		return content;
+	} 
+	
+	public Map<Long, String> WordCount(Map<Long, String> content){
+		System.out.println("/***   Spark WordCount Action   ***/");
+		content = new egSparkPipeJobWordCountTask001().run(content);
 		return content;
 	} 
 

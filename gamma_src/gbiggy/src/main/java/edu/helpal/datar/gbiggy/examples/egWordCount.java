@@ -28,10 +28,10 @@ public class egWordCount {
 	private AbstractPipe getWordCount(){
 		AbstractPipe headPipe = new HeadPipe(AbstractPipe.HEAD);
 		AbstractPipe yarnControlPipe = new ControlPipeYARN(AbstractPipe.CONTROL, "data control by YARN Pipe.");
-		AbstractPipe fileInputPipe = new InputPipeBDIO(AbstractPipe.INPUT, "data input by BDIO Pipe.");
+		AbstractPipe fileInputPipe = new InputPipeBDIO(AbstractPipe.INPUT, "data input by BDIO Pipe.", "edu.helpal.datar.gbiggy.examples.WordCount.egBDIOPipeJobReadFile");
 		AbstractPipe hbaseStoragePipe = new StoragePipeHBase(AbstractPipe.STORAGE, "data storage by HBase Pipe.", "edu.helpal.datar.gbiggy.examples.WordCount.egHBasePipeJobWriteDB");
-		AbstractPipe sparkComputationPipe = new ComputationPipeSpark(AbstractPipe.COMPUTATION, "data computation by Spark Pipe.");
-		AbstractPipe d3OutputPipe = new OutputPipeD3(AbstractPipe.OUTPUT, "data output by D3 Pipe.");
+		AbstractPipe sparkComputationPipe = new ComputationPipeSpark(AbstractPipe.COMPUTATION, "data computation by Spark Pipe.", "edu.helpal.datar.gbiggy.examples.WordCount.egSparkPipeJobWordCount");
+		AbstractPipe d3OutputPipe = new OutputPipeD3(AbstractPipe.OUTPUT, "data output by D3 Pipe.", "edu.helpal.datar.gbiggy.examples.WordCount.egD3PipeJobVisual");
 		
 		headPipe.setNextPipe(yarnControlPipe);
 		yarnControlPipe.setNextPipe(fileInputPipe);

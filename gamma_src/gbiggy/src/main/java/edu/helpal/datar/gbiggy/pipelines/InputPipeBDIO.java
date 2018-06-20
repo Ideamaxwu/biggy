@@ -9,17 +9,18 @@ import edu.helpal.datar.gbiggy.pipelines.WordCount.BDIOPipeJob;
  *
  */
 public class InputPipeBDIO extends InputPipe{
-
-	public InputPipeBDIO(int level, String pipeJob) {
+	String cls;
+	public InputPipeBDIO(int level, String pipeJob, String cls) {
 		super(level, pipeJob);
 		// TODO Auto-generated constructor stub
+		this.cls = cls;
 	}
 	
 	@Override
 	protected void start(String message){
 		super.start(message);
 		BDIOPipeJob bdiopj = new BDIOPipeJob();
-		bdiopj.submit(this.bigdata);
+		bdiopj.submit(this.bigdata, this.cls);
 	}
 
 }

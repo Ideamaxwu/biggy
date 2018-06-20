@@ -1,5 +1,7 @@
 package edu.helpal.datar.gbiggy.pipelines.WordCount;
 
+import java.lang.reflect.Method;
+
 import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 
 /**
@@ -8,12 +10,24 @@ import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
  *
  */
 public class BDIOPipeJob {
-	public void submit(BigData bigdata){
+	public void submit(BigData bigdata, String cls){
 		System.out.println("submitting WordCount input job on bdio...");
-		System.out.println("  innner Loooooooooooooooo");
-		BDIOPipeJobReadFile bpjr = new BDIOPipeJobReadFile();
 		
-		bpjr.startReadFile(bigdata);
+		System.out.println("  innner Loooooooooooooooo");
+		//BDIOPipeJobReadFile bpjr = new BDIOPipeJobReadFile();
+		//bpjr.startReadFile(bigdata);
+		
+		Class<?> bpjr;
+		Object obj;
+		try {
+			bpjr = Class.forName(cls);
+			obj = bpjr.getConstructor().newInstance(); 
+			Method meth = bpjr.getMethod("startReadFile", BigData.class);
+			meth.invoke(obj, bigdata);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		System.out.println("  innner ooooooooooooooooG");
 	}

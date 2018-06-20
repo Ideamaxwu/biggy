@@ -14,10 +14,10 @@ public class PLWordCount extends Pipeline{
 	private AbstractPipe getPLWordCount(){
 		AbstractPipe headPipe = new HeadPipe(AbstractPipe.HEAD);
 		AbstractPipe yarnControlPipe = new ControlPipeYARN(AbstractPipe.CONTROL, "data control by YARN Pipe.");
-		AbstractPipe fileInputPipe = new InputPipeBDIO(AbstractPipe.INPUT, "data input by BDIO Pipe.");
+		AbstractPipe fileInputPipe = new InputPipeBDIO(AbstractPipe.INPUT, "data input by BDIO Pipe.", "edu.helpal.datar.gbiggy.pipelines.WordCount.BDIOPipeJobReadFile");
 		AbstractPipe hbaseStoragePipe = new StoragePipeHBase(AbstractPipe.STORAGE, "data storage by HBase Pipe.", "edu.helpal.datar.gbiggy.pipelines.WordCount.HBasePipeJobWriteDB");
-		AbstractPipe sparkComputationPipe = new ComputationPipeSpark(AbstractPipe.COMPUTATION, "data computation by Spark Pipe.");
-		AbstractPipe d3OutputPipe = new OutputPipeD3(AbstractPipe.OUTPUT, "data output by D3 Pipe.");
+		AbstractPipe sparkComputationPipe = new ComputationPipeSpark(AbstractPipe.COMPUTATION, "data computation by Spark Pipe.", "edu.helpal.datar.gbiggy.pipelines.WordCount.SparkPipeJobWordCount");
+		AbstractPipe d3OutputPipe = new OutputPipeD3(AbstractPipe.OUTPUT, "data output by D3 Pipe.", "edu.helpal.datar.gbiggy.pipelines.WordCount.D3PipeJobVisual");
 		
 		headPipe.setNextPipe(yarnControlPipe);
 		yarnControlPipe.setNextPipe(fileInputPipe);

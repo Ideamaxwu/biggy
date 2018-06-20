@@ -1,0 +1,8 @@
+D3: 1
+Spark: 4
+Zookeeper: 1
+Apache Beam: 1
+AsterixDB: 2
+YARN: 1
+bigo: 3
+HBase: 1
