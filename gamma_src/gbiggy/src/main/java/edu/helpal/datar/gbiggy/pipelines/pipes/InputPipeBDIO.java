@@ -1,7 +1,7 @@
-package edu.helpal.datar.gbiggy.pipelines;
+package edu.helpal.datar.gbiggy.pipelines.pipes;
 
 import edu.helpal.datar.gbiggy.framework.pipeline.InputPipe;
-import edu.helpal.datar.gbiggy.pipelines.WordCount.BDIOPipeJob;
+import edu.helpal.datar.gbiggy.pipelines.jobs.BDIOPipeJob;
 
 /**
  * 

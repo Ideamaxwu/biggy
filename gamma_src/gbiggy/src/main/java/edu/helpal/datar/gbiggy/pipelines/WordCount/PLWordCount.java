@@ -1,9 +1,14 @@
-package edu.helpal.datar.gbiggy.pipelines;
+package edu.helpal.datar.gbiggy.pipelines.WordCount;
 
 import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 import edu.helpal.datar.gbiggy.framework.pipeline.AbstractPipe;
 import edu.helpal.datar.gbiggy.framework.pipeline.HeadPipe;
 import edu.helpal.datar.gbiggy.framework.pipeline.Pipeline;
+import edu.helpal.datar.gbiggy.pipelines.pipes.ComputationPipeSpark;
+import edu.helpal.datar.gbiggy.pipelines.pipes.ControlPipeYARN;
+import edu.helpal.datar.gbiggy.pipelines.pipes.InputPipeBDIO;
+import edu.helpal.datar.gbiggy.pipelines.pipes.OutputPipeD3;
+import edu.helpal.datar.gbiggy.pipelines.pipes.StoragePipeHBase;
 
 /**
  * 

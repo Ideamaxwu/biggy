@@ -1,7 +1,7 @@
-package edu.helpal.datar.gbiggy.pipelines;
+package edu.helpal.datar.gbiggy.pipelines.pipes;
 
 import edu.helpal.datar.gbiggy.framework.pipeline.ComputationPipe;
-import edu.helpal.datar.gbiggy.pipelines.WordCount.SparkPipeJob;
+import edu.helpal.datar.gbiggy.pipelines.jobs.SparkPipeJob;
 
 /**
  * 

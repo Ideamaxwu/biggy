@@ -1,4 +1,4 @@
-package edu.helpal.datar.gbiggy.pipelines.WordCount;
+package edu.helpal.datar.gbiggy.pipelines.jobs;
 
 import java.lang.reflect.Method;
 

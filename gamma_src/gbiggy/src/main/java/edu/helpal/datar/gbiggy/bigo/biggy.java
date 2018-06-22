@@ -7,7 +7,7 @@ import java.util.Map;
 import edu.helpal.datar.gbiggy.framework.utils.EngineConfig;
 import edu.helpal.datar.gbiggy.framework.utils.BusKeeper;
 import edu.helpal.datar.gbiggy.framework.utils.JetBrain;
-import edu.helpal.datar.gbiggy.pipelines.PLWordCount;
+import edu.helpal.datar.gbiggy.pipelines.WordCount.PLWordCount;
 import edu.helpal.datar.gbiggy.framework.inception.Inception;
 import edu.helpal.datar.gbiggy.framework.pipeline.Pipeline;
 import edu.helpal.datar.gbiggy.bigo.InstanceBDMS;

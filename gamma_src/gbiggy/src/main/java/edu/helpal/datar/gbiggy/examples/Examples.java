@@ -8,6 +8,8 @@ package edu.helpal.datar.gbiggy.examples;
 public class Examples {
 	public static void main(String[] args) {
 		
+		/*
+		
 		//example wordcount
 		egWordCount egWordCount = new egWordCount();
 		egWordCount.run();
@@ -15,6 +17,8 @@ public class Examples {
 		//example sort
 		egSort egSort = new egSort();
 		egSort.run();
+		
+		*/
 		
 		//example kmeans
 		egKMeans egKMeans = new egKMeans();

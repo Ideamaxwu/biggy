@@ -3,11 +3,11 @@ package edu.helpal.datar.gbiggy.examples;
 import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 import edu.helpal.datar.gbiggy.framework.pipeline.AbstractPipe;
 import edu.helpal.datar.gbiggy.framework.pipeline.HeadPipe;
-import edu.helpal.datar.gbiggy.pipelines.ComputationPipeSpark;
-import edu.helpal.datar.gbiggy.pipelines.ControlPipeYARN;
-import edu.helpal.datar.gbiggy.pipelines.InputPipeBDIO;
-import edu.helpal.datar.gbiggy.pipelines.OutputPipeD3;
-import edu.helpal.datar.gbiggy.pipelines.StoragePipeHBase;
+import edu.helpal.datar.gbiggy.pipelines.pipes.ComputationPipeSpark;
+import edu.helpal.datar.gbiggy.pipelines.pipes.ControlPipeYARN;
+import edu.helpal.datar.gbiggy.pipelines.pipes.InputPipeBDIO;
+import edu.helpal.datar.gbiggy.pipelines.pipes.OutputPipeD3;
+import edu.helpal.datar.gbiggy.pipelines.pipes.StoragePipeHBase;
 
 /*
  * 

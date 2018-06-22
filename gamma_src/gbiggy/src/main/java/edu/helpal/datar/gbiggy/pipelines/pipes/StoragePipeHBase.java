@@ -1,7 +1,7 @@
-package edu.helpal.datar.gbiggy.pipelines;
+package edu.helpal.datar.gbiggy.pipelines.pipes;
 
 import edu.helpal.datar.gbiggy.framework.pipeline.StoragePipe;
-import edu.helpal.datar.gbiggy.pipelines.WordCount.HBasePipeJob;
+import edu.helpal.datar.gbiggy.pipelines.jobs.HBasePipeJob;
 
 /**
  * 
