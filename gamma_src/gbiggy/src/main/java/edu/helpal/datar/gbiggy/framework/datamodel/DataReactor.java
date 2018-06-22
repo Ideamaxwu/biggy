@@ -44,6 +44,9 @@ public class DataReactor {
 		if(Operator.equals("WordCount")){
 			this.bigdata.content = new Action().WordCount(this.bigdata.content);
 		}
+		if(Operator.equals("Cluster")){
+			this.bigdata.content = new Action().Cluster(this.bigdata.content);
+		}
 		//Transform Operator
 		if(Operator.equals("Sort")){
 			this.bigdata.content = new Transform().Sort(this.bigdata.content);
