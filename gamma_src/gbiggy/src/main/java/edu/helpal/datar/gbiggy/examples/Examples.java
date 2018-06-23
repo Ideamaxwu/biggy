@@ -16,13 +16,17 @@ public class Examples {
 		
 		//example sort
 		egSort egSort = new egSort();
-		egSort.run();
-		
-		*/
+		egSort.run();	
 		
 		//example kmeans
 		egKMeans egKMeans = new egKMeans();
 		egKMeans.run();
+		
+		*/
+		
+		//example pagerank
+		egPageRank egPageRank = new egPageRank();
+		egPageRank.run();
 	}
 
 }
