@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import edu.helpal.datar.gbiggy.examples.KMeans.egSparkPipeJobClusterTask001;
+import edu.helpal.datar.gbiggy.examples.PageRank.egSparkPipeJobPageRankTask001;
 import edu.helpal.datar.gbiggy.examples.WordCount.egSparkPipeJobWordCountTask001;
 import edu.helpal.datar.gbiggy.pipelines.WordCount.SparkPipeJobWordCountTask001;
 
@@ -48,6 +49,12 @@ public class Action {
 	public Map<Long, String> Cluster(Map<Long, String> content){
 		System.out.println("/***   Spark Cluster Action   ***/");
 		content = new egSparkPipeJobClusterTask001().run(content);
+		return content;
+	}
+
+	public Map<Long, String> PageRank(Map<Long, String> content) {
+		System.out.println("/***   Spark PageRank Action   ***/");
+		content = new egSparkPipeJobPageRankTask001().run(content);
 		return content;
 	}
 

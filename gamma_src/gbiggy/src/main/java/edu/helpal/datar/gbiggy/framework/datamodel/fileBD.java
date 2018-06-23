@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.Map.Entry;
 
 import edu.helpal.datar.gbiggy.examples.KMeans.egClusterD3PipeJobVisualTask001;
+import edu.helpal.datar.gbiggy.examples.PageRank.egPageRankD3PipeJobVisualTask001;
 import edu.helpal.datar.gbiggy.examples.Sort.egSortD3PipeJobVisualTask001;
 import edu.helpal.datar.gbiggy.examples.WordCount.egD3PipeJobVisualTask001;
 import edu.helpal.datar.gbiggy.pipelines.WordCount.D3PipeJobVisualTask001;
@@ -99,6 +100,11 @@ public class fileBD {
 	public void egClusterVisualFile(String path) {
 		System.out.println("Write to Visual Data File: " + path);
 		new egClusterD3PipeJobVisualTask001().generate(this.bigdata.content, path);
+	}
+	
+	public void egPRVisualFile(String path) {
+		System.out.println("Write to Visual Data File: " + path);
+		new egPageRankD3PipeJobVisualTask001().generate(this.bigdata.content, path);
 	}
 
 }

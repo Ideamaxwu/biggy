@@ -47,6 +47,9 @@ public class DataReactor {
 		if(Operator.equals("Cluster")){
 			this.bigdata.content = new Action().Cluster(this.bigdata.content);
 		}
+		if(Operator.equals("PageRank")){
+			this.bigdata.content = new Action().PageRank(this.bigdata.content);
+		}
 		//Transform Operator
 		if(Operator.equals("Sort")){
 			this.bigdata.content = new Transform().Sort(this.bigdata.content);
