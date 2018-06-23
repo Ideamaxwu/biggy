@@ -5,3 +5,5 @@ The basic workflow of biggy is 1) read engine configuration setups; 2) start uti
 * Java Execution Environment: JavaSE-1.8(jre1.8.0_111)
 
 * Default config resources in resources/config/engine.conf
+
+* cross origin problem can be sovled by --allow-file-access-from-files
