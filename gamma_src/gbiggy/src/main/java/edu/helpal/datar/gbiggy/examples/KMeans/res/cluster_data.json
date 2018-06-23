@@ -1,8 +1,7 @@
 {"name": "kmeans","children": [
 {"name": "cluster0","children": [
-{"name": "[15.0,7.0]", "size": 5000},
-{"name": "[18.0,3.0]", "size": 5000},
-{"name": "[12.0,5.0]", "size": 5000}
+{"name": "[15.0,15.0]", "size": 5000},
+{"name": "[13.0,19.0]", "size": 5000}
 ]},
 {"name": "cluster1","children": [
 {"name": "[1.0,2.0]", "size": 5000},
@@ -10,9 +9,10 @@
 {"name": "[2.0,8.0]", "size": 5000}
 ]},
 {"name": "cluster2","children": [
-{"name": "[11.0,11.0]", "size": 5000},
-{"name": "[15.0,15.0]", "size": 5000},
-{"name": "[13.0,19.0]", "size": 5000}
+{"name": "[15.0,7.0]", "size": 5000},
+{"name": "[18.0,3.0]", "size": 5000},
+{"name": "[12.0,5.0]", "size": 5000},
+{"name": "[11.0,11.0]", "size": 5000}
 ]},
 {"name": "cluster3","children": [
 {"name": "[5.0,15.0]", "size": 5000},
