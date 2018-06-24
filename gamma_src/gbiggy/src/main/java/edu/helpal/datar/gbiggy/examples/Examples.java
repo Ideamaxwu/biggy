@@ -8,25 +8,21 @@ package edu.helpal.datar.gbiggy.examples;
 public class Examples {
 	public static void main(String[] args) {
 		
-		/*
-		
 		//example wordcount
-		egWordCount egWordCount = new egWordCount();
-		egWordCount.run();
+		//egWordCount egWordCount = new egWordCount();
+		//egWordCount.run();
 		
 		//example sort
 		egSort egSort = new egSort();
 		egSort.run();	
 		
 		//example kmeans
-		egKMeans egKMeans = new egKMeans();
-		egKMeans.run();
-		
-		*/
+		//egKMeans egKMeans = new egKMeans();
+		//egKMeans.run();
 		
 		//example pagerank
-		egPageRank egPageRank = new egPageRank();
-		egPageRank.run();
+		//egPageRank egPageRank = new egPageRank();
+		//egPageRank.run();
 	}
 
 }

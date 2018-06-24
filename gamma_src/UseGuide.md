@@ -9,3 +9,5 @@ The basic workflow of biggy is 1) read engine configuration setups; 2) start uti
 * cross origin problem can be sovled by --allow-file-access-from-files
 
 * Maven pom spark-core version should compact with spark-mllib version, others same
+
+* download and intall MongoDB
