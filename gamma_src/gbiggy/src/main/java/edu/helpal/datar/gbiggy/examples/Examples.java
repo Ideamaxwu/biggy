@@ -2,7 +2,7 @@ package edu.helpal.datar.gbiggy.examples;
 
 /**
  * 
- * Four Examples
+ * Four Examples: WordCount, Sort, KMeans, PageRank
  *
  */
 public class Examples {
