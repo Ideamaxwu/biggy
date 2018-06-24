@@ -1,6 +1,6 @@
 var data = [
-{Name: "A:B,C,D", num: 1},
-{Name: "B:A,D", num: 1},
-{Name: "C:A", num: 1},
-{Name: "D:B,C", num: 1},
+{Page: "B", score: 0.9006039089048439},
+{Page: "A", score: 1.298188273285468},
+{Page: "C", score: 0.9006039089048439},
+{Page: "D", score: 0.9006039089048439},
 ];

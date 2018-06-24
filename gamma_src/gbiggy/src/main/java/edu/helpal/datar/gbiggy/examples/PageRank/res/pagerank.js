@@ -1,5 +1,5 @@
 var series = d3.stack()
-    .keys(["num"])
+    .keys(["score"])
     .offset(d3.stackOffsetDiverging)
     (data);
 
@@ -9,7 +9,7 @@ var svg = d3.select("svg"),
     height = +svg.attr("height");
 
 var x = d3.scaleBand()
-    .domain(data.map(function(d) { return d.Name; }))
+    .domain(data.map(function(d) { return d.Page; }))
     .rangeRound([margin.left, width - margin.right])
     .padding(0.1);
 
@@ -28,7 +28,7 @@ svg.append("g")
   .data(function(d) { return d; })
   .enter().append("rect")
     .attr("width", x.bandwidth)
-    .attr("x", function(d) { return x(d.data.Name); })
+    .attr("x", function(d) { return x(d.data.Page); })
     .attr("y", function(d) { return y(d[1]); })
     .attr("height", function(d) { return y(d[0]) - y(d[1]); })
 

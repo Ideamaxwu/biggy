@@ -24,8 +24,9 @@ public class egPageRankD3PipeJobVisualTask001 {
 			//write body
 			for (Entry<Long, String> entry : content.entrySet()) {
 				System.out.println("Generate Visual Data: " + entry.getValue());
-				//{Name: "A:B,C,D", num: 1},
-				String line = "{Name: \"" + entry.getValue() +"\", num: 1},";
+				//{Page: "A", score: 1.299},
+				String[] item = entry.getValue().split(": ");
+				String line = "{Page: \"" + item[0] +"\", score: " + item[1] + "},";
 				bw.write(line);
 				bw.newLine();
 			}
