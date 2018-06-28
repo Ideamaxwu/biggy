@@ -29,8 +29,12 @@ public abstract class AbstractPipe {
 		
 		bindBigData(bigdata);
 		
+		Runtime run = Runtime.getRuntime();
+		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS");
+		
 		if(this.level <= level && this.level != AbstractPipe.HEAD){
-			System.out.println("<TIME "+ this.level +">: "+new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(System.currentTimeMillis()));
+			System.out.println("<TIME "+ this.level +">: "+df.format(System.currentTimeMillis()));
+			System.out.println("<Memory" + this.level +"> total: " + run.totalMemory() + " free: " + run.freeMemory() + " used: " + (run.totalMemory()-run.freeMemory()) );
 			start(message);
 		}
 		if(nextPipe != null){
