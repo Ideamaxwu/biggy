@@ -17,7 +17,7 @@ public class HBasePipeJobWriteDBTask001 {
         MongoCollection<Document> coll = MongoDBDriver.instance.getCollection(dbName, collName);
         
 		for (Entry<Long, String> entry : content.entrySet()){
-			System.out.println("Tuple inserted to HBase["+ tableName +"]: "+ entry.getValue());
+			//System.out.println("Tuple inserted to HBase["+ tableName +"]: "+ entry.getValue());
 			//tuple insert
 			Document doc = new Document();
 			doc.put("item", entry.getValue());
@@ -25,13 +25,14 @@ public class HBasePipeJobWriteDBTask001 {
 		}
 		
 		//lookup collection
+		/*
 		MongoCursor<Document> cursor = MongoDBDriver.instance.find(coll);
 		System.out.println("Tuples in Table[" + collName + "]:");
 		while(cursor.hasNext()){
 			Document d = cursor.next();
 			System.out.println(d.toString());
 		}
-		
+		*/
 		MongoDBDriver.instance.close();
 		
 	}

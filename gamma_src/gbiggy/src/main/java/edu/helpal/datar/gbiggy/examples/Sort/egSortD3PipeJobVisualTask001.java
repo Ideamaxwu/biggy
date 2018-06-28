@@ -23,7 +23,7 @@ public class egSortD3PipeJobVisualTask001 {
 			bw.newLine();
 			//write body
 			for (Entry<Long, String> entry : content.entrySet()) {
-				System.out.println("Generate Visual Data: " + entry.getValue());
+				//System.out.println("Generate Visual Data: " + entry.getValue());
 				//{Name: "AsterixDB", num: 1},
 				String line = "{Name: \"" + entry.getValue() +"\", num: 1},";
 				bw.write(line);

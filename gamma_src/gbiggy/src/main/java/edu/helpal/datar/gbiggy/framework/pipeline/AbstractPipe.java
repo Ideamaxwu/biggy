@@ -1,5 +1,7 @@
 package edu.helpal.datar.gbiggy.framework.pipeline;
 
+import java.text.SimpleDateFormat;
+
 import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 
 public abstract class AbstractPipe {
@@ -28,6 +30,7 @@ public abstract class AbstractPipe {
 		bindBigData(bigdata);
 		
 		if(this.level <= level && this.level != AbstractPipe.HEAD){
+			System.out.println("<TIME "+ this.level +">: "+new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(System.currentTimeMillis()));
 			start(message);
 		}
 		if(nextPipe != null){
