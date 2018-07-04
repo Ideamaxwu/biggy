@@ -1,0 +1,205 @@
+<TIME egWordCount start>: 2018/07/04-14:12:13:423 @ 1530684733423
+<Memory egWordCount> total: 126877696 free: 124193048 used: 2684648
+Your WordCount Pipeline on BigData DataFlow runs on your own BDMS ConfChain!
+
+<TIME 5>: 2018/07/04-14:12:13:427 @ 1530684733427
+<Memory 5> total: 126877696 free: 124193048 used: 2684648
+Control Pipe::Pipeline: data control by YARN Pipe. egWordCount pipeline starting.
+
+<TIME 4>: 2018/07/04-14:12:13:428 @ 1530684733428
+<Memory 4> total: 126877696 free: 124193048 used: 2684648
+Input Pipe::Pipeline: data input by BDIO Pipe. egWordCount pipeline starting.
+
+<TIME 3>: 2018/07/04-14:12:14:361 @ 1530684734361
+<Memory 3> total: 223346688 free: 100757152 used: 122589536
+Storege Pipe::Pipeline: data storage by HBase Pipe. egWordCount pipeline starting.
+
+<TIME 2>: 2018/07/04-14:13:53:271 @ 1530684833271
+<Memory 2> total: 413138944 free: 196227416 used: 216911528
+Computation Pipe::Pipeline: data computation by Spark Pipe. egWordCount pipeline starting.
+
+<TIME 1>: 2018/07/04-14:13:59:037 @ 1530684839037
+<Memory 1> total: 560463872 free: 302009376 used: 258454496
+Output Pipe::Pipeline: data output by D3 Pipe. egWordCount pipeline starting.
+
+<TIME egWordCount end>: 2018/07/04-14:13:59:210 @ 1530684839210
+<Memory egWordCount> total: 560463872 free: 203197736 used: 357266136
+
+
+
+
+<TIME egSort start>: 2018/07/04-14:02:58:413 @ 1530684178414
+<Memory egSort> total: 126877696 free: 124193048 used: 2684648
+Your Sort Pipeline on BigData DataFlow runs on your own BDMS ConfChain!
+
+<TIME 5>: 2018/07/04-14:02:58:418 @ 1530684178418
+<Memory 5> total: 126877696 free: 124193048 used: 2684648
+Control Pipe::Pipeline: data control by YARN Pipe. egSort pipeline starting.
+
+<TIME 4>: 2018/07/04-14:02:58:419 @ 1530684178420
+<Memory 4> total: 126877696 free: 124193048 used: 2684648
+Input Pipe::Pipeline: data input by BDIO Pipe. egSort pipeline starting.
+
+<TIME 3>: 2018/07/04-14:02:58:908 @ 1530684178908
+<Memory 3> total: 224395264 free: 101814424 used: 122580840
+Storege Pipe::Pipeline: data storage by HBase Pipe. egSort pipeline starting.
+
+<TIME 2>: 2018/07/04-14:04:37:512 @ 1530684277512
+<Memory 2> total: 412090368 free: 287131128 used: 124959240
+Computation Pipe::Pipeline: data computation by Spark Pipe. egSort pipeline starting.
+
+<TIME 1>: 2018/07/04-14:04:38:338 @ 1530684278338
+<Memory 1> total: 412090368 free: 198201744 used: 213888624
+Output Pipe::Pipeline: data output by D3 Pipe. egSort pipeline starting.
+
+<TIME egSort end>: 2018/07/04-14:04:38:833 @ 1530684278833
+<Memory egSort> total: 412090368 free: 164632032 used: 247458336
+
+
+
+
+<TIME egKMeans start>: 2018/07/04-15:03:25:531 @ 1530687805531
+<Memory egKMeans> total: 126877696 free: 124193048 used: 2684648
+Your KMeans Pipeline on BigData DataFlow runs on your own BDMS ConfChain!
+
+<TIME 5>: 2018/07/04-15:03:25:538 @ 1530687805538
+<Memory 5> total: 126877696 free: 124193048 used: 2684648
+Control Pipe::Pipeline: data control by YARN Pipe. egKMeans pipeline starting.
+
+<TIME 4>: 2018/07/04-15:03:25:539 @ 1530687805539
+<Memory 4> total: 126877696 free: 124193048 used: 2684648
+Input Pipe::Pipeline: data input by BDIO Pipe. egKMeans pipeline starting.
+
+<TIME 3>: 2018/07/04-15:03:26:998 @ 1530687806998
+<Memory 3> total: 364380160 free: 235369464 used: 129010696
+Storege Pipe::Pipeline: data storage by HBase Pipe. egKMeans pipeline starting.
+
+<TIME 2>: 2018/07/04-15:05:08:597 @ 1530687908597
+<Memory 2> total: 428867584 free: 211664112 used: 217203472
+Computation Pipe::Pipeline: data computation by Spark Pipe. egKMeans pipeline starting.
+
+<TIME 1>: 2018/07/04-15:07:00:697 @ 1530688020697
+<Memory 1> total: 1215299584 free: 790936384 used: 424363200
+Output Pipe::Pipeline: data output by D3 Pipe. egKMeans pipeline starting.
+
+<TIME egKMeans end>: 2018/07/04-15:07:01:046 @ 1530688021046
+<Memory egKMeans> total: 1215299584 free: 517957192 used: 697342392
+
+
+
+<TIME egPageRank start>: 2018/07/04-15:28:27:293 @ 1530689307293
+<Memory egPageRank> total: 126877696 free: 124193048 used: 2684648
+Your PageRank Pipeline on BigData DataFlow runs on your own BDMS ConfChain!
+
+<TIME 5>: 2018/07/04-15:28:27:299 @ 1530689307299
+<Memory 5> total: 126877696 free: 124193048 used: 2684648
+Control Pipe::Pipeline: data control by YARN Pipe. egPageRank pipeline starting.
+
+<TIME 4>: 2018/07/04-15:28:27:300 @ 1530689307300
+<Memory 4> total: 126877696 free: 124193048 used: 2684648
+Input Pipe::Pipeline: data input by BDIO Pipe. egPageRank pipeline starting.
+
+<TIME 3>: 2018/07/04-15:28:27:794 @ 1530689307794
+<Memory 3> total: 223870976 free: 97363080 used: 126507896
+Storege Pipe::Pipeline: data storage by HBase Pipe. egPageRank pipeline starting.
+
+<TIME 2>: 2018/07/04-15:30:09:388 @ 1530689409388
+<Memory 2> total: 422576128 free: 272716688 used: 149859440
+Computation Pipe::Pipeline: data computation by Spark Pipe. egPageRank pipeline starting.
+
+<TIME 1>: 2018/07/04-15:30:26:086 @ 1530689426086
+<Memory 1> total: 606601216 free: 292677704 used: 313923512
+Output Pipe::Pipeline: data output by D3 Pipe. egPageRank pipeline starting.
+
+<TIME egPageRank end>: 2018/07/04-15:30:26:103 @ 1530689426103
+<Memory egPageRank> total: 606601216 free: 292677704 used: 313923512
+
+
+1K
+
+<TIME egWordCount start>: 2018/07/04-16:09:43:660 @ 1530691783660
+<Memory egWordCount> total: 126877696 free: 124193048 used: 2684648
+Your WordCount Pipeline on BigData DataFlow runs on your own BDMS ConfChain!
+
+<TIME 5>: 2018/07/04-16:09:43:664 @ 1530691783665
+<Memory 5> total: 126877696 free: 124193048 used: 2684648
+Control Pipe::Pipeline: data control by YARN Pipe. egWordCount pipeline starting.
+
+<TIME 4>: 2018/07/04-16:09:43:665 @ 1530691783665
+<Memory 4> total: 126877696 free: 124193048 used: 2684648
+Input Pipe::Pipeline: data input by BDIO Pipe. egWordCount pipeline starting.
+
+<TIME 3>: 2018/07/04-16:09:43:668 @ 1530691783668
+<Memory 3> total: 126877696 free: 123521960 used: 3355736
+Storege Pipe::Pipeline: data storage by HBase Pipe. egWordCount pipeline starting.
+
+<TIME 2>: 2018/07/04-16:09:45:477 @ 1530691785477
+<Memory 2> total: 126877696 free: 102173648 used: 24704048
+Computation Pipe::Pipeline: data computation by Spark Pipe. egWordCount pipeline starting.
+
+<TIME 1>: 2018/07/04-16:09:48:336 @ 1530691788336
+<Memory 1> total: 187170816 free: 114735696 used: 72435120
+Output Pipe::Pipeline: data output by D3 Pipe. egWordCount pipeline starting.
+
+<TIME egWordCount end>: 2018/07/04-16:09:48:344 @ 1530691788344
+<Memory egWordCount> total: 187170816 free: 114735696 used: 72435120
+
+
+10K
+
+<TIME egWordCount start>: 2018/07/04-16:17:05:792 @ 1530692225792
+<Memory egWordCount> total: 126877696 free: 124193048 used: 2684648
+Your WordCount Pipeline on BigData DataFlow runs on your own BDMS ConfChain!
+
+<TIME 5>: 2018/07/04-16:17:05:798 @ 1530692225798
+<Memory 5> total: 126877696 free: 124193048 used: 2684648
+Control Pipe::Pipeline: data control by YARN Pipe. egWordCount pipeline starting.
+
+<TIME 4>: 2018/07/04-16:17:05:799 @ 1530692225799
+<Memory 4> total: 126877696 free: 124193048 used: 2684648
+Input Pipe::Pipeline: data input by BDIO Pipe. egWordCount pipeline starting.
+
+<TIME 3>: 2018/07/04-16:17:05:808 @ 1530692225808
+<Memory 3> total: 126877696 free: 122850872 used: 4026824
+Storege Pipe::Pipeline: data storage by HBase Pipe. egWordCount pipeline starting.
+
+<TIME 2>: 2018/07/04-16:17:09:145 @ 1530692229145
+<Memory 2> total: 126877696 free: 116716416 used: 10161280
+Computation Pipe::Pipeline: data computation by Spark Pipe. egWordCount pipeline starting.
+
+<TIME 1>: 2018/07/04-16:17:12:222 @ 1530692232222
+<Memory 1> total: 221773824 free: 129690216 used: 92083608
+Output Pipe::Pipeline: data output by D3 Pipe. egWordCount pipeline starting.
+
+<TIME egWordCount end>: 2018/07/04-16:17:12:244 @ 1530692232244
+<Memory egWordCount> total: 221773824 free: 121034288 used: 100739536
+
+
+100K
+
+<TIME egWordCount start>: 2018/07/04-16:24:49:957 @ 1530692689957
+<Memory egWordCount> total: 126877696 free: 124193048 used: 2684648
+Your WordCount Pipeline on BigData DataFlow runs on your own BDMS ConfChain!
+
+<TIME 5>: 2018/07/04-16:24:49:963 @ 1530692689963
+<Memory 5> total: 126877696 free: 124193048 used: 2684648
+Control Pipe::Pipeline: data control by YARN Pipe. egWordCount pipeline starting.
+
+<TIME 4>: 2018/07/04-16:24:49:963 @ 1530692689964
+<Memory 4> total: 126877696 free: 124193048 used: 2684648
+Input Pipe::Pipeline: data input by BDIO Pipe. egWordCount pipeline starting.
+
+<TIME 3>: 2018/07/04-16:24:50:005 @ 1530692690006
+<Memory 3> total: 126877696 free: 111211328 used: 15666368
+Storege Pipe::Pipeline: data storage by HBase Pipe. egWordCount pipeline starting.
+
+<TIME 2>: 2018/07/04-16:25:02:803 @ 1530692702803
+<Memory 2> total: 371195904 free: 176542008 used: 194653896
+Computation Pipe::Pipeline: data computation by Spark Pipe. egWordCount pipeline starting.
+
+<TIME 1>: 2018/07/04-16:25:06:170 @ 1530692706170
+<Memory 1> total: 501743616 free: 272608096 used: 229135520
+Output Pipe::Pipeline: data output by D3 Pipe. egWordCount pipeline starting.
+
+<TIME egWordCount end>: 2018/07/04-16:25:06:229 @ 1530692706229
+<Memory egWordCount> total: 501743616 free: 246834504 used: 254909112

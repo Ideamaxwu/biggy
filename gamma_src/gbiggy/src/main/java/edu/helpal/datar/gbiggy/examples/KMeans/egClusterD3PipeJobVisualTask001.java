@@ -25,7 +25,7 @@ public class egClusterD3PipeJobVisualTask001 {
 			int outlen = content.size();
 			int i = 0;
 			for (Entry<Long, String> entry : content.entrySet()) {
-				System.out.println("Generate Visual Data: " + entry.getValue());
+				//System.out.println("Generate Visual Data: " + entry.getValue());
 				bw.write("{\"name\": \"cluster" + entry.getKey() + "\",\"children\": [");
 				bw.newLine();
 				String[] points = entry.getValue().split(" ");

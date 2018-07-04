@@ -9,7 +9,7 @@ import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 public class egD3PipeJobVisual {
 	public void startVisualPage(BigData bigdata) throws IOException {
 		new fileBD(bigdata.getBD()).egClusterVisualFile("src\\main\\java\\edu\\helpal\\datar\\gbiggy\\examples\\KMeans\\res\\cluster_data.json");
-		bigdata.Show();
+		//bigdata.Show();
 		
 		Properties properties = System.getProperties();
 		String osName = properties.getProperty("os.name");

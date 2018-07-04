@@ -43,13 +43,14 @@ public class egSparkPipeJobClusterTask001 {
 	    });
 		
 		int numClusters = 4;
+		//int numClusters = 100;
 		int numIterations = 20;
 		int runTimes = 3;
 		KMeansModel clusters = KMeans.train(parsedData.rdd(), numClusters, numIterations, runTimes);
 		
 		//System.out.println(parsedData.map(p -> p.toString() + " belong to cluster: " + clusters.predict(p)).collect());
 		for (String s : parsedData.map(p -> p.toString() + " -> " + clusters.predict(p)).collect()){
-			System.out.println(s);
+			//System.out.println(s);
 			String[] kv = s.split(" -> ");
 			long v = Long.parseLong(kv[1]);
 			String k = kv[0];
@@ -62,12 +63,12 @@ public class egSparkPipeJobClusterTask001 {
 		
 		double wssse = clusters.computeCost(parsedData.rdd());
 	    System.out.println("Within Set Sum of Squared Errors = " + wssse);
-	    
+	    /*
 	    System.out.println("Cluster centers:");
 	    for (Vector center : clusters.clusterCenters()) {
 	        System.out.println(" " + center);
 	    }
-	    
+	    */
 	    jsc.stop();
 	    
 	    content = result;

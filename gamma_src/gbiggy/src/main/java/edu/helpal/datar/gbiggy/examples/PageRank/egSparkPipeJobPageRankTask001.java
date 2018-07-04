@@ -65,7 +65,7 @@ public class egSparkPipeJobPageRankTask001 {
 		List<Tuple2<String, Double>> output = ranks.collect();
 		long id = 0;
 		for (Tuple2<?, ?> tuple : output) {
-			System.out.println(tuple._1() + " has rank: " + tuple._2() + ".");
+			//System.out.println(tuple._1() + " has rank: " + tuple._2() + ".");
 			result.put(id, tuple._1() + ": " + tuple._2());
 			id++;
 		}

@@ -9,7 +9,7 @@ import edu.helpal.datar.gbiggy.framework.datamodel.BigData;
 public class egD3PipeJobVisual {
 	public void startVisualPage(BigData bigdata) throws IOException {
 		new fileBD(bigdata.getBD()).egVisualFile("src\\main\\java\\edu\\helpal\\datar\\gbiggy\\examples\\WordCount\\res\\wordcount_data.js");
-		bigdata.Show();
+		//bigdata.Show();
 		
 		Properties properties = System.getProperties();
 		String osName = properties.getProperty("os.name");

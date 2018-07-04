@@ -33,7 +33,7 @@ public abstract class AbstractPipe {
 		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS");
 		
 		if(this.level <= level && this.level != AbstractPipe.HEAD){
-			System.out.println("<TIME "+ this.level +">: "+df.format(System.currentTimeMillis()));
+			System.out.println("<TIME "+ this.level +">: "+df.format(System.currentTimeMillis())+" @ "+System.currentTimeMillis());
 			System.out.println("<Memory " + this.level +"> total: " + run.totalMemory() + " free: " + run.freeMemory() + " used: " + (run.totalMemory()-run.freeMemory()) );
 			start(message);
 		}
