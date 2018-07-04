@@ -34,7 +34,7 @@ public class egSparkPipeJobWordCountTask001 {
 		
 		long id = 0;
 		for (Tuple2<String, Integer> entry : datardd.collect()) {
-			System.out.println(entry._1 + ": " + entry._2);
+			//System.out.println(entry._1 + ": " + entry._2);
 			result.put(id, entry._1 + ": " + (long) entry._2);
 			id += 1;
 		}

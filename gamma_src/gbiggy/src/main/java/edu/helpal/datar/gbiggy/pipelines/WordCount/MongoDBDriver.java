@@ -23,7 +23,7 @@ public enum MongoDBDriver {
 	private static MongoClient mongoClient;
 
 	static {
-		System.out.println("===============MongoDBUtil初始化========================");
+		System.out.println("======= MongoDBUtil initializing =======");
 		String ip = "localhost";
 		int port = 27017;
 		MongoDBDriver.mongoClient = new MongoClient(ip, port);

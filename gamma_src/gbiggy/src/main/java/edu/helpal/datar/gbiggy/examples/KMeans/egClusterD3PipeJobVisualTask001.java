@@ -34,9 +34,9 @@ public class egClusterD3PipeJobVisualTask001 {
 				for (String p : points) {
 					j++;
 					if (j == inlen) {
-						bw.write("{\"name\": \"" + p + "\", \"size\": 5000}");
+						bw.write("{\"name\": \"" + p + "\", \"size\": 3000}");
 					} else {
-						bw.write("{\"name\": \"" + p + "\", \"size\": 5000},");
+						bw.write("{\"name\": \"" + p + "\", \"size\": 3000},");
 					}
 					bw.newLine();
 				}
