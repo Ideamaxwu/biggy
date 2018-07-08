@@ -11,3 +11,5 @@ The basic workflow of biggy is 1) read engine configuration setups; 2) start uti
 * Maven pom spark-core version should compact with spark-mllib version, others same
 
 * download, intall MongoDB and start service: C:\mongodb\bin\mongod --dbpath c:\data\db
+
+* setup HADOOP_HOME by System Environmrnt Variables or by code
