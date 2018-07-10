@@ -9,7 +9,7 @@ import com.helpal.datar.rbiggy.framework.cores.OutputWrapper;
  *
  */
  public class OutputEngineConf extends OutputWrapper{
-	 private String engineName = "Default XXX";
+	 private String engineName = "Default bEngine BDIO";
 	 private OutputEngineFactory outputEngineFactory = new OutputEngineFactory(); 
 	 
 	 public OutputEngineConf(IEngine outputEngine, String confEngineName){

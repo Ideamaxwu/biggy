@@ -24,11 +24,11 @@
 * abstract Pipeline
 * //remove Example Experiment code
 * concrete Scheduler
-* edit jobs comments
-* abstract pipes and jobs
+* //edit jobs comments
+* //abstract pipes and jobs
 * //delete WordCount example
-* add Control module into framework instance
-* update EngineFactory to switch case default
+* //add Control module into framework instance
+* //update EngineFactory to switch case default
 * update Actor and Tranform operators to invoking
 * make sense of StateMachine
 * implement clients

@@ -9,7 +9,7 @@ import com.helpal.datar.rbiggy.framework.cores.InputWrapper;
  *
  */
  public class InputEngineConf extends InputWrapper{
-	 private String engineName = "Default XXX";
+	 private String engineName = "Default bEngine BDIO";
 	 private InputEngineFactory inputEngineFactory = new InputEngineFactory(); 
 	 
 	 public InputEngineConf(IEngine inputEngine, String confEngineName){

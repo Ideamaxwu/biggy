@@ -9,7 +9,7 @@ import com.helpal.datar.rbiggy.framework.cores.ComputationWrapper;
  *
  */
  public class ComputationEngineConf extends ComputationWrapper{
-	 private String engineName = "Default XXX";
+	 private String engineName = "Default bEngine Abacus";
 	 private ComputationEngineFactory computationEngineFactory = new ComputationEngineFactory(); 
 	 
 	 public ComputationEngineConf(IEngine computationEngine, String confEngineName){

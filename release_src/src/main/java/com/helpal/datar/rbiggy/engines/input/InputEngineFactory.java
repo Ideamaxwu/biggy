@@ -1,5 +1,6 @@
 package com.helpal.datar.rbiggy.engines.input;
 
+import com.helpal.datar.rbiggy.bEngines.InputEngineBDIO;
 import com.helpal.datar.rbiggy.engines.input.AsterixDBFeed.InputEngineADBFeed;
 import com.helpal.datar.rbiggy.engines.input.Flafka.InputEngineFlafka;
 
@@ -10,18 +11,15 @@ import com.helpal.datar.rbiggy.engines.input.Flafka.InputEngineFlafka;
  */
 public class InputEngineFactory {
 	public IInputEngine getInputEngine(String engineName){
-		if(engineName == null){
-			return null;
-		}
 		
-		if(engineName.equalsIgnoreCase("Flafka")){
+		switch(engineName.toLowerCase()){
+		case "Flafka":
 			return new InputEngineFlafka();
-		}
-		
-		if(engineName.equalsIgnoreCase("ADBFeed")){
+		case "ADBFeed":
 			return new InputEngineADBFeed();
+		default:
+			System.out.println("NO customized InputEngine or UNAVAILABLE customized InputEngine!");
+			return new InputEngineBDIO();
 		}
-		
-		return null;
 	}
 }

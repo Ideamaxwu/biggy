@@ -9,7 +9,7 @@ import com.helpal.datar.rbiggy.framework.cores.StorageWrapper;
  *
  */
  public class StorageEngineConf extends StorageWrapper{
-	 private String engineName = "Default XXX";
+	 private String engineName = "Default bEngine Oracle";
 	 private StorageEngineFactory storageEngineFactory = new StorageEngineFactory(); 
 	 
 	 public StorageEngineConf(IEngine storageEngine, String confEngineName){
