@@ -14,6 +14,22 @@
 
 * Ready to rELEASE
 
+# Code Structures
+	bigo		- biggy instance, assembling BusKeeper, JetBrain, Server
+	clients		- interactive Web/Desktop clients
+	engines		- runtime Input/Storage/Computation/Control/Output execution engines, e.g., Spark, HBase
+	bEngines	- new original engines for biggy, including BDIO, Oracle, Abacus
+	framework	- biggy framework including
+					- cores: engine-wrapper-related classes 
+					- datamodel: data model BigData based on proactor with Action and Transform
+					- inception: compiler-like Inception, job-schedule-like Dispatcher 
+					- pipeline: dataflow among engines
+					- scripts: scripts to run runtime engine after pipeline
+					- utils: deployment settings EngineConfig, context information manager BusKeeper, self-driving intelligent JetBrain, NettyNet
+	pipelines	- customized pipes, jobs and utils
+	SDKs		- SDKs for developer users, e.g., Python
+	examples	- examples for using biggy, WordCount, Sort, KMeans, PageRank
+	
 # changes
 
 * //put BusKeeper, JetBrain into InstanceBDMS
