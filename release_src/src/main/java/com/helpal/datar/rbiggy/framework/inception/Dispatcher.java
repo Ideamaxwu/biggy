@@ -2,6 +2,7 @@ package com.helpal.datar.rbiggy.framework.inception;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 
@@ -13,8 +14,8 @@ public class Dispatcher {
 	void Dispatch(String engineName, String jobName, String job){
 		//TODO dispatch
 		commandParse(job);
-		dispatchPoolTest();
 		System.out.println("Dispatching Job " + jobName +" to Engine " + engineName);
+		dispatchPoolTest();
 	}
 	
 	void dispatchPoolTest(){
@@ -36,6 +37,13 @@ public class Dispatcher {
 		
 		pool.shutdown();
 		
+		try {
+			pool.awaitTermination(60, TimeUnit.SECONDS);
+			System.out.println("ExecutorService finished.");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	void commandParse(String job){
