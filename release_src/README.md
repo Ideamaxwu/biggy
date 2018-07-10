@@ -34,3 +34,7 @@
 * implement clients
 * //update comments in Examples
 * //fix bugs in Examples
+
+# References
+
+[#100DaysOfCode](http://100daysofcode.com/)
