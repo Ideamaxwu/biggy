@@ -28,19 +28,27 @@ public class CliClient {
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));  
             BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in)); 
             String userInput;  
-            while ((userInput = stdIn.readLine()) != null) {  
-            	out.println(userInput);  
-            	System.out.println(in.readLine()); 
-            	System.out.print("client> ");
-            	if(userInput.equalsIgnoreCase("quit")){
+            String line;
+            boolean runState = true;
+            while ((userInput = stdIn.readLine()) != null && runState) {  
+            	out.println(userInput);
+            	while(!(line = in.readLine()).equals("SENDR"))
+            		System.out.println(line); 
+            	switch(userInput.toLowerCase()){
+            	case "quit":
             		System.out.print("client closed.");
             		clientSocket.close();
+            		runState = false;
             		break;
-            	}
-            	if(userInput.equalsIgnoreCase("cmd")){
-            		System.out.print("starting command console...");
+            	case "cmd":
+            		System.out.println("starting Inception console...");
             		Inception incp = new Inception();
                 	incp.start();
+                	System.out.print("client> ");
+            		break;
+            	default:
+            		System.out.print("client> ");
+            		break;
             	}
             }
 		} catch(UnknownHostException e){

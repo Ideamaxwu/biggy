@@ -24,24 +24,24 @@ public class Examples {
 		*/
 		
 		//example sort
-		
+		/*
 		System.out.println("<TIME egSort start>: "+df.format(System.currentTimeMillis())+" @ "+System.currentTimeMillis());
 		System.out.println("<Memory egSort> total: " + run.totalMemory() + " free: " + run.freeMemory() + " used: " + (run.totalMemory()-run.freeMemory()) );
 		egSort egSort = new egSort();
 		egSort.run();	
 		System.out.println("<TIME egSort end>: "+df.format(System.currentTimeMillis())+" @ "+System.currentTimeMillis());
 		System.out.println("<Memory egSort> total: " + run.totalMemory() + " free: " + run.freeMemory() + " used: " + (run.totalMemory()-run.freeMemory()) );
-		
+		*/
 		
 		//example kmeans
-		
+		/*
 		System.out.println("<TIME egKMeans start>: "+df.format(System.currentTimeMillis())+" @ "+System.currentTimeMillis());
 		System.out.println("<Memory egKMeans> total: " + run.totalMemory() + " free: " + run.freeMemory() + " used: " + (run.totalMemory()-run.freeMemory()) );
 		egKMeans egKMeans = new egKMeans();
 		egKMeans.run();
 		System.out.println("<TIME egKMeans end>: "+df.format(System.currentTimeMillis())+" @ "+System.currentTimeMillis());
 		System.out.println("<Memory egKMeans> total: " + run.totalMemory() + " free: " + run.freeMemory() + " used: " + (run.totalMemory()-run.freeMemory()) );
-		
+		*/
 		
 		//example pagerank
 		/*

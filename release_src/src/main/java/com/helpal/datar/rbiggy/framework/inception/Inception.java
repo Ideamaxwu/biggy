@@ -17,6 +17,7 @@ public class Inception
 		 dp = new Dispatcher();
 		 System.out.println(">>>>>>biggy Console<<<<<<");
 		 prompt = "Please input your command: > ";
+		 String cmdPrompts = "TRY: input \t store \t compute \t control \t output \t or quit";
 		 sc = new Scanner(System.in); 
 		 System.out.print(prompt);
 		 String cmdLine = sc.nextLine().toLowerCase();
@@ -55,7 +56,7 @@ public class Inception
 			 default:
 				 System.out.println("Invalid Command!");
 				 //TODO processing
-				 
+				 System.out.println(cmdPrompts);
 				 System.out.print(prompt);
 				 break;
 			 }
