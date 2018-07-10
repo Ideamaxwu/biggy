@@ -14,14 +14,14 @@ public class Examples {
 		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS");
 
 		//example wordcount
-		/*
+		
 		System.out.println("<TIME egWordCount start>: "+df.format(System.currentTimeMillis())+" @ "+System.currentTimeMillis());
 		System.out.println("<Memory egWordCount> total: " + run.totalMemory() + " free: " + run.freeMemory() + " used: " + (run.totalMemory()-run.freeMemory()) );
 		egWordCount egWordCount = new egWordCount();
 		egWordCount.run();
 		System.out.println("<TIME egWordCount end>: "+df.format(System.currentTimeMillis())+" @ "+System.currentTimeMillis());
 		System.out.println("<Memory egWordCount> total: " + run.totalMemory() + " free: " + run.freeMemory() + " used: " + (run.totalMemory()-run.freeMemory()) );
-		*/
+		
 		
 		//example sort
 		/*

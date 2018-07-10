@@ -8,8 +8,6 @@ import com.helpal.datar.rbiggy.bigo.InstanceBDMS;
 import com.helpal.datar.rbiggy.framework.utils.EngineConfig;
 import com.helpal.datar.rbiggy.framework.utils.BusKeeper;
 import com.helpal.datar.rbiggy.framework.utils.JetBrain;
-import com.helpal.datar.rbiggy.framework.inception.Inception;
-import com.helpal.datar.rbiggy.framework.pipeline.Pipeline;
 
 import com.helpal.datar.rbiggy.framework.cores.IEngine;
 import com.helpal.datar.rbiggy.framework.cores.ControlEngine;
@@ -24,6 +22,9 @@ import com.helpal.datar.rbiggy.framework.cores.ComputationEngine;
 import com.helpal.datar.rbiggy.engines.computation.ComputationEngineConf;
 import com.helpal.datar.rbiggy.framework.cores.OutputEngine;
 import com.helpal.datar.rbiggy.engines.output.OutputEngineConf;
+
+import com.helpal.datar.rbiggy.framework.pipeline.Pipeline;
+import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 /**
  * @author HelPal 1deamaxwu
@@ -99,16 +100,17 @@ public class biggy
     	System.out.println("\n->->->   show Info");
     	bigo.showInfo();
     	
-    	//start Inception cmd line
-    	System.out.println("\n->->->   start Inception");
-    	Inception incp = new Inception();
-    	//incp.start();
-    	incp.init();
-    	
     	//run pipeline model
     	System.out.println("\n->->->   start Pipeline");
     	Pipeline pipeline = new Pipeline();
     	pipeline.run();
+    	
+    	//data model
+    	System.out.println("\n->->->   BigData Model");
+    	BigData bigdata = new BigData("BigData");
+    	bigdata.Show();
+    	bigdata.Tansform("upperCase");
+    	bigdata.Show();
     	
     	//start bigo server
     	System.out.println("\n->->->   start bigo server");

@@ -32,5 +32,5 @@
 * update Actor and Tranform operators to invoking
 * make sense of StateMachine
 * implement clients
-* update comments in Examples
-* fix bugs in Examples
+* //update comments in Examples
+* //fix bugs in Examples
