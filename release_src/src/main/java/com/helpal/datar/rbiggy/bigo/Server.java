@@ -52,6 +52,7 @@ public class Server {
 						out.println("server closed.");
 						serverSocket.close();
 						runState = false;
+						clear();
 						break;
 					case "info":
 						//System.out.println(context.getContext().toString());
@@ -77,5 +78,14 @@ public class Server {
 					"Exception caught when trying to listen on port " + port + " or listening for a connection");
 			System.out.println(e.getMessage());
 		}
+	}
+	
+	public void clear(){
+		//buskeeper info
+    	System.out.println("\n->->->   close ALL");
+    	this.context.setContext("endTime", new Date().toString());
+    	System.out.println("biggy Context: " + this.context.getContext().toString());
+    	//close buskeeper
+    	this.context.close();
 	}
 }

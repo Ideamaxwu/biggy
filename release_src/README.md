@@ -16,7 +16,7 @@
 
 # changes
 
-* put BusKeeper, JetBrain into InstanceBDMS
+* //put BusKeeper, JetBrain into InstanceBDMS
 * put addEngine into ConfChain
 * concrete HeartBeat
 * concrete NettyNet

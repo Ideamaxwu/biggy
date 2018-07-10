@@ -4,8 +4,10 @@ import java.util.List;
 
 import com.helpal.datar.rbiggy.framework.cores.IEngine;
 import com.helpal.datar.rbiggy.framework.utils.BusKeeper;
+import com.helpal.datar.rbiggy.framework.utils.JetBrain;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * 
@@ -30,9 +32,19 @@ public class InstanceBDMS {
 		}
 		return instance;
 	}
-	
-	public void bundleContext(BusKeeper bk){
+	//BusKeeper
+	public void bundleContext(){
+		System.out.println("\n->->->   start BusKeeper");
+		BusKeeper bk = new BusKeeper();
+		bk.start();
+		bk.setContext("startTime", new Date().toString());
 		this.bk = bk;
+	}
+	//JetBrain
+	public void startIntelySys(){
+		System.out.println("\n->->->   start JetBrain");
+		JetBrain jb = new JetBrain();
+		jb.start();
 	}
 	public void addEngine(IEngine engine) {
 		engine.start();

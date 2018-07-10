@@ -1,14 +1,11 @@
 package com.helpal.datar.rbiggy.bigo;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 import com.helpal.datar.rbiggy.bigo.InstanceBDMS;
-import com.helpal.datar.rbiggy.framework.utils.EngineConfig;
-import com.helpal.datar.rbiggy.framework.utils.BusKeeper;
-import com.helpal.datar.rbiggy.framework.utils.JetBrain;
 
+import com.helpal.datar.rbiggy.framework.utils.EngineConfig;
 import com.helpal.datar.rbiggy.framework.cores.IEngine;
 import com.helpal.datar.rbiggy.framework.cores.ControlEngine;
 import com.helpal.datar.rbiggy.engines.control.ha.ControlEngineZooKeeper;
@@ -24,6 +21,7 @@ import com.helpal.datar.rbiggy.framework.cores.OutputEngine;
 import com.helpal.datar.rbiggy.engines.output.OutputEngineConf;
 
 import com.helpal.datar.rbiggy.framework.pipeline.Pipeline;
+
 import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 /**
@@ -41,24 +39,14 @@ public class biggy
         EngineConfig conf = new EngineConfig();
 		Map<String, String> engineMap = new HashMap<String, String>();
 		engineMap = conf.getEngineConf();
-    	
-		//bus keeper
-		System.out.println("\n->->->   start BusKeeper");
-		BusKeeper bk = new BusKeeper();
-		bk.start();
-		bk.setContext("startTime", new Date().toString());
-				
-		//jet brain
-		System.out.println("\n->->->   start JetBrain");
-		JetBrain jb = new JetBrain();
-		jb.start();
-				
+	
     	//start instance
 		System.out.println("\n->->->   start Bigo");
     	InstanceBDMS bigo = InstanceBDMS.getInstance();
     	//test instance duplicate
     	InstanceBDMS.getInstance();
-    	bigo.bundleContext(bk);
+    	bigo.bundleContext();
+    	bigo.startIntelySys();
     	
     	//add Control module
     	System.out.println("\n->->->   add Control fisrt");
@@ -115,12 +103,5 @@ public class biggy
     	//start bigo server
     	System.out.println("\n->->->   start bigo server");
     	bigo.startServer();
-    	
-    	//buskeeper info
-    	System.out.println("\n->->->   close ALL");
-    	bk.setContext("endTime", new Date().toString());
-    	System.out.println("biggy Context: " + bk.getContext().toString());
-    	//close buskeeper
-    	bk.close();
     }
 }
