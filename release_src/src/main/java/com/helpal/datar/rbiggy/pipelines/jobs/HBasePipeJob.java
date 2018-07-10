@@ -23,7 +23,7 @@ public class HBasePipeJob {
 		try {
 			bpjw = Class.forName(cls);
 			obj = bpjw.getConstructor().newInstance(); 
-			Method meth = bpjw.getMethod("startWriteFile", BigData.class);
+			Method meth = bpjw.getMethod("startWriteDB", BigData.class);
 			meth.invoke(obj, bigdata);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

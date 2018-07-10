@@ -23,7 +23,7 @@ public class SparkPipeJob {
 		try {
 			spwc = Class.forName(cls);
 			obj = spwc.getConstructor().newInstance(); 
-			Method meth = spwc.getMethod("startWordCount", BigData.class);
+			Method meth = spwc.getMethod("startCompute", BigData.class);
 			meth.invoke(obj, bigdata);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
