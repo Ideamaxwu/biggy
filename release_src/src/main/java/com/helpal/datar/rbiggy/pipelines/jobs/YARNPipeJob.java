@@ -1,7 +1,7 @@
 package com.helpal.datar.rbiggy.pipelines.jobs;
 
 import com.helpal.datar.rbiggy.framework.datamodel.BigData;
-import com.helpal.datar.rbiggy.pipelines.WordCount.YARNPipeJobResConf;
+import com.helpal.datar.rbiggy.pipelines.utils.YARNPipeJobResConf;
 
 /**
  * 

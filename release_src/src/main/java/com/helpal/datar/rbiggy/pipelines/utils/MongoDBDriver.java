@@ -1,4 +1,4 @@
-package com.helpal.datar.rbiggy.pipelines.WordCount;
+package com.helpal.datar.rbiggy.pipelines.utils;
 
 import org.bson.Document;
 import com.mongodb.MongoClient;

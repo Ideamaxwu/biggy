@@ -1,4 +1,4 @@
-package com.helpal.datar.rbiggy.pipelines.WordCount;
+package com.helpal.datar.rbiggy.pipelines.utils;
 
 import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
