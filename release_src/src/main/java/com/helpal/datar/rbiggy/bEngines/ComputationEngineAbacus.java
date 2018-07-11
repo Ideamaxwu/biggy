@@ -8,11 +8,15 @@ import com.helpal.datar.rbiggy.engines.computation.IComputationEngine;
  *
  */
 public class ComputationEngineAbacus implements IComputationEngine{
-
+	private String engineName = "Abacus";
 	@Override
 	public void setup() {
 		//TODO setup
 		System.out.println("setup ComputationEngine as bEngine Abacus.");
+	}
+	@Override
+	public String getEngineName() {
+		return engineName;
 	}
 
 }

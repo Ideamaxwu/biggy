@@ -1,4 +1,4 @@
-package com.helpal.datar.rbiggy.framework.utils;
+package com.helpal.datar.rbiggy.framework.confchain.chain;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -19,7 +19,7 @@ import java.io.*;
 		 ClassLoader classLoader = new EngineConfig().getClass().getClassLoader();
 		 File confFile = new File(classLoader.getResource(fileName).getFile());
 		 BufferedReader br = null;
-		 System.out.println("******biggy Configuration Info******");
+		 System.out.println("-----biggy Configuration Info-----");
 		 try{
 			 br = new BufferedReader(new FileReader(confFile));
 			 String line;

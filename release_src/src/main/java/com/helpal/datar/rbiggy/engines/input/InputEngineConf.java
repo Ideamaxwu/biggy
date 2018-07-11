@@ -1,7 +1,7 @@
 package com.helpal.datar.rbiggy.engines.input;
 
-import com.helpal.datar.rbiggy.framework.cores.IEngine;
-import com.helpal.datar.rbiggy.framework.cores.InputWrapper;
+import com.helpal.datar.rbiggy.framework.confchain.cores.IEngine;
+import com.helpal.datar.rbiggy.framework.confchain.cores.InputWrapper;
 
 /**
  * 
@@ -28,7 +28,7 @@ import com.helpal.datar.rbiggy.framework.cores.InputWrapper;
 	 private void setInputEngine(){
 		 IInputEngine inputEngine = inputEngineFactory.getInputEngine(engineName);
 		 inputEngine.setup();
-		 System.out.println("Add Input Engine: " + engineName + ".");
+		 System.out.println("Add Input Engine: " + inputEngine.getEngineName() + ".");
 	 }
 	 
 	 public String getEngineName(){

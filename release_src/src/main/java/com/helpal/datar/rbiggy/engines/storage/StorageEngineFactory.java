@@ -10,11 +10,11 @@ import com.helpal.datar.rbiggy.engines.storage.HBase.StorageEngineHBase;
  */
 public class StorageEngineFactory {
 	public IStorageEngine getStorageEngine(String engineName){
-		switch(engineName.toLowerCase()){
+		switch(engineName){
 		case "HBase":
 			return new StorageEngineHBase();
 		default:
-			System.out.println("NO customized StorageEngine or UNAVAILABLE customized StorageEngine!");
+			System.out.println("NO customized StorageEngine or UNAVAILABLE customized StorageEngine as " + engineName +"!");
 			return new StorageEngineOracle();
 		}
 	}

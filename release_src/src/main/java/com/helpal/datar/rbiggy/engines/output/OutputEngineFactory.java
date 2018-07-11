@@ -10,11 +10,11 @@ import com.helpal.datar.rbiggy.engines.output.D3.OutputEngineD3;
  */
 public class OutputEngineFactory {
 	public IOutputEngine getOutputEngine(String engineName){
-		switch(engineName.toLowerCase()){
+		switch(engineName){
 		case "D3":
 			return new OutputEngineD3();
 		default:
-			System.out.println("NO customized OutputEngine or UNAVAILABLE customized OutputEngine!");
+			System.out.println("NO customized OutputEngine or UNAVAILABLE customized OutputEngine as " + engineName +"!");
 			return new OutputEngineBDIO();
 		}
 	}

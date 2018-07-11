@@ -10,11 +10,11 @@ import com.helpal.datar.rbiggy.engines.computation.Spark.ComputationEngineSpark;
  */
 public class ComputationEngineFactory {
 	public IComputationEngine getComputationEngine(String engineName){
-		switch(engineName.toLowerCase()){
+		switch(engineName){
 		case "Spark":
 			return new ComputationEngineSpark();
 		default:
-			System.out.println("NO customized ComputationEngine or UNAVAILABLE customized ComputationEngine!");
+			System.out.println("NO customized ComputationEngine or UNAVAILABLE customized ComputationEngine as " + engineName +"!");
 			return new ComputationEngineAbacus();
 		}
 	}

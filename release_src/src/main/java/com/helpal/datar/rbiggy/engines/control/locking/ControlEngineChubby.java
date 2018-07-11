@@ -1,7 +1,7 @@
 package com.helpal.datar.rbiggy.engines.control.locking;
 
-import com.helpal.datar.rbiggy.framework.cores.ControlWrapper;
-import com.helpal.datar.rbiggy.framework.cores.IEngine;
+import com.helpal.datar.rbiggy.framework.confchain.cores.ControlWrapper;
+import com.helpal.datar.rbiggy.framework.confchain.cores.IEngine;
 
 /**
  * 

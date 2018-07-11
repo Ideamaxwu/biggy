@@ -7,4 +7,5 @@ package com.helpal.datar.rbiggy.engines.storage;
  */
 public interface IStorageEngine {
 	void setup();
+	String getEngineName();
 }

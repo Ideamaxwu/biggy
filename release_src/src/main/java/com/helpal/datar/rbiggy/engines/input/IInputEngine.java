@@ -7,4 +7,5 @@ package com.helpal.datar.rbiggy.engines.input;
  */
 public interface IInputEngine {
 	void setup();
+	String getEngineName();
 }

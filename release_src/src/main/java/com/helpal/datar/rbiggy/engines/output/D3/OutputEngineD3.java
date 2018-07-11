@@ -8,10 +8,14 @@ import com.helpal.datar.rbiggy.engines.output.IOutputEngine;
  *
  */
 public class OutputEngineD3 implements IOutputEngine{
-
+	private String engineName = "BDIO";
 	@Override
 	public void setup() {
 		//TODO setup
 		System.out.println("setup OutputEngine as D3.");
+	}
+	@Override
+	public String getEngineName() {
+		return engineName;
 	}
 }

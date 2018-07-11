@@ -8,11 +8,15 @@ import com.helpal.datar.rbiggy.engines.input.IInputEngine;
  *
  */
 public class InputEngineADBFeed implements IInputEngine{
-
+	private String engineName = "ADBFeed";
 	@Override
 	public void setup() {
 		//TODO setup
 		System.out.println("setup InputEngine as AsterixDB Feed.");
 	}
 
+	@Override
+	public String getEngineName() {
+		return engineName;
+	}
 }

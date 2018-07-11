@@ -1,7 +1,7 @@
 package com.helpal.datar.rbiggy.engines.computation;
 
-import com.helpal.datar.rbiggy.framework.cores.IEngine;
-import com.helpal.datar.rbiggy.framework.cores.ComputationWrapper;
+import com.helpal.datar.rbiggy.framework.confchain.cores.ComputationWrapper;
+import com.helpal.datar.rbiggy.framework.confchain.cores.IEngine;
 
 /**
  * 
@@ -28,7 +28,7 @@ import com.helpal.datar.rbiggy.framework.cores.ComputationWrapper;
 	 private void setComputationEngine(){
 		 IComputationEngine computationEngine = computationEngineFactory.getComputationEngine(engineName);
 		 computationEngine.setup();
-		 System.out.println("Add Computation Engine: " + engineName + ".");
+		 System.out.println("Add Computation Engine: " + computationEngine.getEngineName() + ".");
 	 }
 	 
 	 public String getEngineName(){

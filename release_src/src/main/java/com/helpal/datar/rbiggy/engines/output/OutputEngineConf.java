@@ -1,7 +1,7 @@
 package com.helpal.datar.rbiggy.engines.output;
 
-import com.helpal.datar.rbiggy.framework.cores.IEngine;
-import com.helpal.datar.rbiggy.framework.cores.OutputWrapper;
+import com.helpal.datar.rbiggy.framework.confchain.cores.IEngine;
+import com.helpal.datar.rbiggy.framework.confchain.cores.OutputWrapper;
 
 /**
  * 
@@ -28,7 +28,7 @@ import com.helpal.datar.rbiggy.framework.cores.OutputWrapper;
 	 private void setOutputEngine(){
 		 IOutputEngine outputEngine = outputEngineFactory.getOutputEngine(engineName);
 		 outputEngine.setup();
-		 System.out.println("Add Output Engine: " + engineName + ".");
+		 System.out.println("Add Output Engine: " + outputEngine.getEngineName() + ".");
 	 }
 	 
 	 public String getEngineName(){

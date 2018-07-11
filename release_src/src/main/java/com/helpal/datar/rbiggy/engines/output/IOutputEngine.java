@@ -7,4 +7,5 @@ package com.helpal.datar.rbiggy.engines.output;
  */
 public interface IOutputEngine {
 	void setup();
+	String getEngineName();
 }

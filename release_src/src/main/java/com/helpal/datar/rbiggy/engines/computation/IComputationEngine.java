@@ -7,4 +7,5 @@ package com.helpal.datar.rbiggy.engines.computation;
  */
 public interface IComputationEngine {
 	void setup();
+	String getEngineName();
 }

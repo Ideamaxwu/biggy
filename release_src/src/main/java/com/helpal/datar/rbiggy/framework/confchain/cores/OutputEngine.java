@@ -1,4 +1,4 @@
-package com.helpal.datar.rbiggy.framework.cores;
+package com.helpal.datar.rbiggy.framework.confchain.cores;
 
 /**
  * 

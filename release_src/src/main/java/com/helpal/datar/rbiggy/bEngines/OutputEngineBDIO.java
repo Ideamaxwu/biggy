@@ -8,10 +8,14 @@ import com.helpal.datar.rbiggy.engines.output.IOutputEngine;
  *
  */
 public class OutputEngineBDIO implements IOutputEngine{
-
+	private String engineName = "BDIO";
 	@Override
 	public void setup() {
 		//TODO setup
 		System.out.println("setup OutputEngine as bEngine BDIO.");
+	}
+	@Override
+	public String getEngineName() {
+		return engineName;
 	}
 }
