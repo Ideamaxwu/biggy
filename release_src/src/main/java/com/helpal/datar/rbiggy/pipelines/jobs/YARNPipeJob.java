@@ -5,12 +5,12 @@ import com.helpal.datar.rbiggy.pipelines.utils.YARNPipeJobResConf;
 
 /**
  * 
- * YARN Pipe Job for WordCount
+ * YARN Pipe Job for Examples
  *
  */
 public class YARNPipeJob {
 	public void submit(BigData bigdata){
-		System.out.println("submitting WordCount control job on yarn...");
+		System.out.println("submitting Examples control job on yarn...");
 		System.out.println("  innner Loooooooooooooooo");
 		YARNPipeJobResConf yprs = new YARNPipeJobResConf();
 		

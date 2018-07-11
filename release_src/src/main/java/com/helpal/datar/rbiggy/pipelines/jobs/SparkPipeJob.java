@@ -6,13 +6,13 @@ import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 /**
  * 
- * Spark Pipe Job for WordCount
+ * Spark Pipe Job for Examples
  *
  */
 public class SparkPipeJob {
 	
 	public void submit(BigData bigdata, String cls){
-		System.out.println("submitting WordCount computation job on spark...");
+		System.out.println("submitting Examples computation job on spark...");
 		System.out.println("  innner Loooooooooooooooo");
 		
 		//SparkPipeJobWordCount spwc = new SparkPipeJobWordCount();

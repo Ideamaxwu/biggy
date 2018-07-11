@@ -6,13 +6,13 @@ import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 /**
  * 
- * HBase Pipe Job for WordCount
+ * HBase Pipe Job for Examples
  *
  */
 public class HBasePipeJob {
 
 	public void submit(BigData bigdata, String cls){
-		System.out.println("submitting WordCount storage job on hbase...");
+		System.out.println("submitting Examples storage job on hbase...");
 		System.out.println("  innner Loooooooooooooooo");
 		
 		//HBasePipeJobWriteDB bpjw = new HBasePipeJobWriteDB();

@@ -6,12 +6,12 @@ import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 /**
  * 
- * BDIO Pipe Job for WordCount
+ * BDIO Pipe Job for Examples
  *
  */
 public class BDIOPipeJob {
 	public void submit(BigData bigdata, String cls){
-		System.out.println("submitting WordCount input job on bdio...");
+		System.out.println("submitting Examples input job on bdio...");
 		
 		System.out.println("  innner Loooooooooooooooo");
 		//BDIOPipeJobReadFile bpjr = new BDIOPipeJobReadFile();

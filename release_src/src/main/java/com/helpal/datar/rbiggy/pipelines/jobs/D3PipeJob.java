@@ -6,13 +6,13 @@ import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 /**
  * 
- * D3 Pipe Job for WordCount
+ * D3 Pipe Job for Examples
  *
  */
 public class D3PipeJob {
 	
 	public void submit(BigData bigdata, String cls){
-		System.out.println("submitting WordCount output job on d3...");
+		System.out.println("submitting Examples output job on d3...");
 		System.out.println("  inner Loooooooooooooooo");
 		
 		/*

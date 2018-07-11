@@ -39,7 +39,7 @@ public class biggy
     	System.out.println("\n->->->   BigData Model");
     	BigData bigdata = new BigData("BigData");
     	bigdata.Show();
-    	bigdata.Tansform("upperCase");
+    	bigdata.Tansform("upperCase", null);
     	bigdata.Show();
     	
     	//start bigo server

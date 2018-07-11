@@ -37,7 +37,7 @@
 * concrete HeartBeat
 * concrete NettyNet
 * //delete or reconstruct Inception package, or move it into CliClient
-* abstract Pipeline
+* //abstract Pipeline
 * //remove Example Experiment code
 * concrete Scheduler
 * //edit jobs comments
@@ -50,6 +50,7 @@
 * implement clients
 * //update comments in Examples
 * //fix bugs in Examples
+* connect ConfChain, Pipeline and BigData
 
 # References
 

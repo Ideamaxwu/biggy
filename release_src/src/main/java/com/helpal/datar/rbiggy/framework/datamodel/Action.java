@@ -1,11 +1,8 @@
 package com.helpal.datar.rbiggy.framework.datamodel;
 
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.helpal.datar.rbiggy.examples.KMeans.egSparkPipeJobClusterTask001;
-import com.helpal.datar.rbiggy.examples.PageRank.egSparkPipeJobPageRankTask001;
-import com.helpal.datar.rbiggy.examples.WordCount.egSparkPipeJobWordCountTask001;
 
 /**
  * 
@@ -33,21 +30,58 @@ public class Action {
 		return content;
 	} 
 	
-	public Map<Long, String> WordCount(Map<Long, String> content){
+	public Map<Long, String> WordCount(Map<Long, String> content, String cls){
 		System.out.println("/***   Spark WordCount Action   ***/");
-		content = new egSparkPipeJobWordCountTask001().run(content);
+		//content = new egSparkPipeJobWordCountTask001().run(content);
+		Class<?> wc;
+		Object obj;
+		try {
+			wc = Class.forName(cls);
+			obj = wc.getConstructor().newInstance(); 
+			Method meth = wc.getMethod("run", Map.class);
+			Object result = meth.invoke(obj, content);
+			content = (Map<Long, String>) result;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		return content;
 	}
 	
-	public Map<Long, String> Cluster(Map<Long, String> content){
+	public Map<Long, String> Cluster(Map<Long, String> content, String cls){
 		System.out.println("/***   Spark Cluster Action   ***/");
-		content = new egSparkPipeJobClusterTask001().run(content);
+		//content = new egSparkPipeJobClusterTask001().run(content);
+		Class<?> clus;
+		Object obj;
+		try {
+			clus = Class.forName(cls);
+			obj = clus.getConstructor().newInstance(); 
+			Method meth = clus.getMethod("run", Map.class);
+			Object result = meth.invoke(obj, content);
+			content = (Map<Long, String>) result;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return content;
 	}
 
-	public Map<Long, String> PageRank(Map<Long, String> content) {
+	public Map<Long, String> PageRank(Map<Long, String> content, String cls) {
 		System.out.println("/***   Spark PageRank Action   ***/");
-		content = new egSparkPipeJobPageRankTask001().run(content);
+		//content = new egSparkPipeJobPageRankTask001().run(content);
+		Class<?> pr;
+		Object obj;
+		try {
+			pr = Class.forName(cls);
+			obj = pr.getConstructor().newInstance(); 
+			Method meth = pr.getMethod("run", Map.class);
+			Object result = meth.invoke(obj, content);
+			content = (Map<Long, String>) result;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return content;
 	}
 

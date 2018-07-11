@@ -5,7 +5,7 @@ import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 public class egSparkPipeJobPageRank {
 	public void startCompute(BigData bigdata) {
-		bigdata.Action("PageRank");
+		bigdata.Action("PageRank", "com.helpal.datar.rbiggy.examples.PageRank.egSparkPipeJobPageRankTask001");
     	new fileBD(bigdata.getBD()).WriteToFile("src\\main\\java\\com\\helpal\\datar\\rbiggy\\examples\\PageRank\\data\\egGraph_PR.txt");
     	bigdata.Show();
 	}

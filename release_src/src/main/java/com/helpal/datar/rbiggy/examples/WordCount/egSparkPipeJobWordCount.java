@@ -5,7 +5,7 @@ import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 public class egSparkPipeJobWordCount {
 	public void startCompute(BigData bigdata) {
-		bigdata.Action("WordCount");
+		bigdata.Action("WordCount", "com.helpal.datar.rbiggy.examples.WordCount.egSparkPipeJobWordCountTask001");
     	new fileBD(bigdata.getBD()).WriteToFile("src\\main\\java\\com\\helpal\\datar\\rbiggy\\examples\\WordCount\\data\\egDBcount_count.txt");
     	bigdata.Show();
 	}

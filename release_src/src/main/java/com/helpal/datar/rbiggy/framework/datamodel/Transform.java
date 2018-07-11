@@ -17,8 +17,8 @@ import java.util.Map.Entry;
  */
 public class Transform {
 
-	public Map<Long, String> Sort(Map<Long, String> content) {
-		
+	public Map<Long, String> Sort(Map<Long, String> content, String cls) {
+		System.out.println("/***   Aabcus Sort Action   ***/");
 		Map<Long, String> resultMap = sortMapByValue(content); 
 		long id = 0;
 		

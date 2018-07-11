@@ -19,15 +19,15 @@ public class BigData {
 		linage.add(this);
 	}
 	
-	public BigData Tansform(String transformOperator){
-		System.out.println("BigData::Transform::" + transformOperator);
-		bigdata = new DataReactor(this, "Transform", transformOperator).eventReturn(transformOperator);
+	public BigData Tansform(String transformOperator, String cls){
+		System.out.println("BigData::Transform::" + transformOperator + " with " + cls);
+		bigdata = new DataReactor(this, "Transform", transformOperator, cls).eventReturn(transformOperator);
 		return bigdata;
 	}
 	
-	public BigData Action(String actionOperator){
-		System.out.println("BigData::Action::" + actionOperator);
-		bigdata = new DataReactor(this, "Action", actionOperator).eventReturn(actionOperator);
+	public BigData Action(String actionOperator, String cls){
+		System.out.println("BigData::Action::" + actionOperator + " with " + cls);
+		bigdata = new DataReactor(this, "Action", actionOperator, cls).eventReturn(actionOperator);
 		return bigdata;
 	}
 	
