@@ -34,32 +34,39 @@ public class DataReactor {
 	
 	void eventProcess(String Operator, String cls){
 		System.out.println(Operator + " event processing...");
-
+		switch(Operator){
+		
 		//Action Operator
-		if(Operator.equals("addData")){
+		case "addData":
 			this.bigdata.info += " add this texts";
-		}
-		if(Operator.equals("Count")){
+			break;
+		case "Count":
 			this.bigdata.content = new Action().Count(this.bigdata.content);
-		}
-		if(Operator.equals("WordCount")){
+			break;
+		case "WordCount":
 			this.bigdata.content = new Action().WordCount(this.bigdata.content, cls);
-		}
-		if(Operator.equals("Cluster")){
+			break;
+		case "Cluster":
 			this.bigdata.content = new Action().Cluster(this.bigdata.content, cls);
-		}
-		if(Operator.equals("PageRank")){
+			break;
+		case "PageRank":
 			this.bigdata.content = new Action().PageRank(this.bigdata.content, cls);
-		}
+			break;
+		
 		//Transform Operator
-		if(Operator.equals("upperCase")){
+		case "upperCase":
 			this.bigdata.info = this.bigdata.info.toUpperCase();
-		}
-		if(Operator.equals("Sort")){
-			this.bigdata.content = new Transform().Sort(this.bigdata.content,cls);
-		}
-		if(Operator.equals("Filter")){
-			this.bigdata.content = new Transform().Filter(this.bigdata.content, "AsterixDB");
+			break;
+		case "Sort":
+			this.bigdata.content = new Transform().Sort(this.bigdata.content, cls);
+			break;
+		case "Filter":
+			this.bigdata.content = new Transform().Filter(this.bigdata.content, cls);
+			break;
+			
+		default:
+			System.err.println("NO such operator as " + Operator + "!");
+			break;
 		}
 	}
 	

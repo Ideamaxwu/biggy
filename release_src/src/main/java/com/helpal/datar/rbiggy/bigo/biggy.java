@@ -41,6 +41,8 @@ public class biggy
     	bigdata.Show();
     	bigdata.Tansform("upperCase", null);
     	bigdata.Show();
+    	bigdata.Tansform("Filter", "AsterixDB");
+    	bigdata.Show();
     	
     	//start bigo server
     	System.out.println("\n->->->   start bigo server");
