@@ -30,6 +30,7 @@ public class Action {
 		return content;
 	} 
 	
+	@SuppressWarnings("unchecked")
 	public Map<Long, String> WordCount(Map<Long, String> content, String cls){
 		System.out.println("/***   Spark WordCount Action   ***/");
 		//content = new egSparkPipeJobWordCountTask001().run(content);
@@ -45,10 +46,10 @@ public class Action {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		return content;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public Map<Long, String> Cluster(Map<Long, String> content, String cls){
 		System.out.println("/***   Spark Cluster Action   ***/");
 		//content = new egSparkPipeJobClusterTask001().run(content);
@@ -67,6 +68,7 @@ public class Action {
 		return content;
 	}
 
+	@SuppressWarnings("unchecked")
 	public Map<Long, String> PageRank(Map<Long, String> content, String cls) {
 		System.out.println("/***   Spark PageRank Action   ***/");
 		//content = new egSparkPipeJobPageRankTask001().run(content);

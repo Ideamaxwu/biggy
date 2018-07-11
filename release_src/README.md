@@ -45,7 +45,7 @@
 * //delete WordCount example
 * //add Control module into framework instance
 * //update EngineFactory to switch case default
-* update Actor and Tranform operators to invoking
+* //update Actor and Tranform operators to invoking
 * make sense of StateMachine
 * implement clients
 * //update comments in Examples

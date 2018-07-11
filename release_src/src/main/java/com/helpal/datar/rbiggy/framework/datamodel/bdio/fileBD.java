@@ -6,12 +6,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.Map;
 import java.util.Map.Entry;
 
-import com.helpal.datar.rbiggy.examples.KMeans.egClusterD3PipeJobVisualTask001;
-import com.helpal.datar.rbiggy.examples.PageRank.egPageRankD3PipeJobVisualTask001;
-import com.helpal.datar.rbiggy.examples.Sort.egSortD3PipeJobVisualTask001;
-import com.helpal.datar.rbiggy.examples.WordCount.egD3PipeJobVisualTask001;
 import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 /**
@@ -81,11 +79,23 @@ public class fileBD {
 		}
 	}
 	
-	public void egVisualFile(String path) {
+	public void egVisualFile(String path, String cls) {
 		System.out.println("Write to Visual Data File: " + path);
-		new egD3PipeJobVisualTask001().generate(this.bigdata.getContent(), path);
+		//new egD3PipeJobVisualTask001().generate(this.bigdata.getContent(), path);
+		Class<?> egVF;
+		Object obj;
+		try {
+			egVF = Class.forName(cls);
+			obj = egVF.getConstructor().newInstance(); 
+			Method meth = egVF.getMethod("generate", Map.class, String.class);
+			meth.invoke(obj, this.bigdata.getContent(), path);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
+	/*
 	public void egSortVisualFile(String path) {
 		System.out.println("Write to Visual Data File: " + path);
 		new egSortD3PipeJobVisualTask001().generate(this.bigdata.getContent(), path);
@@ -100,5 +110,5 @@ public class fileBD {
 		System.out.println("Write to Visual Data File: " + path);
 		new egPageRankD3PipeJobVisualTask001().generate(this.bigdata.getContent(), path);
 	}
-
+	*/
 }

@@ -8,7 +8,7 @@ import com.helpal.datar.rbiggy.framework.datamodel.bdio.fileBD;
 
 public class egD3PipeJobVisual {
 	public void startVisualPage(BigData bigdata) throws IOException {
-		new fileBD(bigdata.getBD()).egVisualFile("src\\main\\java\\com\\helpal\\datar\\rbiggy\\examples\\WordCount\\res\\wordcount_data.js");
+		new fileBD(bigdata.getBD()).egVisualFile("src\\main\\java\\com\\helpal\\datar\\rbiggy\\examples\\WordCount\\res\\wordcount_data.js", "com.helpal.datar.rbiggy.examples.WordCount.egD3PipeJobVisualTask001");
 		bigdata.Show();
 		
 		Properties properties = System.getProperties();
