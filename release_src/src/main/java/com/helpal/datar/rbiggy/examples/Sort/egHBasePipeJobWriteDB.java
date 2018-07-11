@@ -1,8 +1,8 @@
 package com.helpal.datar.rbiggy.examples.Sort;
 
-import com.helpal.datar.rbiggy.framework.datamodel.fileBD;
 import com.helpal.datar.rbiggy.framework.datamodel.BigData;
-import com.helpal.datar.rbiggy.framework.datamodel.hdfsBD;
+import com.helpal.datar.rbiggy.framework.datamodel.bdio.fileBD;
+import com.helpal.datar.rbiggy.framework.datamodel.bdio.hdfsBD;
 
 public class egHBasePipeJobWriteDB {
 	public void startWriteDB(BigData bigdata) {

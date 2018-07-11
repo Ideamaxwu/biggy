@@ -40,4 +40,8 @@ public class BigData {
 		return bigdata;
 	}
 	
+	public Map<Long, String> getContent(){
+		return content;
+	}
+	
 }

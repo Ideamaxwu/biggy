@@ -1,8 +1,10 @@
-package com.helpal.datar.rbiggy.framework.datamodel;
+package com.helpal.datar.rbiggy.framework.datamodel.bdio;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 /**
  * 
@@ -22,7 +24,7 @@ public class BDIO<K, V> {
 	// to BigData type from * types
 	void ToBD(Map<K,V> data){
 		for (Map.Entry<K, V> entry : data.entrySet()){
-			this.bigdata.content.put((Long) entry.getKey(), (String) entry.getValue());
+			this.bigdata.getContent().put((Long) entry.getKey(), (String) entry.getValue());
 		}
 	}
 	
@@ -30,7 +32,7 @@ public class BDIO<K, V> {
 	//from BigData type to * types
 	Map<K, V> FromBD(){
 		Map<Long, String> data = new HashMap<Long, String>();
-		for (Entry<Long, String> entry : bigdata.content.entrySet()){
+		for (Entry<Long, String> entry : bigdata.getContent().entrySet()){
 			data.put(entry.getKey(), entry.getValue());
 		}
 		return (Map<K, V>) data;

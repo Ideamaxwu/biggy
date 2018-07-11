@@ -48,7 +48,7 @@ public class egSparkPipeJobClusterTask001 {
 		int runTimes = 3;
 		KMeansModel clusters = KMeans.train(parsedData.rdd(), numClusters, numIterations, runTimes);
 		
-		//System.out.println(parsedData.map(p -> p.toString() + " belong to cluster: " + clusters.predict(p)).collect());
+		System.out.println(parsedData.map(p -> p.toString() + " belong to cluster: " + clusters.predict(p)).collect());
 		for (String s : parsedData.map(p -> p.toString() + " -> " + clusters.predict(p)).collect()){
 			//System.out.println(s);
 			String[] kv = s.split(" -> ");

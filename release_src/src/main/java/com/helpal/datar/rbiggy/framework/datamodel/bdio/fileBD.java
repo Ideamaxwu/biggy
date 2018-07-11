@@ -1,4 +1,4 @@
-package com.helpal.datar.rbiggy.framework.datamodel;
+package com.helpal.datar.rbiggy.framework.datamodel.bdio;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,6 +12,7 @@ import com.helpal.datar.rbiggy.examples.KMeans.egClusterD3PipeJobVisualTask001;
 import com.helpal.datar.rbiggy.examples.PageRank.egPageRankD3PipeJobVisualTask001;
 import com.helpal.datar.rbiggy.examples.Sort.egSortD3PipeJobVisualTask001;
 import com.helpal.datar.rbiggy.examples.WordCount.egD3PipeJobVisualTask001;
+import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 
 /**
  * 
@@ -36,7 +37,7 @@ public class fileBD {
 			br = new BufferedReader(new FileReader(dataFile));
 			String line;
 			while ((line = br.readLine()) != null) {
-				this.bigdata.content.put(id, line);
+				this.bigdata.getContent().put(id, line);
 				id += 1;
 			}
 			br.close();
@@ -63,7 +64,7 @@ public class fileBD {
 				dataFile.createNewFile();
 			}
 			bw = new BufferedWriter(new FileWriter(dataFile));
-			for (Entry<Long, String> entry : this.bigdata.content.entrySet()){
+			for (Entry<Long, String> entry : this.bigdata.getContent().entrySet()){
 				bw.write(entry.getValue());
 				bw.newLine();
 			}
@@ -82,22 +83,22 @@ public class fileBD {
 	
 	public void egVisualFile(String path) {
 		System.out.println("Write to Visual Data File: " + path);
-		new egD3PipeJobVisualTask001().generate(this.bigdata.content, path);
+		new egD3PipeJobVisualTask001().generate(this.bigdata.getContent(), path);
 	}
 	
 	public void egSortVisualFile(String path) {
 		System.out.println("Write to Visual Data File: " + path);
-		new egSortD3PipeJobVisualTask001().generate(this.bigdata.content, path);
+		new egSortD3PipeJobVisualTask001().generate(this.bigdata.getContent(), path);
 	}
 
 	public void egClusterVisualFile(String path) {
 		System.out.println("Write to Visual Data File: " + path);
-		new egClusterD3PipeJobVisualTask001().generate(this.bigdata.content, path);
+		new egClusterD3PipeJobVisualTask001().generate(this.bigdata.getContent(), path);
 	}
 	
 	public void egPRVisualFile(String path) {
 		System.out.println("Write to Visual Data File: " + path);
-		new egPageRankD3PipeJobVisualTask001().generate(this.bigdata.content, path);
+		new egPageRankD3PipeJobVisualTask001().generate(this.bigdata.getContent(), path);
 	}
 
 }

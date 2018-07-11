@@ -3,8 +3,8 @@ package com.helpal.datar.rbiggy.examples.WordCount;
 import java.io.IOException;
 import java.util.Properties;
 
-import com.helpal.datar.rbiggy.framework.datamodel.fileBD;
 import com.helpal.datar.rbiggy.framework.datamodel.BigData;
+import com.helpal.datar.rbiggy.framework.datamodel.bdio.fileBD;
 
 public class egD3PipeJobVisual {
 	public void startVisualPage(BigData bigdata) throws IOException {

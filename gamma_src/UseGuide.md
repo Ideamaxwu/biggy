@@ -17,3 +17,5 @@ The basic workflow of biggy is 1) read engine configuration setups; 2) start uti
 * solve cannot read lifecycle mapping problem by editing pom.xml
 
 * explictly set maven compiler as 1.8 version in pom.xml if default is 1.5 without change
+
+* DO NOT run two examples at once, because the MongoDBDriver close connection each time

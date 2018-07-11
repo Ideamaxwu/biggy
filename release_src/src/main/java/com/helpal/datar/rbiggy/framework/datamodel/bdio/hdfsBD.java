@@ -1,5 +1,6 @@
-package com.helpal.datar.rbiggy.framework.datamodel;
+package com.helpal.datar.rbiggy.framework.datamodel.bdio;
 
+import com.helpal.datar.rbiggy.framework.datamodel.BigData;
 import com.helpal.datar.rbiggy.pipelines.utils.HBasePipeJobWriteDBTaskUtil;
 
 /**
@@ -17,7 +18,7 @@ public class hdfsBD {
 	public void WriteToHBase(String tablename) {
 		
 		System.out.println("Write to HBase Table: " + tablename);
-		new HBasePipeJobWriteDBTaskUtil().flush(this.bigdata.content, tablename);
+		new HBasePipeJobWriteDBTaskUtil().flush(this.bigdata.getContent(), tablename);
 	}
 
 }

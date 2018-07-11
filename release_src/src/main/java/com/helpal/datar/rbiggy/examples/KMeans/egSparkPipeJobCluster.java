@@ -1,7 +1,7 @@
 package com.helpal.datar.rbiggy.examples.KMeans;
 
-import com.helpal.datar.rbiggy.framework.datamodel.fileBD;
 import com.helpal.datar.rbiggy.framework.datamodel.BigData;
+import com.helpal.datar.rbiggy.framework.datamodel.bdio.fileBD;
 
 public class egSparkPipeJobCluster {
 	public void startCompute(BigData bigdata) {

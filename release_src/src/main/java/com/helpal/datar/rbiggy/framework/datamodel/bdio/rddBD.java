@@ -1,4 +1,4 @@
-package com.helpal.datar.rbiggy.framework.datamodel;
+package com.helpal.datar.rbiggy.framework.datamodel.bdio;
 
 /**
  * 
