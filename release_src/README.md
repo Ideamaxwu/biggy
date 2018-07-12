@@ -34,4 +34,4 @@
 
 [#100DaysOfCode](http://100daysofcode.com/)
 
-[UserGuid](https://github.com/Ideamaxwu/biggy/blob/master/gamma_src/UseGuide.md) for biggy
+[UserGuide](https://github.com/Ideamaxwu/biggy/blob/master/gamma_src/UseGuide.md) for biggy
