@@ -18,7 +18,7 @@ public class CliClient {
 	
 	private Socket clientSocket;
 	private String host = "localhost";
-	private int port = 9091;
+	private int port = 9090;
 	
 	public void startClient(){
 		System.out.print("client> ");

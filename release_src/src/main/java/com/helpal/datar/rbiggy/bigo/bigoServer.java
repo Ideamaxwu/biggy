@@ -15,13 +15,13 @@ import com.helpal.datar.rbiggy.framework.utils.BusKeeper;
  * Server for running instance
  * 
  */
-public class Server {
+public class bigoServer {
 	
 	private ServerSocket serverSocket;
-	private int port = 9091;
+	private int port = 9090;
 	public BusKeeper context = null;
 	
-	public Server(BusKeeper bk) {
+	public bigoServer(BusKeeper bk) {
 		this.context = bk;
 	}
 

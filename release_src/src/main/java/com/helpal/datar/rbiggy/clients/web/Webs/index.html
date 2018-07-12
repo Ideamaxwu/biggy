@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<title>Web Client - biggy</title>
+
+<head>
+<script type="text/javascript" src="js/utils/jquery-1.12.4.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+
+<body ng-app="WebClient">
+<div ng-controller="IndexController" ng-init="init()">
+<h1>biggy, build your own BDMS!</h1>
+<p ng-show="showinfo"><b>{{infoInput}}</b>: {{info}}</p>
+<button type="submit" ng-click="getInfo(infoInput)">GetInfo</button>
+</div>
+
+<script type="text/javascript" src="js/utils/WebApp.js"></script>
+<script type="text/javascript" src="js/IndexController.js"></script>
+<script type="text/javascript" src="js/IndexGetter.js"></script>
+	  
+</body>
+
+</html>

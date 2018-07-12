@@ -53,7 +53,7 @@ public class InstanceBDMS {
 	}
 
 	public void startServer() {
-		new Server(this.bk).start();
+		new bigoServer(this.bk).start();
 	}
 
 	public void showInfo() {

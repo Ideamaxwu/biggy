@@ -10,10 +10,10 @@ import java.io.IOException;
 public class WebGUI {
 
 	public static void main(String[] args) throws IOException {
-				WebServer webServer = new WebServer(9090);
-        new Thread(webServer).start();
-        
-        WebSeverHome wsh = new WebSeverHome();
-		wsh.startWebHome();
+		WebServer webServer = new WebServer(9092);
+		webServer.start();
+
+		HomePageServer hps = new HomePageServer();
+		hps.startHomePage();
 	}
 }

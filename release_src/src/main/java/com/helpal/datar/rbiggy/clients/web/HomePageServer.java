@@ -5,21 +5,19 @@ import java.util.Properties;
 
 /**
  * 
- * WebServer Home
+ * Home Page Server
  *
  */
-public class WebSeverHome {
-	void startWebHome() throws IOException {
+public class HomePageServer {
+	void startHomePage() throws IOException {
 		Properties properties = System.getProperties();
 		String osName = properties.getProperty("os.name");
-
 		System.out.println("Your OS name: " + osName);
 
 		if (osName.indexOf("Linux") != -1) {
 			Runtime.getRuntime().exec("htmlview");
 		} else if (osName.indexOf("Windows") != -1) {
-			Runtime.getRuntime().exec("explorer http://localhost:9090");
-			Runtime.getRuntime().exec("explorer src\\main\\java\\edu\\helpal\\datar\\gbiggy\\clients\\web\\index.html");
+			Runtime.getRuntime().exec("explorer http://localhost:8080");
 		} else {
 			throw new RuntimeException("Unknown OS.");
 		}
