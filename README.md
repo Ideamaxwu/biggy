@@ -66,3 +66,6 @@ See beta-version guide [here](https://github.com/Ideamaxwu/biggy/tree/master/bet
 
 ## Study Case
 IoTs privacy testbed based on Big data platform [BIT](https://github.com/Ideamaxwu/BIT)
+
+## Next
+Extend biggy to next level as OS for BDMS, a.k.a., Oeperating System for Big Data Management System.
